@@ -1,12 +1,13 @@
 import { View, Text } from "react-native";
 import React from "react";
 import Header from "../components/Header";
+import Searchbar from "../components/Searchbar";
 
 const Dashboard = () => {
   return (
     <View>
       <Header />
-      {/* <Searchbar /> */}
+      <Searchbar />
       {/* <Deals /> */}
       {/* <Brands /> */}
       {/* <Products /> */}
