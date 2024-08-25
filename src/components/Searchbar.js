@@ -20,7 +20,7 @@ const Searchbar = () => {
         style={{
           flexDirection: "row",
           alignItems: "center",
-          height: responsiveHeight(7),
+          height: responsiveHeight(6.5),
           width: responsiveHeight(40),
           borderColor: "#000",
           borderWidth: 1,
@@ -33,8 +33,8 @@ const Searchbar = () => {
       </View>
       <TouchableOpacity
         style={{
-          height: responsiveHeight(7),
-          width: responsiveHeight(7),
+          height: responsiveHeight(6.5),
+          width: responsiveHeight(6.5),
           borderRadius: responsiveHeight(2),
           borderWidth: 1,
           alignItems: "center",

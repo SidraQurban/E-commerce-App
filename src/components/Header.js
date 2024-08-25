@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { Image } from "react-native";
 import {
@@ -17,7 +17,6 @@ const Header = () => {
     >
       <View
         style={{
-          marginHorizontal: responsiveWidth(2),
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "space-between",
@@ -37,14 +36,14 @@ const Header = () => {
             justifyContent: "space-between",
           }}
         >
-          <View style={{ marginRight: responsiveWidth(6) }}>
+          <TouchableOpacity style={{ marginRight: responsiveWidth(6) }}>
             <Fontisto
               name="bell"
               size={25}
               style={{ top: responsiveHeight(1.75) }}
             />
-          </View>
-          <View
+          </TouchableOpacity>
+          <TouchableOpacity
             style={{
               height: responsiveHeight(7),
               width: responsiveHeight(7),
@@ -55,7 +54,7 @@ const Header = () => {
             }}
           >
             <Feather name="shopping-cart" size={25} />
-          </View>
+          </TouchableOpacity>
         </View>
       </View>
     </View>
