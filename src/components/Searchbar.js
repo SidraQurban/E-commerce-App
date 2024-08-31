@@ -9,8 +9,7 @@ const Searchbar = () => {
   return (
     <View
       style={{
-        padding: responsiveWidth(4),
-        top: responsiveHeight(-12),
+        top: responsiveHeight(-7),
         flexDirection: "row",
         justifyContent: "space-between",
       }}

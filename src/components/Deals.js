@@ -27,19 +27,18 @@ const Deals = () => {
         borderRadius: 3,
       }}
       style={{
-        bottom: 80,
-        marginBottom: responsiveHeight(32),
+        flex: 1,
+        bottom: 35,
+        marginBottom: responsiveHeight(34),
       }}
     >
       {images.map((img) => (
         <Image
           style={{
             borderRadius: 10,
-            marginLeft: responsiveWidth(2),
-            marginRight: responsiveWidth(2),
             marginTop: 10,
             height: responsiveHeight(25),
-            width: "96%",
+            width: "100%",
             resizeMode: "cover",
           }}
           source={img.img}

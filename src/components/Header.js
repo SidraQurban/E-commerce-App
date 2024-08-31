@@ -12,7 +12,6 @@ const Header = () => {
     <View
       style={{
         top: responsiveHeight(-4),
-        padding: responsiveWidth(4),
       }}
     >
       <View
