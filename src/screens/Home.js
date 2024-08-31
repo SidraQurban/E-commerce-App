@@ -43,7 +43,7 @@ const Home = ({ navigation }) => {
             marginHorizontal: responsiveWidth(5),
             fontSize: responsiveScreenFontSize(2.3),
             color: "#000",
-            marginBottom: responsiveHeight(23),
+            marginBottom: responsiveHeight(10),
           }}
         >
           Discover the best deals, and enjoy a user-friendly interface that
@@ -58,6 +58,7 @@ const Home = ({ navigation }) => {
             justifyContent: "center",
             width: responsiveWidth(80),
             height: responsiveWidth(15),
+            top: responsiveHeight(10),
           }}
         >
           <Text

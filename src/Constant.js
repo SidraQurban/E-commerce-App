@@ -1,5 +1,12 @@
-export const images = [
-  require("./../assets/image1.png"),
-  require("./../assets/image2.png"),
-  require("./../assets/image3.png"),
-];
+import { View, Text } from "react-native";
+import React from "react";
+
+const Constant = () => {
+  return (
+    <View>
+      <Text>Constant</Text>
+    </View>
+  );
+};
+
+export default Constant;
