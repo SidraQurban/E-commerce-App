@@ -1,17 +1,18 @@
-import { View, Text, TextInput, TouchableOpacity } from "react-native";
+import { View, TextInput, TouchableOpacity } from "react-native";
 import React from "react";
 import {
   responsiveHeight,
   responsiveWidth,
 } from "react-native-responsive-dimensions";
 import { Ionicons, MaterialCommunityIcons } from "react-native-vector-icons";
+
 const Searchbar = () => {
   return (
     <View
       style={{
-        top: responsiveHeight(-7),
         flexDirection: "row",
         justifyContent: "space-between",
+        marginVertical: responsiveHeight(1),
       }}
     >
       <View

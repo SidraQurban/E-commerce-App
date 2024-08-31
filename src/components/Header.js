@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, TouchableOpacity } from "react-native";
 import React from "react";
 import { Image } from "react-native";
 import {
@@ -9,11 +9,7 @@ import { Fontisto, Feather } from "react-native-vector-icons";
 
 const Header = () => {
   return (
-    <View
-      style={{
-        top: responsiveHeight(-4),
-      }}
-    >
+    <View style={{ paddingVertical: responsiveHeight(1) }}>
       <View
         style={{
           flexDirection: "row",
@@ -24,7 +20,7 @@ const Header = () => {
         <Image
           source={require("../../assets/logo.png")}
           style={{
-            height: responsiveHeight(20),
+            height: responsiveHeight(10),
             width: responsiveWidth(30),
             resizeMode: "contain",
           }}
@@ -35,12 +31,13 @@ const Header = () => {
             justifyContent: "space-between",
           }}
         >
-          <TouchableOpacity style={{ marginRight: responsiveWidth(6) }}>
-            <Fontisto
-              name="bell"
-              size={25}
-              style={{ top: responsiveHeight(1.75) }}
-            />
+          <TouchableOpacity
+            style={{
+              marginRight: responsiveWidth(6),
+              marginVertical: responsiveHeight(1.5),
+            }}
+          >
+            <Fontisto name="bell" size={25} />
           </TouchableOpacity>
           <TouchableOpacity
             style={{

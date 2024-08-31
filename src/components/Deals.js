@@ -1,4 +1,5 @@
-import { View, Text, Image } from "react-native";
+// Deals.js
+import { View, Image } from "react-native";
 import React from "react";
 import {
   responsiveHeight,
@@ -9,43 +10,44 @@ import { images } from "../Constant";
 
 const Deals = () => {
   return (
-    <Carousel
-      showsControls={false}
-      loop={true}
-      activeDotStyle={{
-        height: 3,
-        width: 25,
-        marginHorizontal: 3,
-        backgroundColor: "#adb5bd",
-        borderRadius: 3,
-      }}
-      dotStyle={{
-        height: 3,
-        width: 25,
-        marginHorizontal: 3,
-        backgroundColor: "#6c757d",
-        borderRadius: 3,
-      }}
-      style={{
-        flex: 1,
-        bottom: 35,
-        marginBottom: responsiveHeight(34),
-      }}
-    >
-      {images.map((img) => (
-        <Image
-          style={{
-            borderRadius: 10,
-            marginTop: 10,
-            height: responsiveHeight(25),
-            width: "100%",
-            resizeMode: "cover",
-          }}
-          source={img.img}
-          key={img.id}
-        />
-      ))}
-    </Carousel>
+    <View style={{ marginVertical: responsiveHeight(2) }}>
+      <Carousel
+        showsControls={false}
+        loop={true}
+        height={responsiveHeight(30)}
+        activeDotStyle={{
+          height: 3,
+          width: 25,
+          marginHorizontal: 3,
+          backgroundColor: "#adb5bd",
+          borderRadius: 3,
+        }}
+        dotStyle={{
+          height: 3,
+          width: 25,
+          marginHorizontal: 3,
+          backgroundColor: "#6c757d",
+          borderRadius: 3,
+        }}
+        style={{
+          borderRadius: 10,
+          overflow: "hidden",
+        }}
+      >
+        {images.map((img) => (
+          <Image
+            style={{
+              borderRadius: 10,
+              height: responsiveHeight(25),
+              width: "100%",
+              resizeMode: "cover",
+            }}
+            source={img.img}
+            key={img.id}
+          />
+        ))}
+      </Carousel>
+    </View>
   );
 };
 
