@@ -5,7 +5,6 @@ import {
   responsiveWidth,
 } from "react-native-responsive-dimensions";
 import { Ionicons, MaterialCommunityIcons } from "react-native-vector-icons";
-
 const Searchbar = () => {
   return (
     <View

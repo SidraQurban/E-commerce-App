@@ -6,7 +6,7 @@ import Deals from "../components/Deals";
 
 const Dashboard = () => {
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <Header />
       <Searchbar />
       <Deals />

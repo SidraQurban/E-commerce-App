@@ -1,12 +1,10 @@
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 import React from "react";
 import {
   responsiveHeight,
   responsiveWidth,
 } from "react-native-responsive-dimensions";
 import Carousel from "pinar";
-// import { images } from "../Constant";
-import { Image } from "react-native";
 
 const images = [
   {
@@ -25,7 +23,7 @@ const images = [
 const Deals = () => {
   return (
     <View>
-      <View>
+      <View style={{ alignItems: "center", marginTop: responsiveHeight(2) }}>
         <Carousel
           style={{
             height: responsiveHeight(30),
@@ -34,7 +32,7 @@ const Deals = () => {
         >
           {images.map((img) => (
             <Image
-              style={{ height: "80%", width: "80%" }}
+              style={{ height: "100%", width: "100%", resizeMode: "cover" }}
               source={img.img}
               key={img.id}
             />
