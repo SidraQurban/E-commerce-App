@@ -5,41 +5,48 @@ import {
   responsiveWidth,
 } from "react-native-responsive-dimensions";
 import Carousel from "pinar";
+import { images } from "../Constant";
 
-const images = [
-  {
-    id: 1,
-    img: require("../../assets/image1.png"),
-  },
-  {
-    id: 2,
-    img: require("../../assets/image2.png"),
-  },
-  {
-    id: 3,
-    img: require("../../assets/image3.png"),
-  },
-];
 const Deals = () => {
   return (
-    <View>
-      <View style={{ alignItems: "center", marginTop: responsiveHeight(2) }}>
-        <Carousel
+    <Carousel
+      showsControls={false}
+      loop={true}
+      activeDotStyle={{
+        height: 3,
+        width: 25,
+        marginHorizontal: 3,
+        backgroundColor: "#adb5bd",
+        borderRadius: 3,
+      }}
+      dotStyle={{
+        height: 3,
+        width: 25,
+        marginHorizontal: 3,
+        backgroundColor: "#6c757d",
+        borderRadius: 3,
+      }}
+      style={{
+        bottom: 80,
+        marginBottom: responsiveHeight(32),
+      }}
+    >
+      {images.map((img) => (
+        <Image
           style={{
-            height: responsiveHeight(30),
-            width: responsiveWidth(90),
+            borderRadius: 10,
+            marginLeft: responsiveWidth(2),
+            marginRight: responsiveWidth(2),
+            marginTop: 10,
+            height: responsiveHeight(25),
+            width: "96%",
+            resizeMode: "cover",
           }}
-        >
-          {images.map((img) => (
-            <Image
-              style={{ height: "100%", width: "100%", resizeMode: "cover" }}
-              source={img.img}
-              key={img.id}
-            />
-          ))}
-        </Carousel>
-      </View>
-    </View>
+          source={img.img}
+          key={img.id}
+        />
+      ))}
+    </Carousel>
   );
 };
 
