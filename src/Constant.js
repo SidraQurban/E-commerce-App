@@ -17,18 +17,22 @@ export const brandsLogo = [
   {
     id: 1,
     logo: require("./../assets/khaadi.png"),
+    url: "https://pk.khaadi.com/",
   },
   {
     id: 2,
     logo: require("./../assets/ideas.png"),
+    url: "https://www.gulahmedshop.com/unstitched-fabric/lawn-collection?gclid=CjwKCAjwxNW2BhAkEiwA24Cm9JViskuAMhyzKT-8JscwxCLV3JijHC6eCYb5iBDY-jv9ZGBxtsdmuBoCaKwQAvD_BwE",
   },
   {
     id: 3,
     logo: require("./../assets/j..png"),
+    url: "https://www.junaidjamshed.com/",
   },
   {
     id: 4,
     logo: require("./../assets/ga.png"),
+    url: "https://www.gulahmedshop.com/",
   },
 ];
 

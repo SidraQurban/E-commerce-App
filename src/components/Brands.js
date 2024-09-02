@@ -3,11 +3,18 @@ import React from "react";
 import {
   responsiveFontSize,
   responsiveHeight,
-  responsiveWidth,
 } from "react-native-responsive-dimensions";
 import { brandsLogo } from "../Constant";
+import { Linking } from "react-native";
 
 const Brands = () => {
+  // Function to handle opening the URL
+  const handlePress = (url) => {
+    Linking.openURL(url).catch((err) =>
+      console.error("Failed to open URL:", err)
+    );
+  };
+
   return (
     <View style={{ marginVertical: responsiveHeight(1) }}>
       <View>
@@ -24,11 +31,13 @@ const Brands = () => {
           gap: 2,
         }}
       >
-        {brandsLogo.map((logo) => {
-          return (
+        {brandsLogo.map((logo) => (
+          <TouchableOpacity
+            key={logo.id}
+            onPress={() => handlePress(logo.url)} // Pass the URL to the handlePress function
+          >
             <Image
               source={logo.logo}
-              key={logo.id}
               style={{
                 height: responsiveHeight(11),
                 width: responsiveHeight(11),
@@ -36,8 +45,8 @@ const Brands = () => {
                 resizeMode: "cover",
               }}
             />
-          );
-        })}
+          </TouchableOpacity>
+        ))}
       </View>
     </View>
   );
