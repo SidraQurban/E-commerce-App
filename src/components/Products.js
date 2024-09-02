@@ -11,6 +11,9 @@ import { productData } from "../Constant";
 
 const Products = () => {
   const [active, setActive] = useState(null);
+  const handlePress = (id) => {
+    setActive(active === id ? null : id);
+  };
 
   const rows = [];
   for (let i = 0; i < productData.length; i += 2) {
@@ -48,21 +51,24 @@ const Products = () => {
               key={product.id}
               style={{
                 width: "48%",
-                height: responsiveHeight(27),
+                height: responsiveHeight(30),
                 borderRadius: responsiveHeight(2),
                 backgroundColor: "#f8f9fa",
               }}
             >
               {/* Image */}
-              <Image
-                source={product.img}
-                style={{
-                  backgroundColor: "#e9ecef",
-                  height: responsiveHeight(17),
-                  resizeMode: "contain",
-                  width: "100%",
-                }}
-              />
+              <TouchableOpacity>
+                <Image
+                  source={product.img}
+                  style={{
+                    backgroundColor: "#e9ecef",
+                    height: responsiveHeight(17),
+                    resizeMode: "contain",
+                    width: "100%",
+                  }}
+                />
+              </TouchableOpacity>
+
               {/* Product Text  */}
               <View>
                 <View
@@ -81,11 +87,11 @@ const Products = () => {
                   >
                     {product.name}
                   </Text>
-                  <TouchableOpacity onPress={() => setActive(!active)}>
+                  <TouchableOpacity onPress={() => handlePress(product.id)}>
                     <AntDesign
-                      name={active ? "heart" : "hearto"}
+                      name={active === product.id ? "heart" : "hearto"}
                       size={17}
-                      color={active ? "red" : "red"}
+                      color={active === product.id ? "red" : "red"}
                     />
                   </TouchableOpacity>
                 </View>
