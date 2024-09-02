@@ -5,6 +5,7 @@ import Searchbar from "../components/Searchbar";
 import Deals from "../components/Deals";
 import Brands from "../components/Brands";
 import { responsiveWidth } from "react-native-responsive-dimensions";
+import Products from "../components/Products";
 
 const Dashboard = () => {
   return (
@@ -13,7 +14,7 @@ const Dashboard = () => {
       <Searchbar />
       <Deals />
       <Brands />
-      {/* <Products /> */}
+      <Products />
     </ScrollView>
   );
 };
