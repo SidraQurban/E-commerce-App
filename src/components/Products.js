@@ -1,5 +1,7 @@
 import { View, Text } from "react-native";
 import React from "react";
+import { responsiveFontSize } from "react-native-responsive-dimensions";
+import { TouchableOpacity } from "react-native";
 
 const Products = () => {
   return (
@@ -10,8 +12,14 @@ const Products = () => {
           justifyContent: "space-between",
         }}
       >
-        <Text>For You</Text>
-        <Text>Shop for more</Text>
+        <Text style={{ fontSize: responsiveFontSize(2), fontWeight: "bold" }}>
+          For You
+        </Text>
+        <TouchableOpacity>
+          <Text style={{ color: "#4ea8de", fontSize: responsiveFontSize(2) }}>
+            Shop for more
+          </Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
