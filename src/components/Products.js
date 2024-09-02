@@ -1,5 +1,5 @@
 import { View, Text, Image } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import {
   responsiveFontSize,
   responsiveHeight,
@@ -9,6 +9,8 @@ import { TouchableOpacity } from "react-native";
 import { AntDesign } from "react-native-vector-icons";
 
 const Products = () => {
+  const [active, setActive] = useState(false);
+
   return (
     <View>
       <View
@@ -21,7 +23,7 @@ const Products = () => {
           For You
         </Text>
         <TouchableOpacity>
-          <Text style={{ color: "#4ea8de", fontSize: responsiveFontSize(2) }}>
+          <Text style={{ color: "blue", fontSize: responsiveFontSize(2) }}>
             Shop more
           </Text>
         </TouchableOpacity>
@@ -53,16 +55,30 @@ const Products = () => {
           />
           {/* Product Text  */}
           <View>
-            <Text
+            <View
               style={{
-                fontWeight: "bold",
-                fontSize: responsiveFontSize(2),
                 marginTop: responsiveHeight(0.5),
                 marginBottom: responsiveHeight(0.5),
+                flexDirection: "row",
+                justifyContent: "space-between",
               }}
             >
-              Pixi Blush on
-            </Text>
+              <Text
+                style={{
+                  fontWeight: "bold",
+                  fontSize: responsiveFontSize(2),
+                }}
+              >
+                Pixi Blush on
+              </Text>
+              <TouchableOpacity onPress={() => setActive(!active)}>
+                <AntDesign
+                  name={active ? "heart" : "hearto"}
+                  size={17}
+                  color={active ? "red" : "red"}
+                />
+              </TouchableOpacity>
+            </View>
             {/* Pricing */}
             <View
               style={{
@@ -85,8 +101,17 @@ const Products = () => {
             {/* Product Rating */}
             <View style={{ flexDirection: "row" }}>
               <AntDesign name="star" color="#fcbf49" size={18} />
-              <Text style={{ marginLeft: responsiveWidth(2) }}>4.6(127)</Text>
-              <Text style={{ marginLeft: responsiveWidth(2) }}> 1.1k sold</Text>
+              <Text
+                style={{ marginLeft: responsiveWidth(1), color: "#343a40" }}
+              >
+                4.6(127)
+              </Text>
+              <Text
+                style={{ marginLeft: responsiveWidth(1), color: "#343a40" }}
+              >
+                {" "}
+                1.1k sold
+              </Text>
             </View>
           </View>
         </View>
