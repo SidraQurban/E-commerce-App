@@ -7,10 +7,15 @@ import {
 } from "react-native-responsive-dimensions";
 import { TouchableOpacity } from "react-native";
 import { AntDesign } from "react-native-vector-icons";
+import { productData } from "../Constant";
 
 const Products = () => {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(null);
 
+  const rows = [];
+  for (let i = 0; i < productData.length; i += 2) {
+    rows.push(productData.slice(i, i + 2));
+  }
   return (
     <View>
       <View
@@ -28,104 +33,100 @@ const Products = () => {
           </Text>
         </TouchableOpacity>
       </View>
-      <View
-        style={{
-          marginTop: 10,
-          flexDirection: "row",
-          justifyContent: "space-between",
-        }}
-      >
+      {rows.map((row, rowIndex) => (
         <View
+          key={rowIndex}
           style={{
-            width: responsiveHeight(25),
-            height: responsiveHeight(27),
-            borderRadius: responsiveHeight(2),
-            backgroundColor: "#f8f9fa",
+            marginTop: 10,
+            flexDirection: "row",
+            justifyContent: "space-between",
+            marginBottom: responsiveHeight(0.5),
           }}
         >
-          {/* Image */}
-          <Image
-            source={require("../../assets/blush.png")}
-            style={{
-              backgroundColor: "#e9ecef",
-              height: responsiveHeight(17),
-              resizeMode: "contain",
-              width: "100%",
-            }}
-          />
-          {/* Product Text  */}
-          <View>
+          {row.map((product) => (
             <View
+              key={product.id}
               style={{
-                marginTop: responsiveHeight(0.5),
-                marginBottom: responsiveHeight(0.5),
-                flexDirection: "row",
-                justifyContent: "space-between",
+                width: "48%",
+                height: responsiveHeight(27),
+                borderRadius: responsiveHeight(2),
+                backgroundColor: "#f8f9fa",
               }}
             >
-              <Text
+              {/* Image */}
+              <Image
+                source={product.img}
                 style={{
-                  fontWeight: "bold",
-                  fontSize: responsiveFontSize(2),
+                  backgroundColor: "#e9ecef",
+                  height: responsiveHeight(17),
+                  resizeMode: "contain",
+                  width: "100%",
                 }}
-              >
-                Pixi Blush on
-              </Text>
-              <TouchableOpacity onPress={() => setActive(!active)}>
-                <AntDesign
-                  name={active ? "heart" : "hearto"}
-                  size={17}
-                  color={active ? "red" : "red"}
-                />
-              </TouchableOpacity>
+              />
+              {/* Product Text  */}
+              <View>
+                <View
+                  style={{
+                    marginTop: responsiveHeight(0.5),
+                    marginBottom: responsiveHeight(0.5),
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <Text
+                    style={{
+                      fontWeight: "bold",
+                      fontSize: responsiveFontSize(2),
+                    }}
+                  >
+                    {product.name}
+                  </Text>
+                  <TouchableOpacity onPress={() => setActive(!active)}>
+                    <AntDesign
+                      name={active ? "heart" : "hearto"}
+                      size={17}
+                      color={active ? "red" : "red"}
+                    />
+                  </TouchableOpacity>
+                </View>
+                {/* Pricing */}
+                <View
+                  style={{
+                    flexDirection: "row",
+                    marginBottom: responsiveHeight(0.5),
+                  }}
+                >
+                  <Text style={{ color: "#6c757d" }}>{product.price}</Text>
+                  <Text
+                    style={{
+                      marginLeft: responsiveWidth(2),
+                      color: "#6c757d",
+                      height: responsiveHeight(2.4),
+                      backgroundColor: "#ced4da",
+                    }}
+                  >
+                    {product.discount}
+                  </Text>
+                </View>
+                {/* Product Rating */}
+                <View style={{ flexDirection: "row" }}>
+                  <AntDesign name="star" color="#fcbf49" size={18} />
+                  <Text
+                    style={{ marginLeft: responsiveWidth(1), color: "#343a40" }}
+                  >
+                    {product.rating}
+                  </Text>
+                  <Text
+                    style={{ marginLeft: responsiveWidth(1), color: "#343a40" }}
+                  >
+                    {product.sold}
+                  </Text>
+                </View>
+              </View>
             </View>
-            {/* Pricing */}
-            <View
-              style={{
-                flexDirection: "row",
-                marginBottom: responsiveHeight(0.5),
-              }}
-            >
-              <Text style={{ color: "#6c757d" }}>Rs.1,764</Text>
-              <Text
-                style={{
-                  marginLeft: responsiveWidth(2),
-                  color: "#6c757d",
-                  height: responsiveHeight(2.4),
-                  backgroundColor: "#ced4da",
-                }}
-              >
-                -50%
-              </Text>
-            </View>
-            {/* Product Rating */}
-            <View style={{ flexDirection: "row" }}>
-              <AntDesign name="star" color="#fcbf49" size={18} />
-              <Text
-                style={{ marginLeft: responsiveWidth(1), color: "#343a40" }}
-              >
-                4.6(127)
-              </Text>
-              <Text
-                style={{ marginLeft: responsiveWidth(1), color: "#343a40" }}
-              >
-                {" "}
-                1.1k sold
-              </Text>
-            </View>
-          </View>
+          ))}
         </View>
-        <View
-          style={{
-            width: responsiveHeight(22),
-            height: responsiveHeight(29),
-            borderRadius: responsiveHeight(2),
-            backgroundColor: "blue",
-          }}
-        >
-          <Text>Hi</Text>
-        </View>
-      </View>
+      ))}
     </View>
   );
 };
