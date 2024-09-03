@@ -14,6 +14,7 @@ const Deals = () => {
       <Carousel
         showsControls={false}
         loop={true}
+        autoplay={true}
         height={responsiveHeight(30)}
         activeDotStyle={{
           height: 3,

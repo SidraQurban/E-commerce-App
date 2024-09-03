@@ -131,7 +131,7 @@ export const productData = [
   {
     id: 11,
     img: require("./../assets/lotion.png"),
-    name: "Nivea Aloe Vera Body Lotion",
+    name: "Nivea Body Lotion",
     price: "Rs. 1,490",
     discount: "-80%",
     rating: "4.2(100)",
