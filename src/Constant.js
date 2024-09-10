@@ -166,3 +166,9 @@ export const productData = [
     sold: "5k sold",
   },
 ];
+export const icons = [
+  { name: "home-outline", activeName: "home-sharp", route: "Dashboard" },
+  { name: "search-outline", activeName: "search-sharp", route: "Search" },
+  { name: "heart-outline", activeName: "heart-sharp", route: "Fav" },
+  { name: "cart-outline", activeName: "cart-sharp", route: "Cart" },
+];

@@ -6,16 +6,20 @@ import Deals from "../components/Deals";
 import Brands from "../components/Brands";
 import { responsiveWidth } from "react-native-responsive-dimensions";
 import Products from "../components/Products";
+import Footer from "../components/Footer";
 
 const Dashboard = () => {
   return (
-    <ScrollView style={{ flex: 1, padding: responsiveWidth(3) }}>
-      <Header />
-      <Searchbar />
-      <Deals />
-      <Brands />
-      <Products />
-    </ScrollView>
+    <>
+      <ScrollView style={{ flex: 1, padding: responsiveWidth(3) }}>
+        <Header />
+        <Searchbar />
+        <Deals />
+        <Brands />
+        <Products />
+      </ScrollView>
+      <Footer />
+    </>
   );
 };
 

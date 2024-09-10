@@ -1,10 +1,7 @@
 // Deals.js
 import { View, Image } from "react-native";
 import React from "react";
-import {
-  responsiveHeight,
-  responsiveWidth,
-} from "react-native-responsive-dimensions";
+import { responsiveHeight } from "react-native-responsive-dimensions";
 import Carousel from "pinar";
 import { images } from "../Constant";
 
