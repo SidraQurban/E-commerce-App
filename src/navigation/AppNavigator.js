@@ -5,7 +5,6 @@ import Home from "../screens/Home";
 import Dashboard from "../screens/Dashboard";
 
 const Stack = createNativeStackNavigator();
-
 const AppNavigator = () => {
   return (
     <NavigationContainer>
