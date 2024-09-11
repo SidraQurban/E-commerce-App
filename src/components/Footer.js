@@ -22,6 +22,7 @@ const Footer = () => {
     <View>
       <View
         style={{
+          position: "static",
           height: responsiveHeight(7),
           borderTopEndRadius: responsiveHeight(3),
           borderTopLeftRadius: responsiveHeight(3),
@@ -46,7 +47,7 @@ const Footer = () => {
                 <Ionicons
                   name={activeLogo === icon.name ? icon.activeName : icon.name}
                   size={25}
-                  color={activeLogo === icon.name ? "lightgrey" : "black"}
+                  color={activeLogo === icon.name ? "#2b2d42" : "#8d99ae"}
                 />
               </TouchableOpacity>
             );

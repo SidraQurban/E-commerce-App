@@ -8,8 +8,10 @@ import {
 import { TouchableOpacity } from "react-native";
 import { AntDesign } from "react-native-vector-icons";
 import { productData } from "../Constant";
+import { useNavigation } from "@react-navigation/native";
 
 const Products = () => {
+  const navigation = useNavigation();
   const [active, setActive] = useState(null);
   const handlePress = (id) => {
     setActive(active === id ? null : id);
@@ -30,7 +32,7 @@ const Products = () => {
         <Text style={{ fontSize: responsiveFontSize(2), fontWeight: "bold" }}>
           For You
         </Text>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("MoreProducts")}>
           <Text style={{ color: "blue", fontSize: responsiveFontSize(2) }}>
             Shop more
           </Text>

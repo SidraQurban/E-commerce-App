@@ -6,6 +6,7 @@ import Dashboard from "../screens/Dashboard";
 import Fav from "../screens/Fav";
 import Search from "../screens/Search";
 import Cart from "../screens/Cart";
+import MoreProducts from "../screens/MoreProducts";
 
 const Stack = createNativeStackNavigator();
 const AppNavigator = () => {
@@ -17,6 +18,7 @@ const AppNavigator = () => {
         <Stack.Screen name="Fav" component={Fav} />
         <Stack.Screen name="Search" component={Search} />
         <Stack.Screen name="Cart" component={Cart} />
+        <Stack.Screen name="MoreProducts" component={MoreProducts} />
       </Stack.Navigator>
     </NavigationContainer>
   );
