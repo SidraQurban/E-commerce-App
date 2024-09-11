@@ -172,3 +172,30 @@ export const icons = [
   { name: "heart-outline", activeName: "heart-sharp", route: "Fav" },
   { name: "cart-outline", activeName: "cart-sharp", route: "Cart" },
 ];
+
+export const categoryData = [
+  {
+    id: 1,
+    name: "All",
+  },
+  {
+    id: 2,
+    name: "Sale",
+  },
+  {
+    id: 3,
+    name: "Beauty",
+  },
+  {
+    id: 4,
+    name: "Electronics",
+  },
+  {
+    id: 5,
+    name: "LifeStyle",
+  },
+  {
+    id: 6,
+    name: "Fashion",
+  },
+];
