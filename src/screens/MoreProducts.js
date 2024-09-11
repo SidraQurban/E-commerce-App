@@ -13,6 +13,7 @@ import {
   responsiveHeight,
   responsiveWidth,
 } from "react-native-responsive-dimensions";
+import Categories from "../components/Categories";
 
 const MoreProducts = () => {
   const navigation = useNavigation();
@@ -41,6 +42,7 @@ const MoreProducts = () => {
         </TouchableOpacity>
         <Text
           style={{
+            marginRight: responsiveWidth(2),
             fontWeight: "bold",
             fontSize: responsiveFontSize(2),
             marginTop: responsiveHeight(2.5),
@@ -53,8 +55,8 @@ const MoreProducts = () => {
           style={{
             flexDirection: "row",
             alignItems: "center",
-            height: responsiveHeight(5.5),
-            width: "45%",
+            height: responsiveHeight(5.3),
+            width: "50%",
             borderColor: "#000",
             borderWidth: 1,
             borderRadius: responsiveHeight(2),
@@ -64,19 +66,26 @@ const MoreProducts = () => {
           <Ionicons name="search" size={20} style={{ marginRight: 5 }} />
           <TextInput placeholder="Search here" placeholderTextColor="#000" />
         </View>
-        <TouchableOpacity
+
+        <View
           style={{
-            height: responsiveHeight(6.5),
-            width: "13%",
-            borderRadius: responsiveHeight(2),
-            borderWidth: 1,
-            alignItems: "center",
-            justifyContent: "center",
+            flexDirection: "row",
+            marginTop: responsiveHeight(2),
           }}
         >
-          <MaterialCommunityIcons name="line-scan" size={30} />
-        </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("Cart")}>
+            <Ionicons
+              name="cart-outline"
+              size={25}
+              style={{ marginRight: responsiveWidth(2) }}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Ionicons name="share-outline" size={25} />
+          </TouchableOpacity>
+        </View>
       </View>
+      <Categories />
     </ScrollView>
   );
 };
