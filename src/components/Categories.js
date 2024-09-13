@@ -15,11 +15,15 @@ const Categories = () => {
 
   return (
     <View>
-      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+      <ScrollView
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
+        style={{ marginBottom: responsiveHeight(1) }}
+      >
         <View
           style={{
             flexDirection: "row",
-            gap: responsiveWidth(2),
+            gap: responsiveWidth(2.5),
           }}
         >
           {categoryData.map((cat) => {
@@ -33,7 +37,7 @@ const Categories = () => {
                   borderRadius: responsiveHeight(1.5),
                   borderWidth: 1,
                   borderColor: active === cat.id ? "#f4845f" : "#d9d9d9",
-                  width: responsiveHeight(13),
+                  width: responsiveHeight(12),
                   height: responsiveHeight(5),
                   backgroundColor: active === cat.id ? "#f79d65" : "#d9d9d9",
                 }}
