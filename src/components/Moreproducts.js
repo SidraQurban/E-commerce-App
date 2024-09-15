@@ -7,7 +7,7 @@ import {
 } from "react-native-responsive-dimensions";
 import { TouchableOpacity } from "react-native";
 import { AntDesign } from "react-native-vector-icons";
-import { productData } from "../Constant";
+import { moreProductData } from "../Constant";
 import { useNavigation } from "@react-navigation/native";
 
 const Moreproducts = () => {
@@ -18,8 +18,8 @@ const Moreproducts = () => {
   };
 
   const rows = [];
-  for (let i = 0; i < productData.length; i += 2) {
-    rows.push(productData.slice(i, i + 2));
+  for (let i = 0; i < moreProductData.length; i += 2) {
+    rows.push(moreProductData.slice(i, i + 2));
   }
   return (
     <View>

@@ -8,9 +8,14 @@ import { TouchableOpacity } from "react-native";
 import { categoryData } from "../Constant";
 
 const Categories = () => {
-  const [active, setActive] = useState();
+  const [active, setActive] = useState("All");
+
   const handlePress = (id) => {
-    setActive(active === id ? null : id);
+    if (id === "All") {
+      setActive("All");
+    } else {
+      setActive(active === id ? "All" : id);
+    }
   };
 
   return (
@@ -23,7 +28,7 @@ const Categories = () => {
         <View
           style={{
             flexDirection: "row",
-            gap: responsiveWidth(2.5),
+            gap: responsiveWidth(4.5),
           }}
         >
           {categoryData.map((cat) => {
