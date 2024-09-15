@@ -11,7 +11,10 @@ import Footer from "../components/Footer";
 const Dashboard = () => {
   return (
     <>
-      <ScrollView style={{ flex: 1, padding: responsiveWidth(3) }}>
+      <ScrollView
+        style={{ flex: 1, padding: responsiveWidth(3) }}
+        showsVerticalScrollIndicator={false}
+      >
         <Header />
         <Searchbar />
         <Deals />
