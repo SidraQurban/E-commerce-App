@@ -59,7 +59,9 @@ const Products = () => {
               }}
             >
               {/* Image */}
-              <TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => navigation.navigate("DetailProduct")}
+              >
                 <Image
                   source={product.img}
                   style={{
