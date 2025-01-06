@@ -14,6 +14,7 @@ const Home = ({ navigation }) => {
         <View
           style={{
             top: responsiveHeight(5),
+            botton: responsiveHeight(1),
           }}
         >
           <Image
