@@ -1,9 +1,12 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { responsiveHeight } from 'react-native-responsive-dimensions';
+import {Ionicons} from "react-native-vector-icons";
+import {useNavigation} from '@react-navigation/native';
 
 const DetailProduct = () => {
+  const navigation = useNavigation();
   return (
     <SafeAreaView>
       <View>
@@ -14,7 +17,14 @@ const DetailProduct = () => {
             borderBottomRightRadius: responsiveHeight(5),
           }}
         >
-          <Text>DetailProduct</Text>
+         <TouchableOpacity onPress={() => navigation.goBack()}>
+                     <Ionicons
+                       name="chevron-back"
+                       size={25}
+                       style={{ marginTop: responsiveHeight(2.5) }}
+                     />
+                   </TouchableOpacity>
+         
           <Image
             source={require("../../assets/lipstick.png")}
             style={{
