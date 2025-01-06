@@ -12,19 +12,19 @@ const DetailProduct = () => {
       <View>
         <View
           style={{
-            height:responsiveHeight('40'),
+            height: responsiveHeight("40"),
             backgroundColor: "#e9ecef",
             borderBottomRightRadius: responsiveHeight(5),
           }}
         >
-         <TouchableOpacity onPress={() => navigation.goBack()}>
-                     <Ionicons
-                       name="chevron-back"
-                       size={25}
-                       style={{ marginTop: responsiveHeight(2.5) }}
-                     />
-                   </TouchableOpacity>
-         
+          <TouchableOpacity onPress={() => navigation.goBack()}>
+            <Ionicons
+              name="chevron-back"
+              size={25}
+              style={{ marginTop: responsiveHeight(2.5) }}
+            />
+          </TouchableOpacity>
+        {/* p.image  */}
           <Image
             source={require("../../assets/lipstick.png")}
             style={{
@@ -33,6 +33,11 @@ const DetailProduct = () => {
               height: responsiveHeight(35),
             }}
           />
+        </View>
+        {/* p.name */}
+        <View style={{padding:responsiveHeight(1.5)}}>
+          <Text style={{ fontSize:responsiveHeight(3), fontWeight:"bold" }}>Lipstick</Text>
+          
         </View>
       </View>
     </SafeAreaView>
