@@ -9,6 +9,7 @@ const DetailProduct = () => {
       <View>
         <View
           style={{
+            height:responsiveHeight('40'),
             backgroundColor: "#e9ecef",
             borderBottomRightRadius: responsiveHeight(5),
           }}
@@ -19,7 +20,7 @@ const DetailProduct = () => {
             style={{
               resizeMode: "contain",
               alignSelf: "center",
-              height: responsiveHeight(20),
+              height: responsiveHeight(35),
             }}
           />
         </View>
