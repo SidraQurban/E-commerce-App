@@ -1,8 +1,8 @@
 import { View, Text, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { responsiveHeight } from 'react-native-responsive-dimensions';
-import {Ionicons} from "react-native-vector-icons";
+import { responsiveFontSize, responsiveHeight } from 'react-native-responsive-dimensions';
+import {Ionicons,AntDesign} from "react-native-vector-icons";
 import {useNavigation} from '@react-navigation/native';
 
 const DetailProduct = () => {
@@ -24,7 +24,7 @@ const DetailProduct = () => {
               style={{ marginTop: responsiveHeight(2.5) }}
             />
           </TouchableOpacity>
-        {/* p.image  */}
+          {/* p.image  */}
           <Image
             source={require("../../assets/lipstick.png")}
             style={{
@@ -35,9 +35,17 @@ const DetailProduct = () => {
           />
         </View>
         {/* p.name */}
-        <View style={{padding:responsiveHeight(1.5)}}>
-          <Text style={{ fontSize:responsiveHeight(3), fontWeight:"bold" }}>Lipstick</Text>
-          
+        <View style={{ padding: responsiveHeight(2), justifyContent:"space-between", flexDirection:"row" }}>
+          <Text style={{ fontSize: responsiveHeight(3), fontWeight: "bold" }}>
+            Lipstick
+          </Text>
+          <Text style={{fontSize:responsiveFontSize(2)}}>Rs.340</Text>
+        </View>
+        {/* DETAILS */}
+        <View>
+          <Text>
+           <AntDesign name="star" size={10}/>
+          </Text>
         </View>
       </View>
     </SafeAreaView>
