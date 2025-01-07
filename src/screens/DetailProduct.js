@@ -1,7 +1,7 @@
 import { View, Text, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { responsiveFontSize, responsiveHeight } from 'react-native-responsive-dimensions';
+import { responsiveFontSize, responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
 import {Ionicons,AntDesign} from "react-native-vector-icons";
 import {useNavigation} from '@react-navigation/native';
 
@@ -35,16 +35,35 @@ const DetailProduct = () => {
           />
         </View>
         {/* p.name */}
-        <View style={{ padding: responsiveHeight(2), justifyContent:"space-between", flexDirection:"row" }}>
+        <View
+          style={{
+            padding: responsiveHeight(2),
+            justifyContent: "space-between",
+            flexDirection: "row",
+          }}
+        >
           <Text style={{ fontSize: responsiveHeight(3), fontWeight: "bold" }}>
             Lipstick
           </Text>
-          <Text style={{fontSize:responsiveFontSize(2)}}>Rs.340</Text>
+          {/* price */}
+          <Text style={{ fontSize: responsiveFontSize(2) }}>Rs.340</Text>
         </View>
-        {/* DETAILS */}
-        <View>
-          <Text>
-           <AntDesign name="star" size={10}/>
+        {/* rating */}
+        <View
+          style={{
+            flexDirection: "row",
+            // padding: responsiveHeight(2),
+            marginLeft: responsiveWidth(2.5),
+          }}
+        >
+          <AntDesign name="star" size={20} />
+          <Text
+            style={{
+              fontSize: responsiveFontSize(2),
+              marginLeft: responsiveWidth(2),
+            }}
+          >
+            4.5 (230 Review)
           </Text>
         </View>
       </View>
