@@ -20,9 +20,8 @@ const Home = ({ navigation }) => {
             source={require("../../assets/shopping.png")}
             style={{
               resizeMode: "cover",
-              marginLeft: responsiveWidth(5),
-              height: responsiveHeight(40),
-              width: responsiveWidth(90),
+              height: responsiveHeight(45),
+              width: responsiveWidth(100),
               marginBottom: responsiveHeight(6),
             }}
           />
@@ -33,17 +32,17 @@ const Home = ({ navigation }) => {
             fontSize: responsiveScreenFontSize(3),
             fontWeight: "bold",
             color: "#fb5607",
-            marginBottom: responsiveHeight(2),
+            // marginBottom: responsiveHeight(2),
           }}
         >
           ShopEase
         </Text>
         <Text
           style={{
+            marginTop: responsiveHeight(5),
             marginHorizontal: responsiveWidth(5),
             fontSize: responsiveScreenFontSize(2.3),
             color: "#000",
-            marginBottom: responsiveHeight(10),
           }}
         >
           Discover the best deals, and enjoy a user-friendly interface that
