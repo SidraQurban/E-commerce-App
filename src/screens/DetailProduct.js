@@ -2,7 +2,7 @@ import { View, Text, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
-import {Ionicons,AntDesign} from "react-native-vector-icons";
+import {Ionicons,AntDesign,FontAwesome} from "react-native-vector-icons";
 import {useNavigation} from '@react-navigation/native';
 
 const DetailProduct = () => {
@@ -110,7 +110,38 @@ const DetailProduct = () => {
           >
             Color avalaible
           </Text>
-          
+          <View
+            style={{
+              flexDirection: "row",
+              marginTop: responsiveHeight(1),
+              marginLeft: responsiveWidth(2),
+            }}
+          >
+            <FontAwesome name="square" size={20} color="#52b788" />
+            <FontAwesome
+              name="square"
+              size={24}
+              color="#3c096c"
+              style={{ marginLeft: responsiveWidth(1.5) }}
+            />
+            <FontAwesome
+              name="square"
+              size={20}
+              color="#f26a8d"
+              style={{ marginLeft: responsiveWidth(1.5) }}
+            />
+             <FontAwesome
+              name="square"
+              size={20}
+              style={{ marginLeft: responsiveWidth(1.5) }}
+            />
+             <FontAwesome
+              name="square"
+              size={20}
+              color="#aed9e0"
+              style={{ marginLeft: responsiveWidth(1.5) }}
+            />
+          </View>
         </View>
       </View>
     </SafeAreaView>
