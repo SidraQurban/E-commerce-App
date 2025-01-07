@@ -46,7 +46,15 @@ const DetailProduct = () => {
             Lipstick
           </Text>
           {/* price */}
-          <Text style={{color:"#ff6d00",fontWeight:"bold", fontSize: responsiveFontSize(2) }}>Rs.340</Text>
+          <Text
+            style={{
+              color: "#ff6d00",
+              fontWeight: "bold",
+              fontSize: responsiveFontSize(2),
+            }}
+          >
+            Rs.340
+          </Text>
         </View>
         {/* rating */}
         <View
@@ -56,21 +64,36 @@ const DetailProduct = () => {
             marginLeft: responsiveWidth(2.5),
           }}
         >
-          <AntDesign name="star" size={20} color="#fcbf49"/>
+          <AntDesign name="star" size={20} color="#fcbf49" />
           <Text
             style={{
               fontSize: responsiveFontSize(2),
               marginLeft: responsiveWidth(2),
-              color:"#ff6d00"
+              color: "#ff6d00",
             }}
           >
             4.5 (230 Review)
           </Text>
         </View>
         {/* Details */}
-        <View>
-          
+        <View
+          style={{
+            padding: responsiveWidth(2.5),
+            marginLeft: responsiveWidth(1),
+          }}
+        >
+          <Text
+            style={{ fontSize: responsiveFontSize(2.5), fontWeight: "bold" }}
+          >
+            Details
+          </Text>
+          <Text style={{fontSize:responsiveFontSize(1.9),marginTop:responsiveHeight(1)}}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+            vestibulum ex. Donec condimentum urna id diam consectetur, vitae
+            pulvinar ex scelerisque.
+          </Text>
         </View>
+        {/* color avalaible */}
       </View>
     </SafeAreaView>
   );
