@@ -87,13 +87,31 @@ const DetailProduct = () => {
           >
             Details
           </Text>
-          <Text style={{fontSize:responsiveFontSize(1.9),marginTop:responsiveHeight(1)}}>
+          <Text
+            style={{
+              fontSize: responsiveFontSize(1.9),
+              marginTop: responsiveHeight(1),
+            }}
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
             vestibulum ex. Donec condimentum urna id diam consectetur, vitae
             pulvinar ex scelerisque.
           </Text>
         </View>
         {/* color avalaible */}
+        <View
+          style={{
+            padding: responsiveWidth(2.5),
+            marginLeft: responsiveWidth(1),
+          }}
+        >
+          <Text
+            style={{ fontSize: responsiveFontSize(2.5), fontWeight: "bold" }}
+          >
+            Color avalaible
+          </Text>
+          
+        </View>
       </View>
     </SafeAreaView>
   );
