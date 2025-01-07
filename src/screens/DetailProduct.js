@@ -46,7 +46,7 @@ const DetailProduct = () => {
             Lipstick
           </Text>
           {/* price */}
-          <Text style={{ fontSize: responsiveFontSize(2) }}>Rs.340</Text>
+          <Text style={{color:"#ff6d00",fontWeight:"bold", fontSize: responsiveFontSize(2) }}>Rs.340</Text>
         </View>
         {/* rating */}
         <View
@@ -56,15 +56,20 @@ const DetailProduct = () => {
             marginLeft: responsiveWidth(2.5),
           }}
         >
-          <AntDesign name="star" size={20} />
+          <AntDesign name="star" size={20} color="#fcbf49"/>
           <Text
             style={{
               fontSize: responsiveFontSize(2),
               marginLeft: responsiveWidth(2),
+              color:"#ff6d00"
             }}
           >
             4.5 (230 Review)
           </Text>
+        </View>
+        {/* Details */}
+        <View>
+          
         </View>
       </View>
     </SafeAreaView>
