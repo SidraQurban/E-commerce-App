@@ -171,9 +171,14 @@ const DetailProduct = () => {
                 backgroundColor: "#ff6d00",
                 height: responsiveHeight(6),
                 width: responsiveHeight(40),
+                elevation: 5,
+                shadowColor: "#000",
+                shadowOpacity: 0.25,
+                marginLeft:responsiveWidth(2.5),
                 borderRadius: responsiveHeight(3),
                 textAlign: "center",
-              }}
+                padding: responsiveHeight(1)
+                             }}
             >
               Add to Cart
             </Text>
