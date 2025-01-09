@@ -50,7 +50,7 @@ const DetailProduct = () => {
             style={{
               color: "#ff6d00",
               fontWeight: "bold",
-              fontSize: responsiveFontSize(2),
+              fontSize: responsiveFontSize(2.5),
             }}
           >
             Rs.340
