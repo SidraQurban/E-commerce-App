@@ -130,22 +130,54 @@ const DetailProduct = () => {
               color="#f26a8d"
               style={{ marginLeft: responsiveWidth(1.5) }}
             />
-             <FontAwesome
+            <FontAwesome
               name="square"
               size={24}
               style={{ marginLeft: responsiveWidth(1.5) }}
             />
-             <FontAwesome
+            <FontAwesome
               name="square"
               size={24}
               color="#aed9e0"
               style={{ marginLeft: responsiveWidth(1.5) }}
             />
           </View>
-          <View style={{flexDirection:"row",marginLeft:responsiveWidth(62),marginTop:responsiveHeight(-3)}}>
-            <Ionicons name="location" size={18} color="#343a40"/>
-            <Text style={{color:"#343a40",fontSize:responsiveFontSize(1.8),marginLeft:responsiveWidth(1)}}>Deliver in 2 days</Text>
+          <View
+            style={{
+              flexDirection: "row",
+              marginLeft: responsiveWidth(62),
+              marginTop: responsiveHeight(-3),
+            }}
+          >
+            <Ionicons name="location" size={18} color="#343a40" />
+            <Text
+              style={{
+                color: "#343a40",
+                fontSize: responsiveFontSize(1.8),
+                marginLeft: responsiveWidth(1),
+              }}
+            >
+              Deliver in 2 days
+            </Text>
           </View>
+          {/* button */}
+          <TouchableOpacity>
+            <Text
+              style={{
+                marginTop: responsiveHeight(10),
+                fontSize: responsiveFontSize(2.5),
+                fontWeight: "bold",
+                color: "#fff",
+                backgroundColor: "#ff6d00",
+                height: responsiveHeight(6),
+                width: responsiveHeight(40),
+                borderRadius: responsiveHeight(3),
+                textAlign: "center",
+              }}
+            >
+              Add to Cart
+            </Text>
+          </TouchableOpacity>
         </View>
       </View>
     </SafeAreaView>
