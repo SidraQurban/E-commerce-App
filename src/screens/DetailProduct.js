@@ -3,10 +3,12 @@ import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
 import {Ionicons,AntDesign,FontAwesome} from "react-native-vector-icons";
-import {useNavigation} from '@react-navigation/native';
+import {useNavigation, useRoute} from '@react-navigation/native';
 
 const DetailProduct = () => {
   const navigation = useNavigation();
+  const route = useRoute();  // Get the passed product data
+  const { product } = route.params;
   return (
     <SafeAreaView>
       <View>
@@ -26,7 +28,7 @@ const DetailProduct = () => {
           </TouchableOpacity>
           {/* p.image  */}
           <Image
-            source={require("../../assets/lipstick.png")}
+            source={product.img}
             style={{
               resizeMode: "contain",
               alignSelf: "center",
@@ -38,41 +40,42 @@ const DetailProduct = () => {
         <View
           style={{
             padding: responsiveHeight(2),
-            justifyContent: "space-between",
-            flexDirection: "row",
+          
           }}
         >
           <Text style={{ fontSize: responsiveHeight(3), fontWeight: "bold" }}>
-            Lipstick
+            {product.name}
           </Text>
           {/* price */}
           <Text
             style={{
+              marginLeft:responsiveWidth(66),
               color: "#ff6d00",
               fontWeight: "bold",
               fontSize: responsiveFontSize(2.5),
             }}
           >
-            Rs.340
+            {product.price}
           </Text>
         </View>
         {/* rating */}
         <View
           style={{
             flexDirection: "row",
-            // padding: responsiveHeight(2),
             marginLeft: responsiveWidth(2.5),
+            marginTop:responsiveHeight(-4),
           }}
         >
           <AntDesign name="star" size={20} color="#fcbf49" />
           <Text
             style={{
+             
               fontSize: responsiveFontSize(2),
               marginLeft: responsiveWidth(2),
               color: "#ff6d00",
             }}
           >
-            4.5 (230 Review)
+           {product.rating} 
           </Text>
         </View>
         {/* Details */}

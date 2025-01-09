@@ -100,7 +100,7 @@ export const moreProductData = [
     name: "Headphones",
     price: "Rs. 3,490",
     discount: "-25%",
-    rating: "4.8(210)",
+    rating: "4.8 (210)",
     sold: "10.2k sold",
   },
   {
