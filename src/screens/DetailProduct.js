@@ -117,7 +117,7 @@ const DetailProduct = () => {
               marginLeft: responsiveWidth(2),
             }}
           >
-            <FontAwesome name="square" size={20} color="#52b788" />
+            <FontAwesome name="square" size={24} color="#52b788" />
             <FontAwesome
               name="square"
               size={24}
@@ -126,18 +126,18 @@ const DetailProduct = () => {
             />
             <FontAwesome
               name="square"
-              size={20}
+              size={24}
               color="#f26a8d"
               style={{ marginLeft: responsiveWidth(1.5) }}
             />
              <FontAwesome
               name="square"
-              size={20}
+              size={24}
               style={{ marginLeft: responsiveWidth(1.5) }}
             />
              <FontAwesome
               name="square"
-              size={20}
+              size={24}
               color="#aed9e0"
               style={{ marginLeft: responsiveWidth(1.5) }}
             />
