@@ -142,6 +142,10 @@ const DetailProduct = () => {
               style={{ marginLeft: responsiveWidth(1.5) }}
             />
           </View>
+          <View style={{flexDirection:"row",marginLeft:responsiveWidth(62),marginTop:responsiveHeight(-3)}}>
+            <Ionicons name="location" size={18} color="#343a40"/>
+            <Text style={{color:"#343a40",fontSize:responsiveFontSize(1.8),marginLeft:responsiveWidth(1)}}>Deliver in 2 days</Text>
+          </View>
         </View>
       </View>
     </SafeAreaView>
