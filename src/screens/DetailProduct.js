@@ -117,30 +117,40 @@ const DetailProduct = () => {
               marginLeft: responsiveWidth(2),
             }}
           >
-            <FontAwesome name="square" size={24} color="#52b788" />
-            <FontAwesome
-              name="square"
-              size={24}
-              color="#3c096c"
-              style={{ marginLeft: responsiveWidth(1.5) }}
-            />
-            <FontAwesome
-              name="square"
-              size={24}
-              color="#f26a8d"
-              style={{ marginLeft: responsiveWidth(1.5) }}
-            />
-            <FontAwesome
-              name="square"
-              size={24}
-              style={{ marginLeft: responsiveWidth(1.5) }}
-            />
-            <FontAwesome
-              name="square"
-              size={24}
-              color="#aed9e0"
-              style={{ marginLeft: responsiveWidth(1.5) }}
-            />
+            <TouchableOpacity>
+              <FontAwesome name="square" size={24} color="#52b788" />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <FontAwesome
+                name="square"
+                size={24}
+                color="#3c096c"
+                style={{ marginLeft: responsiveWidth(1.5) }}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <FontAwesome
+                name="square"
+                size={24}
+                color="#f26a8d"
+                style={{ marginLeft: responsiveWidth(1.5) }}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <FontAwesome
+                name="square"
+                size={24}
+                style={{ marginLeft: responsiveWidth(1.5) }}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <FontAwesome
+                name="square"
+                size={24}
+                color="#aed9e0"
+                style={{ marginLeft: responsiveWidth(1.5) }}
+              />
+            </TouchableOpacity>
           </View>
           <View
             style={{
@@ -161,7 +171,7 @@ const DetailProduct = () => {
             </Text>
           </View>
           {/* button */}
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("Cart")}>
             <Text
               style={{
                 marginTop: responsiveHeight(10),
@@ -174,11 +184,11 @@ const DetailProduct = () => {
                 elevation: 5,
                 shadowColor: "#000",
                 shadowOpacity: 0.25,
-                marginLeft:responsiveWidth(2.5),
+                marginLeft: responsiveWidth(2.5),
                 borderRadius: responsiveHeight(3),
                 textAlign: "center",
-                padding: responsiveHeight(1)
-                             }}
+                padding: responsiveHeight(1),
+              }}
             >
               Add to Cart
             </Text>
