@@ -1,20 +1,20 @@
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import {
   responsiveHeight,
   responsiveWidth,
 } from "react-native-responsive-dimensions";
 import { Ionicons } from "@expo/vector-icons";
 import { TouchableOpacity } from "react-native";
-import { useState } from "react";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useNavigationState } from "@react-navigation/native";
 import { icons } from "../Constant";
 
 const Footer = () => {
   const navigation = useNavigation();
-  const [activeLogo, setActiveLogo] = useState("home-outline");
+  const activeRouteName = useNavigationState(
+    (state) => state.routes[state.index].name
+  );
 
-  const handleIconPress = (iconName, route) => {
-    setActiveLogo(iconName);
+  const handleIconPress = (route) => {
     navigation.navigate(route);
   };
 
@@ -39,15 +39,16 @@ const Footer = () => {
           }}
         >
           {icons.map((icon) => {
+            const isActive = activeRouteName === icon.route;
             return (
               <TouchableOpacity
                 key={icon.name}
-                onPress={() => handleIconPress(icon.name, icon.route)}
+                onPress={() => handleIconPress(icon.route)}
               >
                 <Ionicons
-                  name={activeLogo === icon.name ? icon.activeName : icon.name}
+                  name={isActive ? icon.activeName : icon.name}
                   size={25}
-                  color={activeLogo === icon.name ? "#2b2d42" : "#8d99ae"}
+                  color={isActive ? "#2b2d42" : "#8d99ae"}
                 />
               </TouchableOpacity>
             );
