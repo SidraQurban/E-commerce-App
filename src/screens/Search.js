@@ -15,11 +15,13 @@ import {
 } from "react-native-responsive-dimensions";
 import Categories from "../components/Categories";
 import Moreproducts from "../components/Moreproducts";
+import Footer from "../components/Footer";
 
 const Search = () => {
 const navigation = useNavigation();
   
   return (
+    <>
     <ScrollView
     style={{
       flex: 1,
@@ -113,7 +115,10 @@ const navigation = useNavigation();
 
     <Categories />
     <Moreproducts />
+    
   </ScrollView>
+  <Footer/>
+  </>
 
   );
 };
