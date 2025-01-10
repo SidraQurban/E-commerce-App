@@ -174,7 +174,7 @@ const DetailProduct = () => {
             </Text>
           </View>
           {/* button */}
-          <TouchableOpacity onPress={() => navigation.navigate("Cart")}>
+          <TouchableOpacity >
             <Text
               style={{
                 marginTop: responsiveHeight(10),
