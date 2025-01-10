@@ -5,6 +5,7 @@ import { responsiveFontSize, responsiveHeight } from "react-native-responsive-di
 import { useNavigation } from "@react-navigation/native";
 import {Ionicons} from "react-native-vector-icons";
 import Footer from "../components/Footer";
+import CartItem from "../components/CartItem";
 
 const Cart = () => {
   const navigation = useNavigation();
@@ -31,7 +32,18 @@ const Cart = () => {
             Your Cart
           </Text>
         </View>
+         {/* horizontal line */}
+         <View
+            style={{
+              marginTop: 20,
+              height: 1,
+              width: "100%",
+              backgroundColor: "#ced4da",
+            }}
+          />
+          <CartItem/>
       </SafeAreaView>
+
       {/* <Footer/> */}
     </>
   );
