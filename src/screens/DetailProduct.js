@@ -75,7 +75,7 @@ const DetailProduct = () => {
               color: "#ff6d00",
             }}
           >
-           {product.rating} 
+           {product.rating} {product.sold}
           </Text>
         </View>
         {/* Details */}
