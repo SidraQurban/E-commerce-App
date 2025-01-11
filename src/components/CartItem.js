@@ -16,10 +16,11 @@ const CartItem = () => {
           flexDirection: "row",
           // justifyContent: "space-between",
           padding: 10,
+          height:responsiveHeight(22),
           backgroundColor: "#fff",
         }}
       >
-        <TouchableOpacity onPress={handlePress}>
+        <TouchableOpacity onPress={handlePress} style={{marginTop:responsiveHeight(7)}}>
           <MaterialCommunityIcons
             name={checked ? "checkbox-outline" : "checkbox-blank-outline"}
             color={checked ? "green" : "black"}
@@ -30,7 +31,9 @@ const CartItem = () => {
           style={{
             height: responsiveHeight(22),
             width: responsiveWidth(30),
+            borderRadius:responsiveHeight(1),
             backgroundColor: "grey",
+            marginLeft:responsiveWidth(5)
           }}
         >
           <Image
