@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity, Image } from 'react-native'
 import React, { useState } from 'react'
-import {MaterialCommunityIcons} from "react-native-vector-icons"
+import {MaterialCommunityIcons,MaterialIcons} from "react-native-vector-icons"
 import { responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
 
 const CartItem = () => {
@@ -31,10 +31,15 @@ const CartItem = () => {
           style={{
             resizeMode: "contain",
             height: responsiveHeight(20),
-            width: responsiveWidth(10),
-            // marginLeft: responsiveWidth(3)
+            width: responsiveWidth(20),
+            
           }}
         />
+        <Text>Blush On</Text>
+        <TouchableOpacity>
+        <MaterialIcons name="delete" size={20}/>
+        </TouchableOpacity>
+     
       </View>
     </View>
   );
