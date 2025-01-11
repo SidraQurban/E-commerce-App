@@ -37,7 +37,7 @@ const CartItem = () => {
             height: responsiveHeight(15),
             width: responsiveWidth(30),
             borderRadius: responsiveHeight(1),
-            backgroundColor: "grey",
+            backgroundColor: "#cccccc",
             marginLeft: responsiveWidth(5),
           }}
         >
