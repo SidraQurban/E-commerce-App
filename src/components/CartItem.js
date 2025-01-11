@@ -37,7 +37,8 @@ const CartItem = () => {
         />
         <Text>Blush On</Text>
         <TouchableOpacity>
-        <MaterialIcons name="delete" size={20}/>
+        <MaterialIcons name="delete" size={25} color="red"/>
+        
         </TouchableOpacity>
      
       </View>
