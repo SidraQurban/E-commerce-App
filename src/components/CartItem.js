@@ -57,12 +57,16 @@ const CartItem = () => {
             marginTop: responsiveHeight(6),
             marginLeft: responsiveWidth(3),
             fontSize: responsiveFontSize(2),
-            // fontWeight: "bold",
           }}
         >
           Blush On
         </Text>
-        <TouchableOpacity>
+        <TouchableOpacity
+          style={{
+            marginLeft: responsiveWidth(28),
+            marginTop: responsiveHeight(5),
+          }}
+        >
           <MaterialIcons name="delete" size={25} color="red" />
         </TouchableOpacity>
       </View>
