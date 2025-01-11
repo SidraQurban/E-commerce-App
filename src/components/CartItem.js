@@ -11,7 +11,14 @@ const CartItem = () => {
   
   return (
     <View>
-      <View style={{flexDirection:"row", justifyContent:"space-between", padding:10, backgroundColor:"#fff"}}>
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          padding: 10,
+          backgroundColor: "#fff",
+        }}
+      >
         <TouchableOpacity onPress={handlePress}>
           <MaterialCommunityIcons
             name={checked ? "checkbox-outline" : "checkbox-blank-outline"}
@@ -21,10 +28,12 @@ const CartItem = () => {
         </TouchableOpacity>
         <Image
           source={require("../../assets/blush.png")}
-          style={{ resizeMode: "contain", height: responsiveHeight(20),
+          style={{
+            resizeMode: "contain",
+            height: responsiveHeight(20),
             width: responsiveWidth(10),
             // marginLeft: responsiveWidth(3)
-           }}
+          }}
         />
       </View>
     </View>
