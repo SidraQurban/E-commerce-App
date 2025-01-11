@@ -29,7 +29,8 @@ const CartItem = () => {
         </TouchableOpacity>
         <View
           style={{
-            height: responsiveHeight(22),
+            marginTop:responsiveHeight(0.5),
+            height: responsiveHeight(18),
             width: responsiveWidth(30),
             borderRadius:responsiveHeight(1),
             backgroundColor: "grey",
@@ -40,7 +41,7 @@ const CartItem = () => {
             source={require("../../assets/blush.png")}
             style={{
               resizeMode: "contain",
-              height: responsiveHeight(21),
+              height: responsiveHeight(20),
               width: responsiveWidth(20),
               alignSelf: "center",
             }}
