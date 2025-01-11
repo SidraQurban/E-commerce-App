@@ -14,7 +14,7 @@ const CartItem = () => {
       <View
         style={{
           flexDirection: "row",
-          justifyContent: "space-between",
+          // justifyContent: "space-between",
           padding: 10,
           backgroundColor: "#fff",
         }}
@@ -26,21 +26,28 @@ const CartItem = () => {
             size={25}
           />
         </TouchableOpacity>
-        <Image
-          source={require("../../assets/blush.png")}
+        <View
           style={{
-            resizeMode: "contain",
-            height: responsiveHeight(20),
-            width: responsiveWidth(20),
-            
+            height: responsiveHeight(22),
+            width: responsiveWidth(30),
+            backgroundColor: "grey",
           }}
-        />
+        >
+          <Image
+            source={require("../../assets/blush.png")}
+            style={{
+              resizeMode: "contain",
+              height: responsiveHeight(21),
+              width: responsiveWidth(20),
+              alignSelf: "center",
+            }}
+          />
+        </View>
+
         <Text>Blush On</Text>
         <TouchableOpacity>
-        <MaterialIcons name="delete" size={25} color="red"/>
-        
+          <MaterialIcons name="delete" size={25} color="red" />
         </TouchableOpacity>
-     
       </View>
     </View>
   );
