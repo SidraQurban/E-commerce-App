@@ -75,11 +75,9 @@ const CartItem = () => {
         <Text>
         Rs. 1,490
         </Text>
-        <TouchableOpacity>
-          <MaterialIcons name="delete" size={25} color="red" />
-        </TouchableOpacity>
+       
       </View>
-      <Image source={require("../../assets/lipstick.png")}/>
+      
     </View>
   );
 }
