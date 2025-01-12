@@ -68,9 +68,10 @@ const CartItem = () => {
           }}
         >
           <MaterialIcons name="delete" size={25} color="red" />
-          <MaterialIcons name="delete" size={25} color="red" /><MaterialIcons name="delete" size={25} color="red" /><MaterialIcons name="delete" size={25} color="red" /><MaterialIcons name="delete" size={25} color="red" /><MaterialIcons name="delete" size={25} color="red" /><MaterialIcons name="delete" size={25} color="red" /><MaterialIcons name="delete" size={25} color="red" /><MaterialIcons name="delete" size={25} color="red" />
-
         </TouchableOpacity>
+      </View>
+      <View>
+        {/* Price */}
       </View>
     </View>
   );
