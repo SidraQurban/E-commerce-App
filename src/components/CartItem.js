@@ -79,6 +79,7 @@ const CartItem = () => {
           <MaterialIcons name="delete" size={25} color="red" />
         </TouchableOpacity>
       </View>
+      <Image source={require("../../assets/lipstick.png")}/>
     </View>
   );
 }
