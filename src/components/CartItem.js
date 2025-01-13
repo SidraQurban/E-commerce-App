@@ -77,6 +77,9 @@ const CartItem = () => {
         </Text>
         <View style={{fontSize:responsiveFontSize(2)}}>
           <Text>Price</Text>
+          <TouchableOpacity>
+            <MaterialCommunityIcons name="heart-outline" size={25} color="red" />
+          </TouchableOpacity>
         </View>
       </View>
     </View>
