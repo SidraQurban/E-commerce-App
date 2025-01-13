@@ -75,10 +75,6 @@ const CartItem = () => {
         <Text>
         Rs. 1,490
         </Text>
-        <Text>Price</Text>
-        <TouchableOpacity>
-          <Text>On going</Text>
-        </TouchableOpacity>
       </View>
     </View>
   );
