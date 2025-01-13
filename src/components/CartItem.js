@@ -75,6 +75,9 @@ const CartItem = () => {
         <Text>
         Rs. 1,490
         </Text>
+        <View style={{fontSize:responsiveFontSize(2)}}>
+          <Text>Price</Text>
+        </View>
       </View>
     </View>
   );

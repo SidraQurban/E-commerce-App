@@ -41,21 +41,6 @@ const Cart = () => {
               backgroundColor: "#ced4da",
             }}
           />
-              <View
-            style={{
-              marginTop: 20,
-              height: 1,
-              width: "100%",
-              backgroundColor: "#ced4da",
-            }}
-          />    <View
-          style={{
-            marginTop: 20,
-            height: 1,
-            width: "100%",
-            backgroundColor: "#ced4da",
-          }}
-        />
           <CartItem/>
       </SafeAreaView>
 
