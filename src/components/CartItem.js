@@ -75,7 +75,7 @@ const CartItem = () => {
         <Text>
         Rs. 1,490
         </Text>
-        
+        <Text>Price</Text>
       </View>
     </View>
   );
