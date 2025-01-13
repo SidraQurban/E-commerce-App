@@ -77,9 +77,6 @@ const CartItem = () => {
         </Text>
         <View style={{fontSize:responsiveFontSize(2), flexDirection:"row", alignItems:"center"}}>
           <Text>Price</Text>
-          <TouchableOpacity>
-           
-          </TouchableOpacity>
         </View>
       </View>
     </View>
