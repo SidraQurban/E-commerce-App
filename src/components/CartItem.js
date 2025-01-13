@@ -75,7 +75,7 @@ const CartItem = () => {
         <Text>
         Rs. 1,490
         </Text>
-        <View style={{fontSize:responsiveFontSize(2)}}>
+        <View style={{fontSize:responsiveFontSize(2), flexDirection:"row", alignItems:"center"}}>
           <Text>Price</Text>
           <TouchableOpacity>
             <MaterialCommunityIcons name="heart-outline" size={25} color="red" />
