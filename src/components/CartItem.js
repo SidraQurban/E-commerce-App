@@ -72,11 +72,16 @@ const CartItem = () => {
       </View>
       <View>
         {/* Price */}
-        <Text>
-        Rs. 1,490
-        </Text>
-        <View style={{fontSize:responsiveFontSize(2), flexDirection:"row", alignItems:"center"}}>
-        <Text>Price</Text> <Text>Price</Text> <Text>Price</Text> <Text>Price</Text> <Text>Price</Text>
+        <Text>Rs. 1,490</Text>
+        <View
+          style={{
+            fontSize: responsiveFontSize(2),
+            flexDirection: "row",
+            alignItems: "center",
+          }}
+        >
+          <Text>Price</Text> <Text>Price</Text> <Text>Price</Text>
+         
         </View>
       </View>
     </View>
