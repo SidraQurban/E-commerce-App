@@ -75,10 +75,9 @@ const CartItem = () => {
         <Text>Rs. 1,490</Text>
         <Text>helllo</Text>
         <Text>helllo</Text>
-        <MaterialIcons name="delete" size= {20} color="blue" style={{height:responsiveHeight(2), width:responsiveWidth(3)}} />
+      
         <Text>Hi</Text>
       </View>
-      
     </View>
   );
 }
