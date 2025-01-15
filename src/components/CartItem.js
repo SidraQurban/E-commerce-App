@@ -76,7 +76,6 @@ const CartItem = () => {
         <Text>helllo</Text>
         <Text>helllo</Text>
       
-        <Text>Hi</Text>
       </View>
     </View>
   );
