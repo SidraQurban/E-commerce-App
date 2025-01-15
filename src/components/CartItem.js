@@ -75,7 +75,7 @@ const CartItem = () => {
         <Text>Rs. 1,490</Text>
         <Text>helllo</Text>
         <Text>helllo</Text>
-        <MaterialIcons name="material" />
+        <MaterialIcons name="delete" size= {20} color="red" />
         <Text>Hi</Text>
       </View>
       
