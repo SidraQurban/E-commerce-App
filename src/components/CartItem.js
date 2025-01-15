@@ -75,7 +75,32 @@ const CartItem = () => {
         <Text>Rs. 1,490</Text>
       </View>
       <View>
-        
+        {/* Quantity */}
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            marginTop: responsiveHeight(2),
+          }}
+        >
+          <Text>Quantity:</Text>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-around",
+              marginLeft: responsiveWidth(5),
+            }}
+          >
+            <TouchableOpacity>
+              <MaterialIcons name="remove-circle-outline" size={25} color="#343a40" />
+            </TouchableOpacity>
+            <Text style={{ marginLeft: responsiveWidth(2) }}>1</Text>
+            <TouchableOpacity>
+              <MaterialIcons name="add-circle-outline" size={25} color="#343a40" />
+            </TouchableOpacity>
+          </View>
+        </View>
+      </View>
       </View>
     </View>
   );
