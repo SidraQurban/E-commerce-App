@@ -74,6 +74,9 @@ const CartItem = () => {
         {/* Price */}
         <Text>Rs. 1,490</Text>
         <Text>helllo</Text>
+        <Text>helllo</Text>
+        <MaterialIcons name="material" />
+        <Text>Hi</Text>
       </View>
       
     </View>
