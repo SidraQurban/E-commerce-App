@@ -75,12 +75,17 @@ const CartItem = () => {
         <Text>Rs. 1,490</Text>
       </View>
       <View>
-        <TouchableOpacity style={{ marginLeft: responsiveWidth(20), marginTop: responsiveHeight(5) }}>
+        <TouchableOpacity
+          style={{
+            marginLeft: responsiveWidth(20),
+            marginTop: responsiveHeight(5),
+          }}
+        >
           <Text>Rs. 1,490 </Text>
-          </TouchableOpacity>
+        </TouchableOpacity>
       </View>
     </View>
   );
 }
 
-export default CartItem
+export default CartItem;
