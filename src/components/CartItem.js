@@ -2,6 +2,7 @@ import { View, Text, TouchableOpacity, Image } from 'react-native'
 import React, { useState } from 'react'
 import {MaterialCommunityIcons,MaterialIcons} from "react-native-vector-icons"
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
+import { MaskedViewBase } from 'react-native';
 
 const CartItem = () => {
   const [checked, setChecked] = useState(false);
@@ -73,19 +74,21 @@ const CartItem = () => {
       <View>
         {/* Price */}
         <Text>Rs. 1,490</Text>
-       
+
         <TouchableOpacity>
           <MaterialCommunityIcons
             name="heart-circle"
             size={25}
             color="#f26a8d"
-            style={{ marginLeft: responsiveWidth(1.5), marginTop: responsiveHeight(2)}}
+            style={{
+              marginLeft: responsiveWidth(1.5),
+              marginTop: responsiveHeight(2),
+            
+            }}
           />
-         
         </TouchableOpacity>
       </View>
-      <View>
-      </View>
+      <View></View>
     </View>
   );
 }
