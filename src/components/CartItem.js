@@ -76,17 +76,7 @@ const CartItem = () => {
         <Text>Rs. 1,490</Text>
 
         <TouchableOpacity>
-          <MaterialCommunityIcons
-            name="heart-circle"
-            size={25}
-            color="#f26a8d"
-            style={{
-              marginLeft: responsiveWidth(1.5),
-              marginTop: responsiveHeight(2),
-              marginBottom: responsiveHeight(2),
-            
-            }}
-          />
+         
         </TouchableOpacity>
       </View>
       <View></View>
