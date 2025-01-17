@@ -81,7 +81,7 @@ const CartItem = () => {
             color="#f26a8d"
             style={{ marginLeft: responsiveWidth(1.5), marginTop: responsiveHeight(2)}}
           />
-          <Text>hi</Text>
+         
         </TouchableOpacity>
       </View>
       <View>
