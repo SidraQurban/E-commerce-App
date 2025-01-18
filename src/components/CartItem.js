@@ -77,7 +77,7 @@ const CartItem = () => {
       </View>
       <View>
         <Text>Hi</Text>
-        <TouchableOpacity style={{}}>
+        <TouchableOpacity style={{marginTop:responsiveHeight(5)}}>
           <MaterialCommunityIcons name="hoem" />
         </TouchableOpacity>
       </View>
