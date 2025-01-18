@@ -83,7 +83,7 @@ const CartItem = () => {
             marginLeft: responsiveWidth(9),
           }}
         >
-          <MaterialCommunityIcons name="hoem" />
+        
         </TouchableOpacity>
       </View>
     </View>
