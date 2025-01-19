@@ -80,9 +80,7 @@ const CartItem = () => {
             name="heart-outline"
             size={25}
             color="#f26a8d"
-            style={{
-             
-            }}
+           
           />
         </TouchableOpacity>
       </View>
