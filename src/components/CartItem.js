@@ -74,15 +74,16 @@ const CartItem = () => {
       <View>
         {/* Price */}
         <Text>Rs. 1,490</Text>
-        <Text>
-          hi
-        </Text>
+        <Text>hi</Text>
         <TouchableOpacity>
           <MaterialCommunityIcons
             name="heart-outline"
             size={25}
             color="#f26a8d"
-            style={{ marginLeft: responsiveWidth(1.5),marginTop: responsiveHeight(3),}}
+            style={{
+              marginLeft: responsiveWidth(1.5),
+              marginTop: responsiveHeight(3),
+            }}
           />
         </TouchableOpacity>
       </View>
