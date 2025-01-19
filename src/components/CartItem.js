@@ -81,9 +81,7 @@ const CartItem = () => {
             size={25}
             color="#f26a8d"
             style={{
-              marginLeft: responsiveWidth(1.5),
-              marginTop: responsiveHeight(3),
-              marginBottom: responsiveHeight(2),
+             
             }}
           />
         </TouchableOpacity>
