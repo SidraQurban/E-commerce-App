@@ -78,9 +78,7 @@ const CartItem = () => {
         <TouchableOpacity>
           <MaterialCommunityIcons
             name="heart-outline"
-            size={20}
-            color="black"
-            style={{ marginLeft: responsiveWidth(1.5), marginTop: responsiveHeight(2)}}
+           
           />
         </TouchableOpacity>
       </View>
