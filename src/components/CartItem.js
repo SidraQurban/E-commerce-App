@@ -78,7 +78,7 @@ const CartItem = () => {
         <TouchableOpacity>
           <Text
             style={{
-              marginLeft: responsiveWidth(2),
+              
             
             }}
           >
