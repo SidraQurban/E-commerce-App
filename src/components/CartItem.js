@@ -76,7 +76,7 @@ const CartItem = () => {
         <Text>Rs. 1,490</Text>
         <Text>hi</Text>
         <TouchableOpacity>
-          <Text>Add to wishlist</Text>
+          <Text style={{marginLeft:responsiveWidth(2), marginTop:responsiveHeight(4)}}>Add to wishlist</Text>
         </TouchableOpacity>
       </View>
     </View>
