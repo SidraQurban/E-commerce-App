@@ -79,7 +79,7 @@ const CartItem = () => {
           <Text
             style={{
               marginLeft: responsiveWidth(2),
-              marginTop: responsiveHeight(4),
+            
             }}
           >
             Add to wishlist
