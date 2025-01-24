@@ -77,7 +77,7 @@ const CartItem = () => {
       </View>
       <View>
         <TouchableOpacity>
-          
+          <Text></Text>
         </TouchableOpacity>
       </View>
     </View>
