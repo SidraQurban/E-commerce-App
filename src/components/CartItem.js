@@ -77,7 +77,10 @@ const CartItem = () => {
       </View>
       <View>
         <TouchableOpacity>
-          <Text></Text>
+          <Text>
+            Add to wishlist
+            <MaterialCommunityIcons name="heart-outline" size={25} color="#f26a8d" />
+          </Text>
         </TouchableOpacity>
       </View>
     </View>
