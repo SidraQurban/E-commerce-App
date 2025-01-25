@@ -49,6 +49,7 @@ const DetailProduct = () => {
           {/* price */}
           <Text
             style={{
+              top:responsiveHeight(1),
               marginLeft:responsiveWidth(66),
               color: "#ff6d00",
               fontWeight: "bold",
@@ -177,7 +178,7 @@ const DetailProduct = () => {
           <TouchableOpacity >
             <Text
               style={{
-                marginTop: responsiveHeight(10),
+                marginTop: responsiveHeight(6),
                 fontSize: responsiveFontSize(2.5),
                 fontWeight: "bold",
                 color: "#fff",

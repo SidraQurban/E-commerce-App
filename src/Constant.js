@@ -152,7 +152,7 @@ export const moreProductData = [
     id: 7,
     img: require("./../assets/mobile.png"),
     name: "Samsung Galaxy S22",
-    price: "Rs. 321,490",
+    price: "Rs. 321,49",
     discount: "-15%",
     rating: "4.9(6720)",
     sold: "11k sold",
@@ -187,7 +187,7 @@ export const moreProductData = [
   {
     id: 11,
     img: require("./../assets/starightner.png"),
-    name: "Latest Trendycasual sneaker",
+    name: "Straightner",
     price: "Rs. 2,490",
     discount: "-25%",
     rating: "4.5(230)",
@@ -224,7 +224,7 @@ export const moreProductData = [
   {
     id: 15,
     img: require("./../assets/serum.png"),
-    name: "Brightening Serum - Nirvana Botanics",
+    name: "Brightening Serum",
     price: "Rs. 1,890",
     discount: "-40%",
     rating: "4.1(263)",
@@ -233,7 +233,7 @@ export const moreProductData = [
   {
     id: 16,
     img: require("./../assets/toys.png"),
-    name: "Latest Trendycasual sneaker",
+    name: "Toys",
     price: "Rs. 2,490",
     discount: "-25%",
     rating: "4.5(230)",
@@ -242,7 +242,7 @@ export const moreProductData = [
   {
     id: 17,
     img: require("./../assets/powder.png"),
-    name: "Powder",
+    name: "Compact Powder",
     price: "Rs. 2,790",
     discount: "-20%",
     rating: "4.8(250)",
@@ -251,7 +251,7 @@ export const moreProductData = [
   {
     id: 18,
     img: require("./../assets/mouthwash.png"),
-    name: "Latest Trendycasual sneaker",
+    name: "Mouthwash",
     price: "Rs. 2,490",
     discount: "-25%",
     rating: "4.5(230)",
