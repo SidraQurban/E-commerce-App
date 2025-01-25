@@ -76,8 +76,7 @@ const CartItem = () => {
          {/* Price */}
          <Text
           style={{
-            // marginTop: responsiveHeight(10),
-            // marginLeft: responsiveWidth(-14),
+            marginBottom:responsiveHeight(10)
           }}
         >
           Rs. 1,490
