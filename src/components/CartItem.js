@@ -69,7 +69,7 @@ const CartItem = () => {
             marginLeft: responsiveWidth(-14),
           }}
         >
-          Rs. 1,490{" "}
+          Rs. 1,490
         </Text>
         <TouchableOpacity
           style={{
