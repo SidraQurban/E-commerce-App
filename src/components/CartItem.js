@@ -63,7 +63,7 @@ const CartItem = () => {
           Blush On
         </Text>
          {/* Price */}
-         <Text style={{marginTop:responsiveHeight(10)}}>Rs. 1,490 </Text>
+         <Text style={{marginTop:responsiveHeight(10), marginRight:responsiveWidth(10)}}>Rs. 1,490 </Text>
         <TouchableOpacity
           style={{
             marginLeft: responsiveWidth(28),
