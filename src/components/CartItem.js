@@ -73,7 +73,7 @@ const CartItem = () => {
       </View>
       <View>
         {/* Price */}
-        <Text>Rs. 1,490</Text>
+        <Text>Rs. 1,490 rupy</Text>
       </View>
      
     </View>
