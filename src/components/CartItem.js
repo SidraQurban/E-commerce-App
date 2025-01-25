@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, Image } from 'react-native'
+import { View, Text, TouchableOpacity, Image, RefreshControl } from 'react-native'
 import React, { useState } from 'react'
 import {MaterialCommunityIcons,MaterialIcons} from "react-native-vector-icons"
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
@@ -63,7 +63,7 @@ const CartItem = () => {
           Blush On
         </Text>
          {/* Price */}
-         <Text style={{}}>Rs. 1,490 </Text>
+         <Text style={{marginTop:responsiveHeight(10)}}>Rs. 1,490 </Text>
         <TouchableOpacity
           style={{
             marginLeft: responsiveWidth(28),
