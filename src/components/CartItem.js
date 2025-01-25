@@ -62,8 +62,15 @@ const CartItem = () => {
         >
           Blush On
         </Text>
-         {/* Price */}
-         <Text style={{marginTop:responsiveHeight(10), marginLeft:responsiveWidth(-14)}}>Rs. 1,490 </Text>
+        {/* Price */}
+        <Text
+          style={{
+            marginTop: responsiveHeight(10),
+            marginLeft: responsiveWidth(-14),
+          }}
+        >
+          Rs. 1,490{" "}
+        </Text>
         <TouchableOpacity
           style={{
             marginLeft: responsiveWidth(28),
@@ -73,10 +80,7 @@ const CartItem = () => {
           <MaterialIcons name="delete" size={25} color="red" />
         </TouchableOpacity>
       </View>
-      <View>
-       
-      </View>
-     
+      <View></View>
     </View>
   );
 }
