@@ -12,75 +12,71 @@ const CartItem = () => {
   
   return (
     <View>
-      <ScrollView>  
-      <View
-        style={{
-          flexDirection: "row",
-          padding: 10,
-          height: responsiveHeight(22),
-        }}
-      >
-        <TouchableOpacity
-          onPress={handlePress}
-          style={{ marginTop: responsiveHeight(7) }}
-        >
-          <MaterialCommunityIcons
-            name={checked ? "checkbox-outline" : "checkbox-blank-outline"}
-            color={checked ? "green" : "black"}
-            size={25}
-          />
-        </TouchableOpacity>
-        {/* p.Image */}
+      <ScrollView>
         <View
           style={{
-            marginTop: responsiveHeight(2.5),
-            height: responsiveHeight(20),
-            width: responsiveWidth(35),
-            borderRadius: responsiveHeight(1),
-            backgroundColor: "#e9ecef",
-            marginLeft: responsiveWidth(5),
+            flexDirection: "row",
+            padding: 10,
+            height: responsiveHeight(22),
           }}
         >
-          <Image
-            source={require("../../assets/skirt.png")}
+          <TouchableOpacity
+            onPress={handlePress}
+            style={{ marginTop: responsiveHeight(7) }}
+          >
+            <MaterialCommunityIcons
+              name={checked ? "checkbox-outline" : "checkbox-blank-outline"}
+              color={checked ? "green" : "black"}
+              size={25}
+            />
+          </TouchableOpacity>
+          {/* p.Image */}
+          <View
             style={{
-              resizeMode: "contain",
-              height: responsiveHeight(25),
-              width: responsiveWidth(20 ),
-              alignSelf: "center",
+              marginTop: responsiveHeight(2.5),
+              height: responsiveHeight(20),
+              width: responsiveWidth(35),
+              borderRadius: responsiveHeight(1),
+              backgroundColor: "#e9ecef",
+              marginLeft: responsiveWidth(5),
             }}
-          />
+          >
+            <Image
+              source={require("../../assets/skirt.png")}
+              style={{
+                resizeMode: "contain",
+                height: responsiveHeight(25),
+                width: responsiveWidth(20),
+                alignSelf: "center",
+              }}
+            />
+          </View>
+          {/* p.name */}
+          <Text
+            style={{
+              marginTop: responsiveHeight(3.6),
+              marginLeft: responsiveWidth(3),
+              fontSize: responsiveFontSize(2),
+              fontWeight: "bold",
+            }}
+          >
+            Blush On
+          </Text>
         </View>
-        {/* p.name */}
-        <Text
-          style={{
-            marginTop: responsiveHeight(6),
-            marginLeft: responsiveWidth(3),
-            fontSize: responsiveFontSize(2),
-          }}
-        >
-          Blush On
-        </Text>
-       
-        <TouchableOpacity
-          style={{
-            marginLeft: responsiveWidth(28),
-            marginTop: responsiveHeight(5),
-          }}
-        >
-          <MaterialIcons name="delete" size={25} color="red" />
-        </TouchableOpacity>
-      </View>
-      <View>
-         {/* Price */}
-         <Text
-          style={{
-            marginBottom:responsiveHeight(10)
-          }}
-        >
-          Rs. 1,490
-        </Text>
-      </View>
+        <View>
+          {/* Price */}
+          <Text
+            style={{
+              marginLeft:responsiveWidth(52),
+              marginTop: responsiveHeight(-13),
+              fontSize: responsiveFontSize(1.9),
+              fontWeight: "bold",
+              
+            }}
+          >
+            Rs. 1,490
+          </Text>
+        </View>
       </ScrollView>
     </View>
   );
