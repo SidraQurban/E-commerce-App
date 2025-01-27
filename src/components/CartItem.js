@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, Image, RefreshControl } from 'react-native'
+import { View, Text, TouchableOpacity, Image, RefreshControl, ScrollView } from 'react-native'
 import React, { useState } from 'react'
 import {MaterialCommunityIcons,MaterialIcons} from "react-native-vector-icons"
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
@@ -12,6 +12,9 @@ const CartItem = () => {
   
   return (
     <View>
+      <ScrollView>
+
+      
       <View
         style={{
           flexDirection: "row",
@@ -82,6 +85,7 @@ const CartItem = () => {
           Rs. 1,490
         </Text>
       </View>
+      </ScrollView>
     </View>
   );
 }
