@@ -1,7 +1,7 @@
-import { View, Text, SafeAreaView, TouchableOpacity } from "react-native";
+import { View, Text, SafeAreaView, TouchableOpacity, Image } from "react-native";
 import React from "react";
 import Footer from "../components/Footer";
-import { responsiveFontSize, responsiveHeight } from "react-native-responsive-dimensions";
+import { responsiveFontSize, responsiveHeight, responsiveWidth } from "react-native-responsive-dimensions";
 import { useNavigation } from "@react-navigation/native";
 import {Ionicons} from "react-native-vector-icons";
 
@@ -11,7 +11,7 @@ const Profile = () => {
   return (
     <>
       <SafeAreaView>
-        <View style={{flexDirection:"row"}}>
+        <View style={{ flexDirection: "row" }}>
           <TouchableOpacity onPress={() => navigation.goBack()}>
             <Ionicons
               name="chevron-back"
@@ -31,16 +31,29 @@ const Profile = () => {
             My Cart
           </Text>
         </View>
-         {/* horizontal line */}
-         <View
-            style={{
-              marginTop: 20,
-              height: 1,
-              width: "100%",
-              backgroundColor: "#ced4da",
-            }}
-          />
-       
+        {/* horizontal line */}
+        <View
+          style={{
+            marginTop: 20,
+            height: 1,
+            width: "100%",
+            backgroundColor: "#ced4da",
+          }}
+        />
+        {/* body */}
+        <View>
+          <View style={{ flexDirection: "row" }}>
+            <Image
+              source={require("../../assets/blush.png")}
+              style={{
+                resizeMode: "cover",
+                height: responsiveHeight(20),
+                width: responsiveWidth(20),
+              }}
+            />
+            <Text>Blush on </Text>
+          </View>
+        </View>
       </SafeAreaView>
     </>
   );
