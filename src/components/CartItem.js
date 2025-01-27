@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Entypo, AntDesign, Ionicons } from "react-native-vector-icons";
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from "react-native-responsive-dimensions";
 
-const CartItem = () => {
+const CartItem = ({product}) => {
   const [noteCount, setNoteCount] = useState(1);
   const [isVisible, setIsVisible] = useState(true); // State to manage visibility
 
@@ -45,7 +45,7 @@ const CartItem = () => {
               }}
             >
               <Image
-                source={require("../../assets/skirt.png")}
+                source={product.img}
                 style={{
                   resizeMode: "contain",
                   height: responsiveHeight(25),
@@ -63,7 +63,7 @@ const CartItem = () => {
                 fontWeight: "bold",
               }}
             >
-              Blush On
+              {product.name}
             </Text>
           </View>
 
@@ -77,7 +77,7 @@ const CartItem = () => {
                 fontWeight: "bold",
               }}
             >
-              Rs. 1,490
+              {product.price}
             </Text>
           </View>
 

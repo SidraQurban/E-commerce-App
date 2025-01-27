@@ -9,7 +9,10 @@ const DetailProduct = () => {
   const navigation = useNavigation();
   const route = useRoute();  // Get the passed product data
   const { product } = route.params;
-  return (
+  const handleAddToCart = () =>{
+    navigation.navigate("Cart", { product})
+  }  
+    return (
     <SafeAreaView>
       <View>
         <View
@@ -175,7 +178,7 @@ const DetailProduct = () => {
             </Text>
           </View>
           {/* button */}
-          <TouchableOpacity onPress={()=> navigation.navigate("Cart")} >
+          <TouchableOpacity onPress={handleAddToCart} >
             <Text
               style={{
                 marginTop: responsiveHeight(6),
@@ -201,6 +204,8 @@ const DetailProduct = () => {
       </View>
     </SafeAreaView>
   );
-}
+} 
 
 export default DetailProduct
+
+
