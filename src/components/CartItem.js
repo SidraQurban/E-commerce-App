@@ -1,14 +1,24 @@
 import { View, Text, TouchableOpacity, Image, RefreshControl, ScrollView } from 'react-native'
 import React, { useState } from 'react'
-import {MaterialCommunityIcons,MaterialIcons} from "react-native-vector-icons"
+import {MaterialCommunityIcons,MaterialIcons, AntDesign, Ionicons} from "react-native-vector-icons"
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
-import { MaskedViewBase } from 'react-native';
 
 const CartItem = () => {
   const [checked, setChecked] = useState(false);
   const handlePress = () => {
     setChecked(!checked);
   }
+  const [noteCount, setNoteCount] = useState(1);
+
+  const handleIncrement = () => {
+    setNoteCount(noteCount + 1);
+  };
+
+  const handleDecrement = () => {
+    if (noteCount > 0) {
+      setNoteCount(noteCount - 1);
+    }
+  };
   
   return (
     <View>
@@ -76,7 +86,56 @@ const CartItem = () => {
           >
             Rs. 1,490
           </Text>
+          {/* Quantity */}
+          <View style={{marginTop:responsiveHeight(9), flexDirection:"row",marginLeft:responsiveWidth(51) }}>
+               {/* subCount */}
+               <TouchableOpacity
+              style={{
+                // bottom: 150,
+                // marginLeft: 80,
+                backgroundColor: "#fff",
+                borderColor: "grey",
+                borderWidth: 1,
+                borderRadius: 20,
+                justifyContent: "center",
+                alignItems: "center",
+                width: 23,
+                height: 23,
+              }}
+              onPress={handleDecrement}
+            >
+              <AntDesign name="minus" color="red" size={20} />
+            </TouchableOpacity>
+            {/* Counter */}
+            <Text
+              style={{
+                
+                fontSize: 19,
+              }}
+            >
+              {noteCount}
+            </Text>
+             {/* AddCount */}
+             <TouchableOpacity
+              style={{
+                // bottom: 199,
+                // marginLeft: 130,
+                backgroundColor: "#fff",
+                borderColor: "grey",
+                borderWidth: 1,
+                borderRadius: 20,
+                justifyContent: "center",
+                alignItems: "center",
+                width: 23,
+                height: 23,
+              }}
+              onPress={handleIncrement}
+            >
+              <Ionicons name="add" size={20} color="red" />
+            </TouchableOpacity>
+          </View>
         </View>
+        
       </ScrollView>
     </View>
   );
