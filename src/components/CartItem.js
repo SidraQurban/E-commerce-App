@@ -1,11 +1,11 @@
-import { View, Text, TouchableOpacity, Image, RefreshControl, ScrollView } from 'react-native'
-import React, { useState } from 'react'
-import {MaterialCommunityIcons,Entypo, AntDesign, Ionicons} from "react-native-vector-icons"
-import { responsiveFontSize, responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
+import { View, Text, TouchableOpacity, Image, ScrollView } from "react-native";
+import React, { useState } from "react";
+import { Entypo, AntDesign, Ionicons } from "react-native-vector-icons";
+import { responsiveFontSize, responsiveHeight, responsiveWidth } from "react-native-responsive-dimensions";
 
 const CartItem = () => {
-
   const [noteCount, setNoteCount] = useState(1);
+  const [isVisible, setIsVisible] = useState(true); // State to manage visibility
 
   const handleIncrement = () => {
     setNoteCount(noteCount + 1);
@@ -16,128 +16,160 @@ const CartItem = () => {
       setNoteCount(noteCount - 1);
     }
   };
-  
+
+  const handleCancel = () => {
+    setIsVisible(false); // Hide the cart item
+  };
+
   return (
-    <View>
-      <ScrollView>
-        <View
-          style={{
-            flexDirection: "row",
-            padding: 10,
-            height: responsiveHeight(22),
-          }}
-        >
-          {/* p.Image */}
+    <View style={{ flex: 1, padding: 10 }}>
+      {isVisible ? (
+        <ScrollView>
+          {/* Cart Item */}
           <View
             style={{
-              marginTop: responsiveHeight(2.5),
-              height: responsiveHeight(20),
-              width: responsiveWidth(35),
-              borderRadius: responsiveHeight(1),
-              backgroundColor: "#e9ecef",
-              marginLeft: responsiveWidth(5),
+              flexDirection: "row",
+              padding: 10,
+              height: responsiveHeight(22),
             }}
           >
-            <Image
-              source={require("../../assets/skirt.png")}
+            {/* Product Image */}
+            <View
               style={{
-                resizeMode: "contain",
-                height: responsiveHeight(25),
-                width: responsiveWidth(20),
-                alignSelf: "center",
+                marginTop: responsiveHeight(2.5),
+                height: responsiveHeight(20),
+                width: responsiveWidth(35),
+                borderRadius: responsiveHeight(1),
+                backgroundColor: "#e9ecef",
+                marginLeft: responsiveWidth(5),
               }}
-            />
+            >
+              <Image
+                source={require("../../assets/skirt.png")}
+                style={{
+                  resizeMode: "contain",
+                  height: responsiveHeight(25),
+                  width: responsiveWidth(20),
+                  alignSelf: "center",
+                }}
+              />
+            </View>
+            {/* Product Name */}
+            <Text
+              style={{
+                marginTop: responsiveHeight(3.6),
+                marginLeft: responsiveWidth(3),
+                fontSize: responsiveFontSize(2),
+                fontWeight: "bold",
+              }}
+            >
+              Blush On
+            </Text>
           </View>
-          {/* p.name */}
-          <Text
-            style={{
-              marginTop: responsiveHeight(3.6),
-              marginLeft: responsiveWidth(3),
-              fontSize: responsiveFontSize(2),
-              fontWeight: "bold",
-            }}
-          >
-            Blush On
-          </Text>
-        </View>
-        <View>
+
           {/* Price */}
-          <Text
+          <View>
+            <Text
+              style={{
+                marginLeft: responsiveWidth(46),
+                marginTop: responsiveHeight(-13),
+                fontSize: responsiveFontSize(1.9),
+                fontWeight: "bold",
+              }}
+            >
+              Rs. 1,490
+            </Text>
+          </View>
+
+          {/* Quantity */}
+          <View
             style={{
-              marginLeft: responsiveWidth(52),
-              marginTop: responsiveHeight(-13),
-              fontSize: responsiveFontSize(1.9),
-              fontWeight: "bold",
+              flexDirection: "row",
+              marginLeft: responsiveWidth(46),
+              marginTop: responsiveHeight(-2),
             }}
           >
-            Rs. 1,490
-          </Text>
-        </View>
-        {/* Quantity */}
+            {/* Increment */}
+            <TouchableOpacity
+              style={{
+                backgroundColor: "#fff",
+                borderColor: "grey",
+                borderWidth: 1,
+                borderRadius: 5,
+                justifyContent: "center",
+                alignItems: "center",
+                width: 22,
+                height: 22,
+              }}
+              onPress={handleIncrement}
+            >
+              <Ionicons name="add" size={20} color="black" />
+            </TouchableOpacity>
+
+            {/* Counter */}
+            <Text
+              style={{
+                fontSize: responsiveFontSize(2),
+                fontWeight: "bold",
+                marginLeft: responsiveWidth(2),
+              }}
+            >
+              {noteCount}
+            </Text>
+
+            {/* Decrement */}
+            <TouchableOpacity
+              style={{
+                marginLeft: responsiveWidth(2.5),
+                backgroundColor: "#fff",
+                borderColor: "grey",
+                borderWidth: 1,
+                borderRadius: 5,
+                justifyContent: "center",
+                alignItems: "center",
+                width: 22,
+                height: 22,
+              }}
+              onPress={handleDecrement}
+            >
+              <AntDesign name="minus" size={20} color="black" />
+            </TouchableOpacity>
+          </View>
+
+          {/* Cancel Button */}
+          <TouchableOpacity
+            style={{
+              marginLeft: responsiveWidth(89),
+              marginTop: responsiveHeight(-2),
+            }}
+            onPress={handleCancel} // Hide component on press
+          >
+            <Entypo name="cross" size={20} color="black" />
+          </TouchableOpacity>
+        </ScrollView>
+      ) : (
+        // Display this message when the cart is empty
         <View
           style={{
-            flexDirection: "row",
-            marginLeft: responsiveWidth(52),
-            marginTop: responsiveHeight(-2),
+            flex: 1,
+            justifyContent: "center",
+            alignItems: "center",
+            height: responsiveHeight(55),
           }}
         >
-          {/* increament */}
-          <TouchableOpacity
-            style={{
-              backgroundColor: "#fff",
-              borderColor: "grey",
-              borderWidth: 1,
-              borderRadius: 5,
-              justifyContent: "center",
-              alignItems: "center",
-              width: 22,
-              height: 22,
-            }}
-            onPress={handleIncrement}
-          >
-            <Ionicons name="add" size={20} color="black" />
-          </TouchableOpacity>
-          {/* num */}
           <Text
             style={{
-              fontSize: responsiveFontSize(2),
+              fontSize: responsiveFontSize(2.5),
               fontWeight: "bold",
-              marginLeft: responsiveWidth(2),
+              color: "gray",
             }}
           >
-            {noteCount}
+            Your cart is empty
           </Text>
-          {/* Decrement */}
-          <TouchableOpacity
-            style={{
-              marginLeft: responsiveWidth(2.5),
-              backgroundColor: "#fff",
-              borderColor: "grey",
-              borderWidth: 1,
-              borderRadius: 5,
-              justifyContent: "center",
-              alignItems: "center",
-              width: 22,
-              height: 22,
-            }}
-            onPress={handleDecrement}
-          >
-            <AntDesign name="minus" size={20} color="black" />
-          </TouchableOpacity>
         </View>
-        {/* Cancel */}
-        <TouchableOpacity
-          style={{
-            marginLeft: responsiveWidth(89),
-            marginTop: responsiveHeight(-2),
-          }}
-        >
-          <Entypo name="cross" size={20} color="black" />
-        </TouchableOpacity>
-      </ScrollView>
-      
+      )}
     </View>
   );
-}
+};
 
 export default CartItem;
