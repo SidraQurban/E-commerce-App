@@ -1,13 +1,10 @@
 import { View, Text, TouchableOpacity, Image, RefreshControl, ScrollView } from 'react-native'
 import React, { useState } from 'react'
-import {MaterialCommunityIcons,MaterialIcons, AntDesign, Ionicons} from "react-native-vector-icons"
+import {MaterialCommunityIcons,Entypo, AntDesign, Ionicons} from "react-native-vector-icons"
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
 
 const CartItem = () => {
-  const [checked, setChecked] = useState(false);
-  const handlePress = () => {
-    setChecked(!checked);
-  }
+
   const [noteCount, setNoteCount] = useState(1);
 
   const handleIncrement = () => {
@@ -30,16 +27,6 @@ const CartItem = () => {
             height: responsiveHeight(22),
           }}
         >
-          <TouchableOpacity
-            onPress={handlePress}
-            style={{ marginTop: responsiveHeight(7) }}
-          >
-            <MaterialCommunityIcons
-              name={checked ? "checkbox-outline" : "checkbox-blank-outline"}
-              color={checked ? "green" : "black"}
-              size={25}
-            />
-          </TouchableOpacity>
           {/* p.Image */}
           <View
             style={{
@@ -86,6 +73,7 @@ const CartItem = () => {
             Rs. 1,490
           </Text>
         </View>
+        {/* Quantity */}
         <View
           style={{
             flexDirection: "row",
@@ -137,7 +125,17 @@ const CartItem = () => {
             <AntDesign name="minus" size={20} color="black" />
           </TouchableOpacity>
         </View>
+        {/* Cancel */}
+        <TouchableOpacity
+          style={{
+            marginLeft: responsiveWidth(89),
+            marginTop: responsiveHeight(-2),
+          }}
+        >
+          <Entypo name="cross" size={20} color="black" />
+        </TouchableOpacity>
       </ScrollView>
+      
     </View>
   );
 }

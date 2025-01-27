@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { responsiveFontSize, responsiveHeight } from "react-native-responsive-dimensions";
@@ -11,7 +11,7 @@ const Cart = () => {
   const navigation = useNavigation();
   return (
     <>
-      <SafeAreaView>
+        <ScrollView showsVerticalScrollIndicator = {false}>       
         <View style={{flexDirection:"row"}}>
           <TouchableOpacity onPress={() => navigation.goBack()}>
             <Ionicons
@@ -42,8 +42,9 @@ const Cart = () => {
             }}
           />
           <CartItem/>
-      </SafeAreaView>
-      {/* <Footer/> */}
+          </ScrollView>
+   
+      <Footer/>
     </>
   );
 };
