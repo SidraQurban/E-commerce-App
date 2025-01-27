@@ -16,10 +16,8 @@ const CartItem = () => {
       <View
         style={{
           flexDirection: "row",
-          // justifyContent: "space-between",
           padding: 10,
           height: responsiveHeight(22),
-          backgroundColor: "#fff",
         }}
       >
         <TouchableOpacity
@@ -36,19 +34,19 @@ const CartItem = () => {
         <View
           style={{
             marginTop: responsiveHeight(2.5),
-            height: responsiveHeight(15),
-            width: responsiveWidth(30),
+            height: responsiveHeight(20),
+            width: responsiveWidth(35),
             borderRadius: responsiveHeight(1),
-            backgroundColor: "#cccccc",
+            backgroundColor: "#e9ecef",
             marginLeft: responsiveWidth(5),
           }}
         >
           <Image
-            source={require("../../assets/blush.png")}
+            source={require("../../assets/skirt.png")}
             style={{
               resizeMode: "contain",
-              height: responsiveHeight(15),
-              width: responsiveWidth(20),
+              height: responsiveHeight(25),
+              width: responsiveWidth(20 ),
               alignSelf: "center",
             }}
           />
