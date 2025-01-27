@@ -2,15 +2,15 @@ import { View, Text } from "react-native";
 import React from "react";
 import Footer from "../components/Footer";
 
-const Fav = () => {
+const Profile = () => {
   return (
     <>
       <View>
-        <Text>Fav</Text>
+        <Text>Profile</Text>
       </View>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
 
-export default Fav;
+export default Profile;

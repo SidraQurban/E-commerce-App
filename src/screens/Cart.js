@@ -44,7 +44,7 @@ const Cart = () => {
           <CartItem/>
       </SafeAreaView>
 
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 };
