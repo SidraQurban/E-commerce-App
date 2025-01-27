@@ -77,65 +77,33 @@ const CartItem = () => {
           {/* Price */}
           <Text
             style={{
-              marginLeft:responsiveWidth(52),
+              marginLeft: responsiveWidth(52),
               marginTop: responsiveHeight(-13),
               fontSize: responsiveFontSize(1.9),
               fontWeight: "bold",
-              
             }}
           >
             Rs. 1,490
           </Text>
-          {/* Quantity */}
-          <View style={{marginTop:responsiveHeight(9), flexDirection:"row",marginLeft:responsiveWidth(51) }}>
-               {/* subCount */}
-               <TouchableOpacity
-              style={{
-                // bottom: 150,
-                // marginLeft: 80,
-                backgroundColor: "#fff",
-                borderColor: "grey",
-                borderWidth: 1,
-                borderRadius: 20,
-                justifyContent: "center",
-                alignItems: "center",
-                width: 23,
-                height: 23,
-              }}
-              onPress={handleDecrement}
-            >
-              <AntDesign name="minus" color="red" size={20} />
-            </TouchableOpacity>
-            {/* Counter */}
-            <Text
-              style={{
-                
-                fontSize: 19,
-              }}
-            >
-              {noteCount}
-            </Text>
-             {/* AddCount */}
-             <TouchableOpacity
-              style={{
-                // bottom: 199,
-                // marginLeft: 130,
-                backgroundColor: "#fff",
-                borderColor: "grey",
-                borderWidth: 1,
-                borderRadius: 20,
-                justifyContent: "center",
-                alignItems: "center",
-                width: 23,
-                height: 23,
-              }}
-              onPress={handleIncrement}
-            >
-              <Ionicons name="add" size={20} color="red" />
-            </TouchableOpacity>
-          </View>
         </View>
-        
+        <View>
+          <TouchableOpacity
+            style={{
+              backgroundColor: "#fff",
+              borderColor: "grey",
+              borderWidth: 1,
+              borderRadius: 20,
+              justifyContent: "center",
+              alignItems: "center",
+              width: 23,
+              height: 23,
+            }}
+            onPress={handleDecrement}
+          >
+            <AntDesign name="minus" color="red" size={20} />
+          </TouchableOpacity>
+          <Text>1</Text>
+        </View>
       </ScrollView>
     </View>
   );

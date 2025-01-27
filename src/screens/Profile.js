@@ -53,6 +53,9 @@ const Profile = () => {
             />
             <Text>Blush on </Text>
           </View>
+          <View>
+            
+          </View>
         </View>
       </SafeAreaView>
     </>
