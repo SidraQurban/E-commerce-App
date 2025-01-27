@@ -29,7 +29,7 @@ const Cart = () => {
               marginTop: responsiveHeight(2),
             }}
           >
-            Your Cart
+            My Cart
           </Text>
         </View>
          {/* horizontal line */}
@@ -43,8 +43,7 @@ const Cart = () => {
           />
           <CartItem/>
       </SafeAreaView>
-
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 };

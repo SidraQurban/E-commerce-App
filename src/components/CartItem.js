@@ -12,9 +12,7 @@ const CartItem = () => {
   
   return (
     <View>
-      <ScrollView>
-
-      
+      <ScrollView>  
       <View
         style={{
           flexDirection: "row",
