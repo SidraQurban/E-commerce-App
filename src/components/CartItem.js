@@ -86,23 +86,56 @@ const CartItem = () => {
             Rs. 1,490
           </Text>
         </View>
-        <View>
+        <View
+          style={{
+            flexDirection: "row",
+            marginLeft: responsiveWidth(52),
+            marginTop: responsiveHeight(-2),
+          }}
+        >
+          {/* increament */}
           <TouchableOpacity
             style={{
               backgroundColor: "#fff",
               borderColor: "grey",
               borderWidth: 1,
-              borderRadius: 20,
+              borderRadius: 5,
               justifyContent: "center",
               alignItems: "center",
-              width: 23,
-              height: 23,
+              width: 22,
+              height: 22,
+            }}
+            onPress={handleIncrement}
+          >
+            <Ionicons name="add" size={20} color="black" />
+          </TouchableOpacity>
+          {/* num */}
+          <Text
+            style={{
+              fontSize: responsiveFontSize(2),
+              fontWeight: "bold",
+              marginLeft: responsiveWidth(2),
+            }}
+          >
+            {noteCount}
+          </Text>
+          {/* Decrement */}
+          <TouchableOpacity
+            style={{
+              marginLeft: responsiveWidth(2.5),
+              backgroundColor: "#fff",
+              borderColor: "grey",
+              borderWidth: 1,
+              borderRadius: 5,
+              justifyContent: "center",
+              alignItems: "center",
+              width: 22,
+              height: 22,
             }}
             onPress={handleDecrement}
           >
-            <AntDesign name="minus" color="red" size={20} />
+            <AntDesign name="minus" size={20} color="black" />
           </TouchableOpacity>
-          <Text>1</Text>
         </View>
       </ScrollView>
     </View>
