@@ -1,4 +1,52 @@
 **E-Commerce App Built with React Native**
 
-Description
+**Description**
+<br>
 This is an e-commerce app developed with React Native designed to provide users with an intuitive and responsive shopping experience. The app integrates dynamic features such as real-time product updates, seamless navigation, and customizable components for scalability.
+<br>
+![image](https://github.com/user-attachments/assets/4a3aad14-9142-4bb4-becf-195bb19ff9ae)
+<br>
+**Key Features**
+<br>
+**Home Screen:**
+<br>
+  Visually engaging interface featuring a carousel with top brands and products.
+<br>
+![image](https://github.com/user-attachments/assets/8f1aa203-f64e-4e8f-82e3-0ffec9542be0)
+<br>
+![image](https://github.com/user-attachments/assets/eb87c6e7-e858-4fcb-b30c-1279c8e2a962)
+<br>
+**Search Screen:**
+<br>
+  Smart search functionality displaying product categories and top-rated products with detailed information such as price, ratings, and sales data.
+<br>
+![image](https://github.com/user-attachments/assets/8453ae0e-d9b7-47c4-85f5-74880d74fbad)
+<br>
+<br>
+![image](https://github.com/user-attachments/assets/a779eb47-3e81-485c-a57c-ba1627070b3f)
+<br>
+**Product Detail Screen:**
+<br>
+  Comprehensive product details including price, ratings, available colors, and estimated delivery time.
+  <br>
+![image](https://github.com/user-attachments/assets/b77ac9a2-3ef5-42d2-9cd6-1adb16a97c6e)
+<br>
+**Add to Cart:**
+<br>
+ Dynamic features like quantity adjustments, real-time price updates, and a smooth checkout process with a confirmation animation.
+<br>
+![image](https://github.com/user-attachments/assets/c0e7083f-f9b6-4e02-ac67-38c42ddfd331)
+<br>
+<br>
+![image](https://github.com/user-attachments/assets/38b01d80-b39f-4ee2-8d9b-d835d9a8af30)
+
+
+
+
+
+
+
+
+
+
+
