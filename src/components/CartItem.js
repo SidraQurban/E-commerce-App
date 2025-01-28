@@ -155,18 +155,36 @@ const CartItem = ({product}) => {
               placeholder="Promo Code"
               keyboardType="numeric"
               style={{
-                marginTop:responsiveHeight(28),
+                marginTop: responsiveHeight(28),
                 height: responsiveHeight(6),
                 margin: responsiveHeight(2),
-                borderRadius:responsiveHeight(3),
+                borderRadius: responsiveHeight(3),
                 borderColor: "#e0e1dd",
                 borderWidth: 1,
-               padding: responsiveHeight(2)
+                padding: responsiveHeight(2),
               }}
             />
-            <View>
-              <Text>Apply</Text>
-            </View>
+            <TouchableOpacity
+              style={{
+                top: responsiveHeight(-8),
+                marginLeft: responsiveWidth(65),
+                backgroundColor: "red",
+                height: responsiveHeight(6),
+                borderRadius: responsiveHeight(3),
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Text
+                style={{
+                  fontSize: responsiveFontSize(2),
+                  fontWeight: "bold",
+                  color: "white",
+                }}
+              >
+                Apply
+              </Text>
+            </TouchableOpacity>
           </View>
         </ScrollView>
       ) : (
