@@ -39,18 +39,6 @@ const Header = () => {
           >
             <Fontisto name="bell" size={25} />
           </TouchableOpacity>
-          <TouchableOpacity
-            style={{
-              height: responsiveHeight(7),
-              width: responsiveHeight(7),
-              borderRadius: responsiveHeight(1.5),
-              backgroundColor: "#ced4da",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Feather name="shopping-cart" size={25} />
-          </TouchableOpacity>
         </View>
       </View>
     </View>
