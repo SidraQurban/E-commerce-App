@@ -2,8 +2,10 @@ import { View, Text, TouchableOpacity, Image, ScrollView, TextInput } from "reac
 import React, { useState } from "react";
 import { Entypo, AntDesign, Ionicons } from "react-native-vector-icons";
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from "react-native-responsive-dimensions";
+import { useNavigation } from "@react-navigation/native";
 
 const CartItem = ({product}) => {
+  const navigation = useNavigation();
   const [noteCount, setNoteCount] = useState(1);
   const [isVisible, setIsVisible] = useState(true); // State to manage visibility
 
@@ -242,7 +244,7 @@ const CartItem = ({product}) => {
               </Text>
             </View>
             {/* Button */}
-            <TouchableOpacity>
+            <TouchableOpacity onPress={()=> navigation.navigate("Animation")}>
               <Text
                 style={{
                   marginTop: responsiveHeight(5),
