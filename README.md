@@ -16,7 +16,7 @@ This is an e-commerce app developed with React Native designed to provide users 
   Visually engaging interface featuring a carousel with top brands and products.
 <br>
 <br>
-![image](https://github.com/user-attachments/assets/8f1aa203-f64e-4e8f-82e3-0ffec9542be0)
+![image](https://github.com/user-attachments/assets/55ea29e9-a144-4ead-86e3-573fb58794de)
 <br>
 <br>
 ![image](https://github.com/user-attachments/assets/eb87c6e7-e858-4fcb-b30c-1279c8e2a962)
