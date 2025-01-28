@@ -46,7 +46,7 @@ const Cart = () => {
             style={{
               fontSize: responsiveFontSize(2.5),
               fontWeight: "bold",
-              color: "gray",
+              color: "gray",  
             }}
           >
             Your cart is empty
