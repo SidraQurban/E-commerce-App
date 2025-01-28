@@ -10,10 +10,11 @@ This is an e-commerce app developed with React Native designed to provide users 
 <br>
 **Key Features:-**
 <br>
+<br>
 **Home Screen:**
 <br>
-<br>
   Visually engaging interface featuring a carousel with top brands and products.
+<br>
 <br>
 ![image](https://github.com/user-attachments/assets/8f1aa203-f64e-4e8f-82e3-0ffec9542be0)
 <br>
@@ -23,8 +24,8 @@ This is an e-commerce app developed with React Native designed to provide users 
 <br>
 **Search Screen:**
 <br>
-<br>
   Smart search functionality displaying product categories and top-rated products with detailed information such as price, ratings, and sales data.
+<br>
 <br>
 ![image](https://github.com/user-attachments/assets/8453ae0e-d9b7-47c4-85f5-74880d74fbad)
 <br>
@@ -34,16 +35,16 @@ This is an e-commerce app developed with React Native designed to provide users 
 <br>
 **Product Detail Screen:**
 <br>
-<br>
   Comprehensive product details including price, ratings, available colors, and estimated delivery time.
+  <br>
   <br>
 ![image](https://github.com/user-attachments/assets/b77ac9a2-3ef5-42d2-9cd6-1adb16a97c6e)
 <br>
 <br>
 **Add to Cart:**
 <br>
-<br>
  Dynamic features like quantity adjustments, real-time price updates, and a smooth checkout process with a confirmation animation.
+<br>
 <br>
 ![image](https://github.com/user-attachments/assets/c0e7083f-f9b6-4e02-ac67-38c42ddfd331)
 <br>
