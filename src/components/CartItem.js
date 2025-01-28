@@ -155,13 +155,13 @@ const CartItem = ({product}) => {
               placeholder="Promo code"
               keyboardType="numeric"
               style={{
-                marginTop: responsiveHeight(28),
+                marginTop: responsiveHeight(15),
                 height: responsiveHeight(6),
                 margin: responsiveHeight(2),
                 borderRadius: responsiveHeight(3),
                 borderColor: "#e0e1dd",
                 borderWidth: 1,
-                padding: responsiveHeight(2),
+                padding: responsiveHeight(1),
               }}
             />
             <TouchableOpacity
@@ -197,7 +197,7 @@ const CartItem = ({product}) => {
               <Text
                 style={{ fontSize: responsiveFontSize(2), fontWeight: "bold" }}
               >
-                Rs 1,450
+                {product.price}
               </Text>
             </View>
             {/* dc */}
@@ -206,33 +206,58 @@ const CartItem = ({product}) => {
                 flexDirection: "row",
                 justifyContent: "space-between",
                 padding: responsiveWidth(1),
-                marginTop:responsiveHeight(2)
+                marginTop: responsiveHeight(2),
               }}
             >
               <Text style={{ fontSize: responsiveFontSize(2) }}>Shipping</Text>
               <Text
                 style={{ fontSize: responsiveFontSize(2), fontWeight: "bold" }}
               >
-                Rs 30.0
+                Rs 0.0
               </Text>
             </View>
+            {/* horizontal line */}
+            <View
+              style={{
+                height: 1,
+                width: "100%",
+                backgroundColor: "#e0e1dd",
+                marginTop: responsiveHeight(3),
+              }}
+            />
             {/* total */}
             <View
               style={{
                 flexDirection: "row",
                 justifyContent: "space-between",
                 padding: responsiveWidth(1),
-                marginTop:responsiveHeight(2)
+                marginTop: responsiveHeight(2),
               }}
             >
               <Text style={{ fontSize: responsiveFontSize(2) }}>Total</Text>
               <Text
                 style={{ fontSize: responsiveFontSize(2), fontWeight: "bold" }}
               >
-                Rs 1,480
+                {product.price}
               </Text>
             </View>
-
+            {/* Button */}
+            <TouchableOpacity>
+              <Text
+                style={{
+                  marginTop: responsiveHeight(5),
+                  fontSize: responsiveFontSize(2.5),
+                  fontWeight: "bold",
+                  color: "white",
+                  backgroundColor: "#000",
+                  padding: responsiveHeight(2),
+                  borderRadius: responsiveHeight(2),
+                  textAlign: "center",
+                }}
+              >
+                Checkout
+              </Text>
+            </TouchableOpacity>
           </View>
         </ScrollView>
       ) : (
@@ -252,7 +277,7 @@ const CartItem = ({product}) => {
               color: "gray",
             }}
           >
-            Your cart is empty
+            Cart is empty
           </Text>
         </View>
       )}
