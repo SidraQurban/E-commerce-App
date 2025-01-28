@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, Image, ScrollView } from "react-native";
+import { View, Text, TouchableOpacity, Image, ScrollView, TextInput } from "react-native";
 import React, { useState } from "react";
 import { Entypo, AntDesign, Ionicons } from "react-native-vector-icons";
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from "react-native-responsive-dimensions";
@@ -20,6 +20,7 @@ const CartItem = ({product}) => {
   const handleCancel = () => {
     setIsVisible(false); // Hide the cart item
   };
+  const [number, onchangeNumber] = useState('');
 
   return (
     <View style={{ flex: 1, padding: 10 }}>
@@ -146,6 +147,27 @@ const CartItem = ({product}) => {
           >
             <Entypo name="cross" size={20} color="black" />
           </TouchableOpacity>
+          {/* Footer  */}
+          <View>
+            <TextInput
+              value={number}
+              onChangeText={onchangeNumber}
+              placeholder="Promo Code"
+              keyboardType="numeric"
+              style={{
+                marginTop:responsiveHeight(28),
+                height: responsiveHeight(6),
+                margin: responsiveHeight(2),
+                borderRadius:responsiveHeight(3),
+                borderColor: "#e0e1dd",
+                borderWidth: 1,
+               padding: responsiveHeight(2)
+              }}
+            />
+            <View>
+              <Text>Apply</Text>
+            </View>
+          </View>
         </ScrollView>
       ) : (
         // Display this message when the cart is empty
