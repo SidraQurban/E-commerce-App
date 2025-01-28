@@ -152,7 +152,7 @@ const CartItem = ({product}) => {
             <TextInput
               value={number}
               onChangeText={onchangeNumber}
-              placeholder="Promo Code"
+              placeholder="Promo code"
               keyboardType="numeric"
               style={{
                 marginTop: responsiveHeight(28),
@@ -168,7 +168,7 @@ const CartItem = ({product}) => {
               style={{
                 top: responsiveHeight(-8),
                 marginLeft: responsiveWidth(65),
-                backgroundColor: "red",
+                backgroundColor: "#ff6d00",
                 height: responsiveHeight(6),
                 borderRadius: responsiveHeight(3),
                 justifyContent: "center",
@@ -185,6 +185,54 @@ const CartItem = ({product}) => {
                 Apply
               </Text>
             </TouchableOpacity>
+            {/* sub total */}
+            <View
+              style={{
+                flexDirection: "row",
+                justifyContent: "space-between",
+                padding: responsiveWidth(1),
+              }}
+            >
+              <Text style={{ fontSize: responsiveFontSize(2) }}>Sub Total</Text>
+              <Text
+                style={{ fontSize: responsiveFontSize(2), fontWeight: "bold" }}
+              >
+                Rs 1,450
+              </Text>
+            </View>
+            {/* dc */}
+            <View
+              style={{
+                flexDirection: "row",
+                justifyContent: "space-between",
+                padding: responsiveWidth(1),
+                marginTop:responsiveHeight(2)
+              }}
+            >
+              <Text style={{ fontSize: responsiveFontSize(2) }}>Shipping</Text>
+              <Text
+                style={{ fontSize: responsiveFontSize(2), fontWeight: "bold" }}
+              >
+                Rs 30.0
+              </Text>
+            </View>
+            {/* total */}
+            <View
+              style={{
+                flexDirection: "row",
+                justifyContent: "space-between",
+                padding: responsiveWidth(1),
+                marginTop:responsiveHeight(2)
+              }}
+            >
+              <Text style={{ fontSize: responsiveFontSize(2) }}>Total</Text>
+              <Text
+                style={{ fontSize: responsiveFontSize(2), fontWeight: "bold" }}
+              >
+                Rs 1,480
+              </Text>
+            </View>
+
           </View>
         </ScrollView>
       ) : (
