@@ -19,9 +19,6 @@ This is an e-commerce app developed with React Native designed to provide users 
 ![image](https://github.com/user-attachments/assets/55ea29e9-a144-4ead-86e3-573fb58794de)
 <br>
 <br>
-![image](https://github.com/user-attachments/assets/eb87c6e7-e858-4fcb-b30c-1279c8e2a962)
-<br>
-<br>
 **Search Screen:**
 <br>
   Smart search functionality displaying product categories and top-rated products with detailed information such as price, ratings, and sales data.
