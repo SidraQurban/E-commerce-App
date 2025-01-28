@@ -10,7 +10,7 @@ const Animation = () => {
    const navigation = useNavigation();
   return (
     <View>
-      <TouchableOpacity onPress={() => navigation.goBack()}>
+      <TouchableOpacity onPress={() => navigation.navigate("Dashboard")}>
         <Entypo
           name="cross"
           size={25}
