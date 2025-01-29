@@ -9,7 +9,7 @@ import { Fontisto, Feather } from "react-native-vector-icons";
 
 const Header = () => {
   return (
-    <View style={{ paddingVertical: responsiveHeight(1) }}>
+    <View style={{ paddingVertical: responsiveHeight(1) , marginTop:responsiveHeight(-4)}}>
       <View
         style={{
           flexDirection: "row",

@@ -12,7 +12,7 @@ const Dashboard = () => {
   return (
     <>
       <ScrollView
-        style={{ flex: 1, padding: responsiveWidth(3) }}
+        style={{ flex: 1, padding: responsiveWidth(1.5) }}
         showsVerticalScrollIndicator={false}
       >
         <Header />

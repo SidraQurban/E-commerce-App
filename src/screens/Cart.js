@@ -36,7 +36,7 @@ const Cart = () => {
               fontWeight: "bold",
               textAlign: "center",
               marginLeft: responsiveHeight(15),
-              marginTop: responsiveHeight(2),
+              marginTop: responsiveHeight(0.5),
             }}
           >
             Your Cart
