@@ -24,7 +24,7 @@ const navigation = useNavigation();
     <>
     <ScrollView
     style={{
-     padding:responsiveWidth(2  )
+   paddingHorizontal: responsiveWidth(1.5),
     }}
   >
     {/* Searchbar */}
