@@ -33,7 +33,7 @@ const Products = () => {
           For You
         </Text>
         <TouchableOpacity onPress={() => navigation.navigate("MoreProducts")}>
-          <Text style={{ color: "blue", fontSize: responsiveFontSize(2) }}>
+          <Text style={{ color: "black", fontSize: responsiveFontSize(2) }}>
             Shop more
           </Text>
         </TouchableOpacity>
