@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableOpacity } from "react-native";
+import { View, Text, Image, TouchableOpacity, StatusBar } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
@@ -10,6 +10,8 @@ import {
 const Home = ({ navigation }) => {
   return (
     <SafeAreaView>
+      <StatusBar barStyle="dark-content" backgroundColor="#f8f8f8" />
+
       <View style={{ backgroundColor: "#fff", height: responsiveHeight(100) }}>
         <View
           style={{
