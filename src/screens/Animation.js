@@ -14,11 +14,11 @@ const Animation = () => {
         <Entypo
           name="cross"
           size={25}
-          style={{ marginTop: responsiveHeight(3), marginLeft: responsiveWidth(90)}}
+          style={{ marginTop: responsiveHeight(2), marginLeft: responsiveWidth(90)}}
         />
       </TouchableOpacity>
       <LottieView
-        style={{ height: responsiveHeight(80), width: responsiveWidth(100) }}
+        style={{ height: responsiveHeight(70), width: responsiveWidth(100) }}
         source={require("../../Animation - 1738038020472.json")}
         autoPlay
         loop
@@ -28,7 +28,7 @@ const Animation = () => {
           fontSize: responsiveFontSize(2.2),
           alignSelf: "center",
           fontWeight: "bold",
-          marginBottom: responsiveHeight(8),
+          marginBottom: responsiveHeight(10),
           color: "green",
         }}
       >
