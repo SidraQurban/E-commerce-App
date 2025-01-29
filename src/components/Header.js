@@ -38,7 +38,7 @@ const Header = () => {
         >
           <TouchableOpacity
             style={{
-              marginRight: responsiveWidth(6),
+              marginRight: responsiveWidth(2),
               marginVertical: responsiveHeight(1.5),
             }}
           >
