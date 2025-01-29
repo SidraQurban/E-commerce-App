@@ -93,7 +93,7 @@ const MoreProducts = () => {
             style={{
               fontSize: responsiveFontSize(2),
               color: "#e36414",
-              marginTop: -responsiveHeight(1),
+              marginTop: responsiveHeight(-2),
             }}
           >
             Limited Time Offer
