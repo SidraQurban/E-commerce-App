@@ -22,36 +22,50 @@ const Cart = () => {
   return (
     <>
       <ScrollView showsVerticalScrollIndicator={false}>
-        <View style={{ flexDirection: 'row' }}>
+        <View style={{ flexDirection: "row" }}>
           <TouchableOpacity onPress={() => navigation.goBack()}>
-            <Ionicons name="chevron-back" size={25} style={{ marginTop: responsiveHeight(2.5) }} />
+            <Ionicons
+              name="chevron-back"
+              size={25}
+              style={{ marginTop: responsiveHeight(0.5) }}
+            />
           </TouchableOpacity>
-          <Text style={{ fontSize: responsiveFontSize(2.2), fontWeight: 'bold', textAlign: 'center', marginLeft: responsiveHeight(15), marginTop: responsiveHeight(2) }}>
+          <Text
+            style={{
+              fontSize: responsiveFontSize(2.2),
+              fontWeight: "bold",
+              textAlign: "center",
+              marginLeft: responsiveHeight(15),
+              marginTop: responsiveHeight(2),
+            }}
+          >
             Your Cart
           </Text>
         </View>
 
         {/* Cart Items */}
         {cartItems.length > 0 ? (
-          cartItems.map((item, index) => <CartItem key={index} product={item} />)
+          cartItems.map((item, index) => (
+            <CartItem key={index} product={item} />
+          ))
         ) : (
           <View
-          style={{
-            justifyContent: "center",
-            alignItems: "center",
-            height: responsiveHeight(55),
-          }}
-        >
-          <Text
             style={{
-              fontSize: responsiveFontSize(2.5),
-              fontWeight: "bold",
-              color: "gray",
+              justifyContent: "center",
+              alignItems: "center",
+              height: responsiveHeight(55),
             }}
           >
-            Your cart is empty
-          </Text>
-        </View>
+            <Text
+              style={{
+                fontSize: responsiveFontSize(2.5),
+                fontWeight: "bold",
+                color: "gray",
+              }}
+            >
+              Your cart is empty
+            </Text>
+          </View>
         )}
       </ScrollView>
 
