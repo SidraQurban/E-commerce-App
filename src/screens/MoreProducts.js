@@ -81,13 +81,6 @@ const MoreProducts = () => {
               marginTop: responsiveHeight(2),
             }}
           >
-            <TouchableOpacity onPress={() => navigation.navigate("Cart")}>
-              <Ionicons
-                name="cart-outline"
-                size={25}
-                style={{ marginRight: responsiveWidth(2) }}
-              />
-            </TouchableOpacity>
             <TouchableOpacity>
               <Ionicons name="share-outline" size={25} />
             </TouchableOpacity>

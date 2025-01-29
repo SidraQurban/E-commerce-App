@@ -280,7 +280,7 @@ export const icons = [
   { name: "home-outline", activeName: "home-sharp", route: "Dashboard" },
   { name: "search-outline", activeName: "search-sharp", route: "Search" },
   { name: "cart-outline", activeName: "cart-sharp", route: "Cart" },
-  { name: "person-outline", activeName: "heart-sharp", route: "Profile" },
+  // { name: "person-outline", activeName: "heart-sharp", route: "Profile" }, 
 ];
 
 export const categoryData = [
