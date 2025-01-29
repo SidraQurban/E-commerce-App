@@ -12,7 +12,7 @@ const Searchbar = () => {
       style={{
         flexDirection: "row",
         justifyContent: "space-between",
-      marginTop:responsiveHeight(-2)
+        marginTop:responsiveHeight(-2)
       }}
     >
       <View
