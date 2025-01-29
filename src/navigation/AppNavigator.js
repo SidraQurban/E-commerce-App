@@ -3,7 +3,6 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "../screens/Home";
 import Dashboard from "../screens/Dashboard";
-import Profile from "../screens/Profile";
 import Search from "../screens/Search";
 import Cart from "../screens/Cart";
 import MoreProducts from "../screens/MoreProducts";

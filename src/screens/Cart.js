@@ -27,7 +27,7 @@ const Cart = () => {
             <Ionicons name="chevron-back" size={25} style={{ marginTop: responsiveHeight(2.5) }} />
           </TouchableOpacity>
           <Text style={{ fontSize: responsiveFontSize(2.2), fontWeight: 'bold', textAlign: 'center', marginLeft: responsiveHeight(15), marginTop: responsiveHeight(2) }}>
-            My Cart
+            Your Cart
           </Text>
         </View>
 
