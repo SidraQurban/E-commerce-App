@@ -35,11 +35,11 @@ const Cart = () => {
               fontSize: responsiveFontSize(2.2),
               fontWeight: "bold",
               textAlign: "center",
-              marginLeft: responsiveHeight(15),
-              marginTop: responsiveHeight(0.5),
-              
-            }}
 
+              marginLeft: responsiveHeight(15),
+
+              marginTop: responsiveHeight(0.5),
+            }}
           >
             Your Cart
           </Text>
@@ -51,7 +51,6 @@ const Cart = () => {
             width: "100%",
             backgroundColor: "#e0e1dd",
             marginTop: responsiveHeight(2),
-
           }}
         />
 
