@@ -41,16 +41,16 @@ const Cart = () => {
           >
             Your Cart
           </Text>
-            {/* horizontal line */}
-                      <View
-                        style={{
-                          height: 1,
-                          width: "100%",
-                          backgroundColor: "#e0e1dd",
-                          marginTop: responsiveHeight(5),
-                        }}
-                      />
         </View>
+        {/* horizontal line */}
+        <View
+          style={{
+            height: 1,
+            width: "100%",
+            backgroundColor: "#e0e1dd",
+            marginTop: responsiveHeight(2),
+          }}
+        />
 
         {/* Cart Items */}
         {cartItems.length > 0 ? (
