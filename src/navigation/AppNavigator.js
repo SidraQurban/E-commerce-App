@@ -17,7 +17,6 @@ const AppNavigator = () => {
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Dashboard" component={Dashboard} />
-        <Stack.Screen name="Profile" component={Profile} />
         <Stack.Screen name="Search" component={Search} />
         <Stack.Screen name="Cart" component={Cart} />
         <Stack.Screen name="MoreProducts" component={MoreProducts} />
