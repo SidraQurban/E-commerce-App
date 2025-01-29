@@ -21,9 +21,9 @@ const MoreProducts = () => {
   return (
     <ScrollView
       style={{
-        flex: 1,
-        padding: responsiveWidth(3),
-        marginTop: responsiveHeight(1),
+       
+        padding: responsiveWidth(2),
+      
       }}
     >
       {/* Searchbar */}
