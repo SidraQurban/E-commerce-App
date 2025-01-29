@@ -19,7 +19,11 @@ import Moreproducts from "../components/Moreproducts";
 const MoreProducts = () => {
   const navigation = useNavigation();
   return (
-    <ScrollView style={{}}>
+    <ScrollView
+      style={{
+        padding: responsiveWidth(1),
+      }}
+    >
       {/* Searchbar */}
       <View
         style={{
@@ -39,7 +43,7 @@ const MoreProducts = () => {
             <Ionicons
               name="chevron-back"
               size={25}
-              style={{ marginTop: responsiveHeight(0.5) }}
+              style={{ marginTop: responsiveHeight(0.1) }}
             />
           </TouchableOpacity>
           <Text
@@ -47,7 +51,7 @@ const MoreProducts = () => {
               marginRight: responsiveWidth(2),
               fontWeight: "bold",
               fontSize: responsiveFontSize(2),
-              marginTop: responsiveHeight(2.5),
+              marginTop: responsiveHeight(0.5),
             }}
           >
             Flash Sale
@@ -72,7 +76,7 @@ const MoreProducts = () => {
           <View
             style={{
               flexDirection: "row",
-              marginTop: responsiveHeight(2),
+              marginTop: responsiveHeight(0.5),
             }}
           >
             <TouchableOpacity>
