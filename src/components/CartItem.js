@@ -7,7 +7,7 @@ import { useNavigation } from "@react-navigation/native";
 const CartItem = ({product}) => {
   const navigation = useNavigation();
   const [noteCount, setNoteCount] = useState(1);
-  const [isVisible, setIsVisible] = useState(true); // State to manage visibility
+  const [isVisible, setIsVisible] = useState(true); 
 
   const handleIncrement = () => {
     setNoteCount(noteCount + 1);
@@ -20,7 +20,7 @@ const CartItem = ({product}) => {
   };
 
   const handleCancel = () => {
-    setIsVisible(false); // Hide the cart item
+    setIsVisible(false); 
   };
   const [number, onchangeNumber] = useState('');
 

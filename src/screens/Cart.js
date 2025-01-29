@@ -41,6 +41,15 @@ const Cart = () => {
           >
             Your Cart
           </Text>
+            {/* horizontal line */}
+                      <View
+                        style={{
+                          height: 1,
+                          width: "100%",
+                          backgroundColor: "#e0e1dd",
+                          marginTop: responsiveHeight(5),
+                        }}
+                      />
         </View>
 
         {/* Cart Items */}
