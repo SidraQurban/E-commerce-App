@@ -15,14 +15,14 @@ const Deals = () => {
         height={responsiveHeight(30)}
         activeDotStyle={{
           height: 3,
-          width: 25,
+          width: 18,
           marginHorizontal: 3,
           backgroundColor: "#adb5bd",
           borderRadius: 3,
         }}
         dotStyle={{
           height: 3,
-          width: 25,
+          width: 18,
           marginHorizontal: 3,
           backgroundColor: "#6c757d",
           borderRadius: 3,
