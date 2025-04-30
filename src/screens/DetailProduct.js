@@ -59,7 +59,7 @@ const DetailProduct = () => {
             {/* price */}
             <Text
               style={{
-                top: responsiveHeight(-1),
+                top: responsiveHeight(-0.2),
                 marginLeft: responsiveWidth(72),
                 color: "#ff6d00",
                 fontWeight: "bold",
@@ -74,7 +74,7 @@ const DetailProduct = () => {
             style={{
               flexDirection: "row",
               marginLeft: responsiveWidth(2.5),
-              marginTop: responsiveHeight(-4),
+              marginTop: responsiveHeight(-3),
             }}
           >
             <AntDesign name="star" size={20} color="#fcbf49" />
