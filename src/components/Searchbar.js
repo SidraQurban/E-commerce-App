@@ -1,10 +1,11 @@
-import { View, TextInput, TouchableOpacity } from "react-native";
+import { View, TextInput, TouchableOpacity, Platform } from "react-native";
 import React from "react";
 import {
   responsiveHeight,
   responsiveWidth,
 } from "react-native-responsive-dimensions";
 import { Ionicons, MaterialCommunityIcons } from "react-native-vector-icons";
+import { launchCamera } from "react-native-image-picker";
 
 const Searchbar = () => {
 
@@ -15,6 +16,15 @@ const camera = async() =>{
     maxHeight: responsiveHeight(90),
   }
   let isCameraPermitted = await requestCameraPermissions();
+  if(isCameraPermitted || Platform.Version >13){
+    launchCamera(options, (response) => { 
+      if(response.errorCode){
+        alert(response.errorMessage)
+      } else {
+        
+      }
+    })
+  }
 }
   return (
     <View
