@@ -42,6 +42,10 @@ const DetailProduct = () => {
         {/* p.name */}
         <View  style={{
             padding: responsiveHeight(1),
+            marginLeft: responsiveWidth(2.5),
+            flexDirection: "row",
+            justifyContent: "space-between",
+            
           
           }}>
         <Text style={{ fontSize: responsiveHeight(3), fontWeight: "bold" }}>
@@ -49,9 +53,7 @@ const DetailProduct = () => {
           </Text>
           <FontAwesome5  name = "share" size={10}/>
         </View>
-        <View
-         
-        >
+        <View>
           
           {/* price */}
           <Text
