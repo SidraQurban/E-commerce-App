@@ -1,5 +1,5 @@
-import { View, TextInput, TouchableOpacity, Platform } from "react-native";
-import React from "react";
+import { View, TextInput, TouchableOpacity, Platform, PermissionsAndroid } from "react-native";
+import React, { useState } from "react";
 import {
   responsiveHeight,
   responsiveWidth,
@@ -8,10 +8,10 @@ import { Ionicons, MaterialCommunityIcons } from "react-native-vector-icons";
 import { launchCamera } from "react-native-image-picker";
 
 const Searchbar = () => {
-
+const [image, setImage] = useState(null);
 const camera = async() =>{
-  let options = {
-    mediaType:"camera",
+  const options = {
+    mediaType:"photo",
     maxWidth: responsiveHeight(90),
     maxHeight: responsiveHeight(90),
   }
@@ -21,9 +21,32 @@ const camera = async() =>{
       if(response.errorCode){
         alert(response.errorMessage)
       } else {
-        
+        console.log(response?.assets)
+        setImage(response?.assets)
       }
     })
+  }
+}
+
+const requestCameraPermissions = async () => {
+  if(Platform.OS === "android"){ 
+    try{
+      const granted = await PermissionsAndroid.request(
+        PermissionsAndroid.PERMISSIONS.CAMERA,
+        {
+          title: "Camera Permission",
+          message: "App needs access to your camera",
+          buttonNeutral: "Ask Me Later",
+          buttonNegative: "Cancel",
+          buttonPositive: "OK",
+        },
+      )
+      return granted === PermissionsAndroid.RESULTS.GRANTED
+    } catch (err){
+      return false
+    }
+  } else{
+    return true
   }
 }
   return (
@@ -50,6 +73,7 @@ const camera = async() =>{
         <TextInput placeholder="Search here" placeholderTextColor="#000" />
       </View>
       <TouchableOpacity
+        onPress={()=> camera()}
         style={{
           height: responsiveHeight(6.5),
           width: "13%",
