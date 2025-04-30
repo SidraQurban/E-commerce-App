@@ -2,7 +2,7 @@ import { View, Text, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
-import {Ionicons,AntDesign,FontAwesome} from "react-native-vector-icons";
+import {Ionicons,AntDesign,FontAwesome,FontAwesome5} from "react-native-vector-icons";
 import {useNavigation, useRoute} from '@react-navigation/native';
 
 const DetailProduct = () => {
@@ -40,15 +40,19 @@ const DetailProduct = () => {
           />
         </View>
         {/* p.name */}
-        <View
-          style={{
-            padding: responsiveHeight(2),
+        <View  style={{
+            padding: responsiveHeight(1),
           
-          }}
-        >
-          <Text style={{ fontSize: responsiveHeight(3), fontWeight: "bold" }}>
+          }}>
+        <Text style={{ fontSize: responsiveHeight(3), fontWeight: "bold" }}>
             {product.name}
           </Text>
+          <FontAwesome5  name = "share" size={10}/>
+        </View>
+        <View
+         
+        >
+          
           {/* price */}
           <Text
             style={{
