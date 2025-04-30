@@ -14,6 +14,7 @@ const camera = async() =>{
     maxWidth: responsiveHeight(90),
     maxHeight: responsiveHeight(90),
   }
+  let isCameraPermitted = await requestCameraPermissions();
 }
   return (
     <View
