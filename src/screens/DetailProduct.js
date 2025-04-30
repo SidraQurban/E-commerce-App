@@ -54,12 +54,12 @@ const DetailProduct = () => {
               <FontAwesome5 name="share" size={23} />
             </TouchableOpacity>
           </View>
-          <View style={{ flexDirection: "row",justifyContent:"space-between" }}>
+          <View>
             {/* price */}
             <Text
               style={{
-                top: responsiveHeight(1),
-                marginLeft: responsiveWidth(66),
+                top: responsiveHeight(-1),
+                marginLeft: responsiveWidth(72),
                 color: "#ff6d00",
                 fontWeight: "bold",
                 fontSize: responsiveFontSize(2.5),
@@ -69,7 +69,24 @@ const DetailProduct = () => {
             </Text>
           </View>
           {/* rating */}
-          
+          <View
+            style={{
+              flexDirection: "row",
+              marginLeft: responsiveWidth(2.5),
+              marginTop: responsiveHeight(-4),
+            }}
+          >
+            <AntDesign name="star" size={20} color="#fcbf49" />
+            <Text
+              style={{
+                fontSize: responsiveFontSize(2),
+                marginLeft: responsiveWidth(2),
+                color: "#ff6d00",
+              }}
+            >
+              {product.rating} {product.sold}
+            </Text>
+          </View>
           {/* Details */}
           <View
             style={{
