@@ -7,6 +7,14 @@ import {
 import { Ionicons, MaterialCommunityIcons } from "react-native-vector-icons";
 
 const Searchbar = () => {
+
+const camera = async() =>{
+  let options = {
+    mediaType:"camera",
+    maxWidth: responsiveHeight(90),
+    maxHeight: responsiveHeight(90),
+  }
+}
   return (
     <View
       style={{
