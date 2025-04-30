@@ -51,7 +51,9 @@ const DetailProduct = () => {
             <Text style={{ fontSize: responsiveHeight(3), fontWeight: "bold" }}>
               {product.name}
             </Text>
-            <TouchableOpacity style={{ marginRight: responsiveWidth(2) }}>
+            <TouchableOpacity
+             onPress={()=>shareProduct()}
+            style={{ marginRight: responsiveWidth(2) }}>
               <FontAwesome5 name="share" size={23} />
             </TouchableOpacity>
           </View>
