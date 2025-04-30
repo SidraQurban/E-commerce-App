@@ -42,6 +42,7 @@ const DetailProduct = () => {
           {/* p.name */}
           <View
             style={{
+              marginLeft: responsiveWidth(1),
               padding: responsiveHeight(1),
               flexDirection: "row",
               justifyContent: "space-between",
@@ -50,7 +51,7 @@ const DetailProduct = () => {
             <Text style={{ fontSize: responsiveHeight(3), fontWeight: "bold" }}>
               {product.name}
             </Text>
-            <TouchableOpacity style={{ marginLeft: responsiveWidth(2) }}>
+            <TouchableOpacity style={{ marginRight: responsiveWidth(2) }}>
               <FontAwesome5 name="share" size={23} />
             </TouchableOpacity>
           </View>
