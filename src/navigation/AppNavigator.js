@@ -8,6 +8,7 @@ import Cart from "../screens/Cart";
 import MoreProducts from "../screens/MoreProducts";
 import DetailProduct from "../screens/DetailProduct";
 import Animation from "../screens/Animation";
+import Fav from "../screens/Fav";
 
 const Stack = createNativeStackNavigator();
 const AppNavigator = () => {
@@ -16,6 +17,7 @@ const AppNavigator = () => {
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Dashboard" component={Dashboard} />
+        <Stack.Screen name="Fav" component={Fav} />
         <Stack.Screen name="Search" component={Search} />
         <Stack.Screen name="Cart" component={Cart} />
         <Stack.Screen name="MoreProducts" component={MoreProducts} />
