@@ -14,7 +14,6 @@ const camera = async() =>{
     mediaType:"photo",
     maxWidth: responsiveHeight(90),
     maxHeight: responsiveHeight(90),
-
   }
   let isCameraPermitted = await requestCameraPermissions();
   if(isCameraPermitted || Platform.Version >13){
