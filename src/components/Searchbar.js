@@ -22,7 +22,7 @@ const camera = async() =>{
         alert(response.errorMessage)
       } else {
         console.log(response?.assets)       
-         
+      
         setImage(response?.assets)
 
       }
