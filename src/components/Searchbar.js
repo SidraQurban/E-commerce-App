@@ -21,6 +21,7 @@ const camera = async() =>{
       if(response.errorCode){
         alert(response.errorMessage)
         
+
       } else {
         console.log(response?.assets)       
 
