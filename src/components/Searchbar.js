@@ -20,7 +20,7 @@ const camera = async() =>{
     launchCamera(options, (response) => { 
       if(response.errorCode){
         alert(response.errorMessage)
-      } e
+      } 
 
       } else {
         console.log(response?.assets)       
