@@ -22,9 +22,10 @@ const camera = async() =>{
         alert(response.errorMessage)
       } else {
         console.log(response?.assets)
-
         setImage(response?.assets)
-        
+        console.log("Camera permissions granted:", isCameraPermitted);
+console.log("Camera response:", response);
+console.log("Image assets:", response?.assets);
       }
     })
   }
