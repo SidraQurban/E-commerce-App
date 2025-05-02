@@ -17,7 +17,7 @@ const camera = async() =>{
   }
   let isCameraPermitted = await requestCameraPermissions();
   if(isCameraPermitted || Platform.Version >13){
-  
+
     launchCamera(options, (response) => { 
       if(response.errorCode){
         alert(response.errorMessage)
