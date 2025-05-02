@@ -28,6 +28,7 @@ console.log("Camera response:", response);
 console.log("Image assets:", response?.assets);
       }
     })
+    
   }
 }
 
