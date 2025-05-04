@@ -23,7 +23,8 @@ const Moreproducts = () => {
   }
 
   return (
-        
+      
+./
     <View>
       <View
         style={{
