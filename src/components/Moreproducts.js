@@ -22,8 +22,7 @@ const Moreproducts = () => {
     rows.push(moreProductData.slice(i, i + 2));
   }
 
-  return (
-  
+  return (  
     <View>
       <View
         style={{
