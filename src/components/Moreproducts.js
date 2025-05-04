@@ -21,8 +21,9 @@ const Moreproducts = () => {
   for (let i = 0; i < moreProductData.length; i += 2) {
     rows.push(moreProductData.slice(i, i + 2));
   }
+  
   return (
-    
+
     <View>
       <View
         style={{
