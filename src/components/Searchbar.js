@@ -29,6 +29,7 @@ console.log("Image assets:", response?.assets);
       }
     })
     
+    
   }
 }
 
