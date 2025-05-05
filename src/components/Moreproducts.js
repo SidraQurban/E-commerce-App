@@ -67,7 +67,6 @@ const Moreproducts = () => {
                   }}
                 />
               </TouchableOpacity>
-
               {/* Product Text  */}
               <View>
                 <View
