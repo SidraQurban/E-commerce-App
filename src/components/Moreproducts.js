@@ -117,7 +117,7 @@ const Moreproducts = () => {
                   <AntDesign name="star" color="#fcbf49" size={18} />
                   <Text
                     style={{ marginLeft: responsiveWidth(1), color: "#343a40" }}
-                  >               {product.rating}
+                  >             {product.rating}
                   </Text>
                   <Text
                     style={{ marginLeft: responsiveWidth(1), color: "#343a40" }}
