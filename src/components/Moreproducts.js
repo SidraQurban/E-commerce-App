@@ -100,7 +100,8 @@ const Moreproducts = () => {
                     marginBottom: responsiveHeight(0.5),
                   }}
                 >
-                  <Text style={{ color: "#6c757d" }}>{product.price}</Text>
+                  <Text style={{ color: "#6c757d" }}>
+                    {product.price}</Text>
                   <Text
                     style={{
                       marginLeft: responsiveWidth(2),
