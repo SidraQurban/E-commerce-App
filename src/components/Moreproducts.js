@@ -122,7 +122,7 @@ const Moreproducts = () => {
                   </Text>
                   <Text
                     style={{ marginLeft: responsiveWidth(1), color: "#343a40" }}
-                  >              {product.sold}
+                  >             {product.sold}
                   </Text>
                 </View>
               </View>
