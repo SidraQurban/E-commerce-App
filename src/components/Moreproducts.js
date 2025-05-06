@@ -120,6 +120,7 @@ const Moreproducts = () => {
                   >
                     {product.rating}
                   </Text>
+                  
                   <Text
                     style={{ marginLeft: responsiveWidth(1), color: "#343a40" }}
                   >             {product.sold}
