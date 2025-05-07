@@ -63,11 +63,12 @@ const CartItem = ({product}) => {
                 flexDirection: "row",
                 justifyContent: "space-between",
                 marginTop: responsiveHeight(3.6),
+                marginLeft: responsiveWidth(3),
               }}
             >
               <Text
                 style={{
-                  marginLeft: responsiveWidth(3),
+                 
                   fontSize: responsiveFontSize(2),
                   fontWeight: "bold",
                 }}
