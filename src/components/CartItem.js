@@ -40,18 +40,18 @@ const CartItem = ({product}) => {
             <View
               style={{
                 marginTop: responsiveHeight(2.5),
-                height: responsiveHeight(20),
-                width: responsiveWidth(35),
+                height: responsiveHeight(15),
+                width: responsiveWidth(40),
                 borderRadius: responsiveHeight(1),
                 backgroundColor: "#e9ecef",
-                marginLeft: responsiveWidth(5),
+                marginLeft: responsiveWidth(2),
               }}
             >
               <Image
                 source={product.img}
                 style={{
                   resizeMode: "contain",
-                  height: responsiveHeight(25),
+                  height: responsiveHeight(15),
                   width: responsiveWidth(20),
                   alignSelf: "center",
                 }}
@@ -75,7 +75,7 @@ const CartItem = ({product}) => {
             <Text
               style={{
                 marginLeft: responsiveWidth(46),
-                marginTop: responsiveHeight(-13),
+                // marginTop: responsiveHeight(-13),
                 fontSize: responsiveFontSize(1.9),
                 fontWeight: "bold",
               }}
