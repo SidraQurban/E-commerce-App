@@ -88,7 +88,7 @@ const CartItem = ({product}) => {
           <View
             style={{
               flexDirection: "row",
-              marginRight: responsiveWidth(46),
+              marginRight: responsiveWidth(50),
               marginTop: responsiveHeight(-2),
             }}
           >
