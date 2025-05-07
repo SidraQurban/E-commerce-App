@@ -58,7 +58,7 @@ const CartItem = ({product}) => {
               />
             </View>
             {/* Product Name */}
-         <View>
+         <View style={{flexDirection: "row"}}>
          <Text
               style={{
                 marginTop: responsiveHeight(3.6),
