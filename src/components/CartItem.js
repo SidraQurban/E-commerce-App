@@ -143,7 +143,7 @@ const CartItem = ({product}) => {
           <TouchableOpacity
             style={{
               marginLeft: responsiveWidth(89),
-              marginTop: responsiveHeight(18),
+              marginTop: responsiveHeight(3),
             }}
             onPress={handleCancel} // Hide component on press
           >
