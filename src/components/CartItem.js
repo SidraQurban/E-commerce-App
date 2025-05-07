@@ -58,7 +58,7 @@ const CartItem = ({product}) => {
               />
             </View>
             {/* Product Name */}
-         <View style={{flexDirection: "row"}}>
+         <View style={{flexDirection: "row", justifyContent: "space-between"}}>
          <Text
               style={{
                 marginTop: responsiveHeight(3.6),
@@ -73,7 +73,7 @@ const CartItem = ({product}) => {
           <TouchableOpacity
             style={{
               // marginLeft: responsiveWidth(89),
-              marginTop: responsiveHeight(3),
+              // marginTop: responsiveHeight(3),
             }}
             onPress={handleCancel} // Hide component on press
           >
