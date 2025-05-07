@@ -75,7 +75,7 @@ const CartItem = ({product}) => {
             <Text
               style={{
                 marginLeft: responsiveWidth(46),
-                // marginTop: responsiveHeight(-13),
+                marginTop: responsiveHeight(-13),
                 fontSize: responsiveFontSize(1.9),
                 fontWeight: "bold",
               }}
