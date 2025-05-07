@@ -103,7 +103,7 @@ const Moreproducts = () => {
                   <Text style={{ color: "#6c757d" }}>
                  {product.price}
                     </Text>
-                  <Text
+                  <Text;[
                     style={{
                       marginLeft: responsiveWidth(2),
                       color: "#6c757d",
