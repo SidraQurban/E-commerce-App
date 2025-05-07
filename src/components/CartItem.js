@@ -69,6 +69,7 @@ const CartItem = ({product}) => {
             >
               {product.name}
             </Text>
+            <Text>hi</Text>
             </View>
            
             {/* Cancel Button */}
