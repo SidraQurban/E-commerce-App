@@ -76,6 +76,7 @@ const CartItem = ({product}) => {
               style={{
                 marginLeft: responsiveWidth(46),
                 // marginTop: responsiveHeight(-13),
+                position: ,
                 fontSize: responsiveFontSize(1.9),
                 fontWeight: "bold",
               }}
