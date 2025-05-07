@@ -88,8 +88,8 @@ const CartItem = ({product}) => {
           <View
             style={{
               flexDirection: "row",
-              marginRight: responsiveWidth(50),
-              marginTop: responsiveHeight(-2),
+              marginLeft: responsiveWidth(75),
+              marginTop: responsiveHeight(-10),
             }}
           >
             {/* Increment */}
@@ -143,7 +143,7 @@ const CartItem = ({product}) => {
           <TouchableOpacity
             style={{
               marginLeft: responsiveWidth(89),
-              marginTop: responsiveHeight(-18),
+              marginTop: responsiveHeight(18),
             }}
             onPress={handleCancel} // Hide component on press
           >
