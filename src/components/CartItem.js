@@ -58,8 +58,8 @@ const CartItem = ({product}) => {
               />
             </View>
             {/* Product Name */}
-         <View style={{flexDirection: "row", justifyContent: "space-between"}}>
-         <Text
+            <View>
+            <Text
               style={{
                 marginTop: responsiveHeight(3.6),
                 marginLeft: responsiveWidth(3),
@@ -69,17 +69,18 @@ const CartItem = ({product}) => {
             >
               {product.name}
             </Text>
+            </View>
+           
             {/* Cancel Button */}
           <TouchableOpacity
             style={{
               // marginLeft: responsiveWidth(89),
-              // marginTop: responsiveHeight(3),
+              marginTop: responsiveHeight(3),
             }}
             onPress={handleCancel} // Hide component on press
           >
             <Entypo name="cross" size={20} color="black" />
           </TouchableOpacity>
-          </View>
           </View>
 
           {/* Price */}
