@@ -21,7 +21,7 @@ const Moreproducts = () => {
     rows.push(moreProductData.slice(i, i + 2));
   }
 
-  return (  
+  return (
     <View>
       <View
         style={{
@@ -55,7 +55,9 @@ const Moreproducts = () => {
             >
               {/* Image */}
               <TouchableOpacity
-                onPress={() => navigation.navigate("DetailProduct" , { product })}
+                onPress={() =>
+                  navigation.navigate("DetailProduct", { product })
+                }
               >
                 <Image
                   source={product.img}
@@ -100,9 +102,7 @@ const Moreproducts = () => {
                     marginBottom: responsiveHeight(0.5),
                   }}
                 >
-                  <Text style={{ color: "#6c757d" }}>
-                 {product.price}
-                    </Text>
+                  <Text style={{ color: "#6c757d" }}>{product.price}</Text>
                   <Text
                     style={{
                       marginLeft: responsiveWidth(2),
@@ -119,13 +119,13 @@ const Moreproducts = () => {
                   <AntDesign name="star" color="#fcbf49" size={18} />
                   <Text
                     style={{ marginLeft: responsiveWidth(1), color: "#343a40" }}
-                  >       
-                 {product.rating}
+                  >
+                    {product.rating}
                   </Text>
                   <Text
                     style={{ marginLeft: responsiveWidth(1), color: "#343a40" }}
-                  >       
-                 {product.sold}
+                  >
+                    {product.sold}
                   </Text>
                 </View>
               </View>
