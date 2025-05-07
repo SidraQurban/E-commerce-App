@@ -58,7 +58,8 @@ const CartItem = ({product}) => {
               />
             </View>
             {/* Product Name */}
-            <Text
+         <View>
+         <Text
               style={{
                 marginTop: responsiveHeight(3.6),
                 marginLeft: responsiveWidth(3),
@@ -78,6 +79,7 @@ const CartItem = ({product}) => {
           >
             <Entypo name="cross" size={20} color="black" />
           </TouchableOpacity>
+          </View>
           </View>
 
           {/* Price */}
