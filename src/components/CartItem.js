@@ -58,30 +58,36 @@ const CartItem = ({product}) => {
               />
             </View>
             {/* Product Name */}
-            <View style={{flexDirection:"row", justifyContent:"space-between"}}>
-            <Text
+            <View
               style={{
+                flexDirection: "row",
+                justifyContent: "space-between",
                 marginTop: responsiveHeight(3.6),
-                marginLeft: responsiveWidth(3),
-                fontSize: responsiveFontSize(2),
-                fontWeight: "bold",
               }}
             >
-              {product.name}
-            </Text>
-            <Text>hi</Text>
+              <Text
+                style={{
+                  marginLeft: responsiveWidth(3),
+                  fontSize: responsiveFontSize(2),
+                  fontWeight: "bold",
+                }}
+              >
+                {product.name}
+              </Text>
+                {/* Cancel Button */}
+            <TouchableOpacity
+              style={{
+                // marginLeft: responsiveWidth(89),
+                marginTop: responsiveHeight(3),
+              }}
+              onPress={handleCancel} // Hide component on press
+            >
+              <Entypo name="cross" size={20} color="black" />
+            </TouchableOpacity>
+             
             </View>
-           
-            {/* Cancel Button */}
-          <TouchableOpacity
-            style={{
-              // marginLeft: responsiveWidth(89),
-              marginTop: responsiveHeight(3),
-            }}
-            onPress={handleCancel} // Hide component on press
-          >
-            <Entypo name="cross" size={20} color="black" />
-          </TouchableOpacity>
+
+          
           </View>
 
           {/* Price */}
@@ -153,7 +159,6 @@ const CartItem = ({product}) => {
             </TouchableOpacity>
           </View>
 
-          
           {/* Footer  */}
           <View>
             <TextInput
@@ -249,7 +254,7 @@ const CartItem = ({product}) => {
               </Text>
             </View>
             {/* Button */}
-            <TouchableOpacity onPress={()=> navigation.navigate("Animation")}>
+            <TouchableOpacity onPress={() => navigation.navigate("Animation")}>
               <Text
                 style={{
                   marginTop: responsiveHeight(5),
