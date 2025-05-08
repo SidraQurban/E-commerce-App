@@ -73,7 +73,7 @@ const CartItem = ({product}) => {
                   fontWeight: "bold",
                 }}
               >
-              setIsVisible(false) // Hide component on press     
+              setIsVisible(false) // Hide component on    
                 {product.name}
               </Text>
               {/* Cancel Button */}
