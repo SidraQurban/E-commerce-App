@@ -73,7 +73,7 @@ const CartItem = ({product}) => {
                   fontWeight: "bold",
                 }}
               >
-                        
+                    
                 {product.name}
               </Text>
               {/* Cancel Button */}
