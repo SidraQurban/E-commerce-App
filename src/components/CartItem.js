@@ -68,18 +68,17 @@ const CartItem = ({product}) => {
             >
               <Text
                 style={{
-                 
                   fontSize: responsiveFontSize(2),
                   fontWeight: "bold",
                 }}
-              >              
+              >
                 {product.name}
               </Text>
               {/* Cancel Button */}
               <TouchableOpacity
                 onPress={handleCancel} // Hide component on press
               >
-                <Entypo name="cross" size={20} color="black"/> 
+                <Entypo name="cross" size={20} color="black" />
               </TouchableOpacity>
             </View>
           </View>
