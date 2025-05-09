@@ -62,8 +62,8 @@ const CartItem = ({product}) => {
               style={{
                 flexDirection: "row",
                 justifyContent: "space-between",
-                marginTop: responsiveHeight(3.6),
-                marginLeft: responsiveWidth(3),
+                // marginTop: responsiveHeight(3.6),
+                // marginLeft: responsiveWidth(3),
               }}
             >
               <Text
