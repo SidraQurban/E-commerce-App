@@ -139,7 +139,7 @@ export const moreProductData = [
   {
     id: 5,
     img: require("./../assets/skirt.png"),
-    name: "Latest Trendycasual sneaker",
+    name: "Skirt",
     price: "Rs. 2,490",
     discount: "-25%",
     rating: "4.5(230)",
