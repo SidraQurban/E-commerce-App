@@ -61,8 +61,8 @@ const CartItem = ({product}) => {
             <View
               style={{
                 flexDirection: "row",
-                // marginTop: responsiveHeight(3.6),
-                // marginLeft: responsiveWidth(3),
+                marginTop: responsiveHeight(3.6),
+                marginLeft: responsiveWidth(3),
               }}
             >
               <Text
@@ -75,6 +75,7 @@ const CartItem = ({product}) => {
               </Text>
               {/* Cancel Button */}
               <TouchableOpacity
+              style={{marginLeft: responsiveWidth(20)}}
                 onPress={handleCancel} // Hide component on press
               >
                 <Entypo name="cross" size={20} color="black" />
