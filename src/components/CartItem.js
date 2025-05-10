@@ -71,7 +71,7 @@ const CartItem = ({product}) => {
                   fontWeight: "bold",
                 }}
               >
-                {product.name}
+               {product.name}
               </Text>
               {/* Cancel Button */}
               <TouchableOpacity
