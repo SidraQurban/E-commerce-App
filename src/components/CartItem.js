@@ -77,7 +77,7 @@ const CartItem = ({product}) => {
               <TouchableOpacity
               style={{marginLeft: responsiveWidth(7)}}
               onPress={() => handleCancel()} // Hide component on press
-                onPress={handleCancel} // Hide component on p
+                onPress={handleCancel} // Hide c
               >
               <Entypo name="cross" size={20} color="black" />
               </TouchableOpacity>
