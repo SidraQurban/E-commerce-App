@@ -79,7 +79,7 @@ const CartItem = ({product}) => {
               onPress={() => handleCancel()} // Hide component on press
               >
               {/* Cancel Icon */}
-        
+  
 
               <Entypo name="cross" size={20} color="black" />
               </TouchableOpacity>
