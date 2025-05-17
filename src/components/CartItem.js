@@ -78,7 +78,7 @@ const CartItem = ({product}) => {
               onPress={() => handleCancel()} // Hide component on press
               >
                          
-              <Text>hello</Text>
+              <Text>hello, my nme is sidra</Text>
               <Entypo name="cross" size={20} color="black" />
               </TouchableOpacity>
             </View>
