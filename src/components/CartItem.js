@@ -77,7 +77,6 @@ const CartItem = ({product}) => {
               style={{marginLeft: responsiveWidth(7)}}
               onPress={() => handleCancel()} // Hide component on press
               >
-       
               <Entypo name="cross" size={20} color="black" />
               </TouchableOpacity>
             </View>
