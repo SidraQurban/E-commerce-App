@@ -81,6 +81,7 @@ const CartItem = ({product}) => {
               </TouchableOpacity>
      
                           
+                          \end{code}
             </View>
           </View>          
           {/* Price */}
