@@ -81,7 +81,7 @@ const CartItem = ({product}) => {
               </TouchableOpacity>
             </View>
 
-            {/* Product Description */}
+            {/* Product Description }
           </View>          
           {/* Price */}
           <View>
