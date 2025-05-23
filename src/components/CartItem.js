@@ -80,7 +80,7 @@ const CartItem = ({product}) => {
              <Entypo name="cross" size={20} color="black" />
               </TouchableOpacity>
             </View>
-            {/* Product Description */}
+            {/* Product Description 
           </View>          
           {/* Price */}
           <View>
