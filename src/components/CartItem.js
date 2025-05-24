@@ -79,6 +79,7 @@ const CartItem = ({product}) => {
               >
              <Entypo name="cross" size={20} color="black" />
               </TouchableOpacity>
+              \end{code}
             </View>
           </View>          
           {/* Price */}
