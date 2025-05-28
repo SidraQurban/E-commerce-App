@@ -28,18 +28,23 @@ const Home = ({ navigation }) => {
             }}
           />
         </View>
-        <Text
+        <View>
+  <Text
           style={{
             textAlign: "center",
             fontSize: responsiveScreenFontSize(3),
-            fontWeight: "bold",
+            fontWeight: "italic",
+            fontFamily: "Poppins_700Bold",
+            letterSpacing: 1,
             color: "#fb5607",
-            resizeMode:"relative"
+            marginTop: responsiveHeight(-49.5),
             
           }}
         >
           ShopEase
         </Text>
+        </View>
+      
         <Text
           style={{
             marginTop: responsiveHeight(5),
