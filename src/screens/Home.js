@@ -34,7 +34,8 @@ const Home = ({ navigation }) => {
             fontSize: responsiveScreenFontSize(3),
             fontWeight: "bold",
             color: "#fb5607",
-            marginTop: responsiveHeight(2),
+            resizeMode:"relative"
+            
           }}
         >
           ShopEase
