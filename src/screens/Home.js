@@ -44,7 +44,7 @@ const Home = ({ navigation }) => {
         <View style={{ marginTop: responsiveHeight(1) }}>
           <Text
             style={{
-              marginLeft: responsiveWidth(5.5),
+              marginLeft: responsiveWidth(7.2),
               fontSize: responsiveScreenFontSize(2),
               fontWeight: "bold",
             }}
@@ -58,18 +58,19 @@ const Home = ({ navigation }) => {
               borderWidth: 1,
               borderRadius: 10,
               paddingHorizontal: 15,
-              marginHorizontal: responsiveWidth(5),
+              marginHorizontal: responsiveWidth(8),
               marginTop: responsiveHeight(1),
             }}
           />
           <Text
             style={{
               marginTop: responsiveHeight(1),
-              marginLeft: responsiveWidth(5.5),
+              marginLeft: responsiveWidth(7.2),
               fontSize: responsiveScreenFontSize(2),
+              fontWeight: "bold",
             }}
           >
-            Enter Password
+            Enter Password:
           </Text>
           <TextInput
             style={{
@@ -78,7 +79,7 @@ const Home = ({ navigation }) => {
               borderWidth: 1,
               borderRadius: 10,
               paddingHorizontal: 15,
-              marginHorizontal: responsiveWidth(5),
+              marginHorizontal: responsiveWidth(8),
               marginTop: responsiveHeight(1),
             }}
           />
