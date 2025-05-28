@@ -82,7 +82,7 @@ const CartItem = ({product}) => {
             </View>
                    
 
-                  
+            {/* Product Description */}
           </View>          
           {/* Price */}
           <View>
