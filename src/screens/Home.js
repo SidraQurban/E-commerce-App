@@ -52,6 +52,7 @@ const Home = ({ navigation }) => {
             Enter your valid email address:
           </Text>
           <TextInput
+           keyboardType="numeric"
             style={{
               height: responsiveHeight(6),
               borderColor: "#ccc",
@@ -73,6 +74,7 @@ const Home = ({ navigation }) => {
             Enter Password:
           </Text>
           <TextInput
+          secureTextEntry={true}
             style={{
               height: responsiveHeight(6),
               borderColor: "#ccc",
