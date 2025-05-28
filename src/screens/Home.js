@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableOpacity, StatusBar } from "react-native";
+import { View, Text, Image, TouchableOpacity, StatusBar, TextInput } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
@@ -29,33 +29,61 @@ const Home = ({ navigation }) => {
           />
         </View>
         <View>
-  <Text
-          style={{
-            textAlign: "center",
-            fontSize: responsiveScreenFontSize(3),
-            fontWeight: "italic",
-            fontFamily: "Poppins_700Bold",
-            letterSpacing: 1,
-            color: "#fb5607",
-            marginTop: responsiveHeight(-49.5),
-            
-          }}
-        >
-          ShopEase
-        </Text>
+          <Text
+            style={{
+              textAlign: "center",
+              fontSize: responsiveScreenFontSize(3),
+              fontWeight: "bold",
+              color: "#fb5607",
+              marginTop: responsiveHeight(-49.5),
+            }}
+          >
+            ShopEase
+          </Text>
         </View>
-      
-        <Text
-          style={{
-            marginTop: responsiveHeight(5),
-            marginHorizontal: responsiveWidth(5),
-            fontSize: responsiveScreenFontSize(2.3),
-            color: "#000",
-          }}
-        >
-          Discover the best deals, and enjoy a user-friendly interface that
-          makes online shopping effortless.
-        </Text>
+        <View style={{ marginTop: responsiveHeight(1) }}>
+          <Text
+            style={{
+              marginLeft: responsiveWidth(5.5),
+              fontSize: responsiveScreenFontSize(2),
+              fontWeight: "bold",
+            }}
+          >
+            Enter your valid email address:
+          </Text>
+          <TextInput
+            style={{
+              height: responsiveHeight(6),
+              borderColor: "#ccc",
+              borderWidth: 1,
+              borderRadius: 10,
+              paddingHorizontal: 15,
+              marginHorizontal: responsiveWidth(5),
+              marginTop: responsiveHeight(1),
+            }}
+          />
+          <Text
+            style={{
+              marginTop: responsiveHeight(1),
+              marginLeft: responsiveWidth(5.5),
+              fontSize: responsiveScreenFontSize(2),
+            }}
+          >
+            Enter Password
+          </Text>
+          <TextInput
+            style={{
+              height: responsiveHeight(6),
+              borderColor: "#ccc",
+              borderWidth: 1,
+              borderRadius: 10,
+              paddingHorizontal: 15,
+              marginHorizontal: responsiveWidth(5),
+              marginTop: responsiveHeight(1),
+            }}
+          />
+        </View>
+
         <TouchableOpacity
           onPress={() => navigation.navigate("Dashboard")}
           style={{
@@ -76,7 +104,7 @@ const Home = ({ navigation }) => {
               fontWeight: "bold",
             }}
           >
-            Let's go
+            Login
           </Text>
         </TouchableOpacity>
       </View>
