@@ -6,8 +6,10 @@ import {
   responsiveScreenFontSize,
   responsiveWidth,
 } from "react-native-responsive-dimensions";
+import Ionicons from "react-native-vector-icons/Ionicons";
 
 const Home = ({ navigation }) => {
+
   return (
     <SafeAreaView>
       <StatusBar barStyle="dark-content" backgroundColor="#f8f8f8" />
@@ -41,10 +43,10 @@ const Home = ({ navigation }) => {
             ShopEase
           </Text>
         </View>
-        <View style={{ marginTop: responsiveHeight(1) }}>
+        <View style={{ marginTop: responsiveHeight(2) }}>
           <Text
             style={{
-              marginLeft: responsiveWidth(7.2),
+              marginLeft: responsiveWidth(8.5),
               fontSize: responsiveScreenFontSize(2),
               fontWeight: "bold",
             }}
@@ -52,7 +54,8 @@ const Home = ({ navigation }) => {
             Enter your valid email address:
           </Text>
           <TextInput
-           keyboardType="numeric"
+            keyboardType="numeric"
+            placeholder="example@gmail.com"
             style={{
               height: responsiveHeight(6),
               borderColor: "#ccc",
@@ -65,8 +68,8 @@ const Home = ({ navigation }) => {
           />
           <Text
             style={{
-              marginTop: responsiveHeight(1),
-              marginLeft: responsiveWidth(7.2),
+              marginTop: responsiveHeight(2),
+              marginLeft: responsiveWidth(8.5),
               fontSize: responsiveScreenFontSize(2),
               fontWeight: "bold",
             }}
@@ -74,7 +77,7 @@ const Home = ({ navigation }) => {
             Enter Password:
           </Text>
           <TextInput
-          secureTextEntry={true}
+            secureTextEntry={true}
             style={{
               height: responsiveHeight(6),
               borderColor: "#ccc",
@@ -85,6 +88,20 @@ const Home = ({ navigation }) => {
               marginTop: responsiveHeight(1),
             }}
           />
+        <View>
+            <Ionicons
+            name="eye"
+            size={24}
+            color="black"
+            style={{
+              position: "relative",
+              left: responsiveWidth(85),
+             marginTop: responsiveHeight(-13),
+              right: responsiveWidth(10),
+              top: responsiveHeight(8),
+            }}
+          />
+        </View>
         </View>
 
         <TouchableOpacity
