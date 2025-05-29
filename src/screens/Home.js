@@ -32,17 +32,15 @@ const [showPassword, setShowPassword] = useState(false);
           />
         </View>
         <View>
-          <Text
+          <Image source={require("../../assets/logo.png")}
             style={{
-              textAlign: "center",
-              fontSize: responsiveScreenFontSize(3),
-              fontWeight: "bold",
-              color: "#fb5607",
-              marginTop: responsiveHeight(-49.5),
-            }}
-          >
-            ShopEase
-          </Text>
+              resizeMode: "contain",
+              height: responsiveHeight(5),
+              width: responsiveWidth(40),
+              alignSelf: "center",
+              marginTop: responsiveHeight(-50),
+              // marginLeft: responsiveWidth(-55),
+            }}/>
         </View>
         <View style={{ marginTop: responsiveHeight(2) }}>
           <Text
@@ -109,18 +107,18 @@ const [showPassword, setShowPassword] = useState(false);
         <TouchableOpacity
           onPress={() => navigation.navigate("Dashboard")}
           style={{
-            backgroundColor: "#f9844a",
+            backgroundColor: "#212529",
             borderRadius: 10,
             alignSelf: "center",
             justifyContent: "center",
             width: responsiveWidth(85),
             height: responsiveWidth(15),
-            top: responsiveHeight(7),
+            top: responsiveHeight(5),
           }}
         >
           <Text
             style={{
-              color: "#000",
+              color: "#f8f9fa",
               textAlign: "center",
               fontSize: responsiveScreenFontSize(2.7),
               fontWeight: "bold",
