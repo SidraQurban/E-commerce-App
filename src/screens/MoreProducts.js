@@ -26,6 +26,7 @@ const MoreProducts = () => {
     >
       {/* Searchbar */}
       <View
+
       
         style={{
           backgroundColor: "#e9ecef",
