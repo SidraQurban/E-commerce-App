@@ -86,7 +86,7 @@ const PaymentMethod = () => {
             marginTop: responsiveHeight(1),
           }}
         >
-          Card holder name
+          Card holder's name
         </Text>
         <TextInput
           keyboardType="numeric"
