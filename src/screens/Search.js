@@ -30,7 +30,7 @@ const navigation = useNavigation();
         {/* Searchbar */}
         <View
           style={{
-            backgroundColor: "#f2cc8f",
+            backgroundColor: "#e9ecef",
             height: responsiveHeight(9),
             marginBottom: responsiveHeight(1),
           }}
@@ -98,7 +98,7 @@ const navigation = useNavigation();
             <Text
               style={{
                 fontSize: responsiveFontSize(2),
-                color: "#e36414",
+                color: "#343a40",
                 marginTop: responsiveHeight(-2),
               }}
             >

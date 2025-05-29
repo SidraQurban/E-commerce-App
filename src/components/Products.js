@@ -60,7 +60,9 @@ const Products = () => {
             >
               {/* Image */}
               <TouchableOpacity
-                onPress={() => navigation.navigate("DetailProduct" ,{product})}
+                onPress={() =>
+                  navigation.navigate("DetailProduct", { product })
+                }
               >
                 <Image
                   source={product.img}
@@ -91,11 +93,13 @@ const Products = () => {
                   >
                     {product.name}
                   </Text>
-                  <TouchableOpacity onPress={() => handlePress(product.id)}>
+                  <TouchableOpacity
+                    onPress={() => navigation.navigate("Fav", { product })}
+                  >
                     <AntDesign
                       name={active === product.id ? "heart" : "hearto"}
                       size={17}
-                      color={active === product.id ? "red" : "red"}
+                      color="red"
                     />
                   </TouchableOpacity>
                 </View>
