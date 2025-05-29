@@ -18,40 +18,42 @@ const PaymentMethod = () => {
             justifyContent: "space-between",
           }}
         >
-            <TouchableOpacity>
-<Image
-            source={require("../../assets/gpay.png")}
-            style={{
-              resizeMode: "contain",
-              height: responsiveHeight(13),
-              width: responsiveHeight(13),
-            }}
-            </TouchableOpacity>
-          
-          />
-          <Image
-            source={require("../../assets/card.png")}
-            style={{
-              marginTop: responsiveHeight(1),
-              resizeMode: "contain",
-              height: responsiveHeight(13),
-              width: responsiveHeight(13),
-              marginRight: responsiveWidth(30),
-              marginLeft: responsiveWidth(-1),
-            }}
-          />
-
-          <Image
-            source={require("../../assets/easypaisa.png")}
-            style={{
-              marginTop: responsiveHeight(2.5),
-              resizeMode: "contain",
-              height: responsiveHeight(8),
-              width: responsiveHeight(8),
-              marginRight: responsiveWidth(25),
-              marginLeft: responsiveWidth(-32),
-            }}
-          />
+          <TouchableOpacity>
+            <Image
+              source={require("../../assets/gpay.png")}
+              style={{
+                resizeMode: "contain",
+                height: responsiveHeight(13),
+                width: responsiveHeight(13),
+              }}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Image
+              source={require("../../assets/card.png")}
+              style={{
+                marginTop: responsiveHeight(1),
+                resizeMode: "contain",
+                height: responsiveHeight(13),
+                width: responsiveHeight(13),
+                marginRight: responsiveWidth(30),
+                marginLeft: responsiveWidth(-1),
+              }}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Image
+              source={require("../../assets/easypaisa.png")}
+              style={{
+                marginTop: responsiveHeight(2.5),
+                resizeMode: "contain",
+                height: responsiveHeight(8),
+                width: responsiveHeight(8),
+                marginRight: responsiveWidth(25),
+                marginLeft: responsiveWidth(-32),
+              }}
+            />
+          </TouchableOpacity>
         </View>
       </View>
       {/* card details */}
