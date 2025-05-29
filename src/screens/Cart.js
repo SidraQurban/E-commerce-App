@@ -35,11 +35,11 @@ const Cart = () => {
               fontSize: responsiveFontSize(2.2),
               fontWeight: "bold",
               textAlign: "center",
-              marginLeft: responsiveHeight(15),
+              marginLeft: responsiveHeight(19),
               marginTop: responsiveHeight(0.5),
             }}
           >
-            Your Cart
+             Cart
           </Text>
         </View>
         {/* horizontal line */}
