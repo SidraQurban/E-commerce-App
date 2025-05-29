@@ -3,6 +3,8 @@ import React from 'react';
 import Footer from '../components/Footer';
 import { TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { Ionicons } from 'react-native-vector-icons';
+import { responsiveFontSize, responsiveHeight } from 'react-native-responsive-dimensions';
 
 const Fav = () => {
   const navigation = useNavigation();
