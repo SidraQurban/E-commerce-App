@@ -1,5 +1,5 @@
 import { View, Text, Image, TouchableOpacity, StatusBar, TextInput } from "react-native";
-import React from "react";
+import React, {useState} from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
   responsiveHeight,
@@ -9,6 +9,7 @@ import {
 import Ionicons from "react-native-vector-icons/Ionicons";
 
 const Home = ({ navigation }) => {
+const [showPassword, setShowPassword] = useState(false);
 
   return (
     <SafeAreaView>
@@ -77,7 +78,8 @@ const Home = ({ navigation }) => {
             Enter Password:
           </Text>
           <TextInput
-            secureTextEntry={true}
+            secureTextEntry={!showPassword}
+            placeholder="enter your password"
             style={{
               height: responsiveHeight(6),
               borderColor: "#ccc",
@@ -88,20 +90,20 @@ const Home = ({ navigation }) => {
               marginTop: responsiveHeight(1),
             }}
           />
-        <View>
-            <Ionicons
-            name="eye"
-            size={24}
-            color="black"
+          <TouchableOpacity
+            onPress={() => setShowPassword(!showPassword)}
             style={{
               position: "relative",
-              left: responsiveWidth(85),
-             marginTop: responsiveHeight(-13),
-              right: responsiveWidth(10),
-              top: responsiveHeight(8),
+              marginLeft: responsiveWidth(84),
+              marginTop: responsiveHeight(-4.5),
             }}
-          />
-        </View>
+          >
+            <Ionicons
+              name={showPassword ? "eye" : "eye-off"}
+              size={24}
+              color="black"
+            />
+          </TouchableOpacity>
         </View>
 
         <TouchableOpacity
@@ -111,9 +113,9 @@ const Home = ({ navigation }) => {
             borderRadius: 10,
             alignSelf: "center",
             justifyContent: "center",
-            width: responsiveWidth(80),
+            width: responsiveWidth(85),
             height: responsiveWidth(15),
-            top: responsiveHeight(10),
+            top: responsiveHeight(7),
           }}
         >
           <Text
