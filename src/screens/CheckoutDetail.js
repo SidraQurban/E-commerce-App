@@ -42,7 +42,7 @@ const CheckoutDetail = () => {
                       />
               {/* <CheckoutForm /> */}
               {/* <PaymentMethod /> */}
-              <Footer />
+              {/* <Footer /> */}
     </SafeAreaView>
    
     </>
