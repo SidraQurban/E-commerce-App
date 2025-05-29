@@ -9,6 +9,7 @@ import MoreProducts from "../screens/MoreProducts";
 import DetailProduct from "../screens/DetailProduct";
 import Animation from "../screens/Animation";
 import Fav from "../screens/Fav";
+import CheckoutDetail from "../screens/CheckoutDetail";
 
 const Stack = createNativeStackNavigator();
 const AppNavigator = () => {
@@ -22,6 +23,7 @@ const AppNavigator = () => {
         <Stack.Screen name="Cart" component={Cart} />
         <Stack.Screen name="MoreProducts" component={MoreProducts} />
         <Stack.Screen name="DetailProduct" component={DetailProduct} />
+        <Stack.Screen name="CheckoutDetail" component={CheckoutDetail} />
         <Stack.Screen name="Animation" component={Animation} />
       </Stack.Navigator>
     </NavigationContainer>

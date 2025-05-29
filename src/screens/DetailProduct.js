@@ -70,7 +70,7 @@ const DetailProduct = () => {
               style={{
                 top: responsiveHeight(-0.2),
                 marginLeft: responsiveWidth(72),
-                color: "#ff6d00",
+                color: "#495057",
                 fontWeight: "bold",
                 fontSize: responsiveFontSize(2.5),
               }}
@@ -91,7 +91,7 @@ const DetailProduct = () => {
               style={{
                 fontSize: responsiveFontSize(2),
                 marginLeft: responsiveWidth(2),
-                color: "#ff6d00",
+                color: "#495057",
               }}
             >
               {product.rating} {product.sold}
@@ -200,7 +200,7 @@ const DetailProduct = () => {
                   fontSize: responsiveFontSize(2.5),
                   fontWeight: "bold",
                   color: "#fff",
-                  backgroundColor: "#ff6d00",
+                  backgroundColor: "#212529",
                   height: responsiveHeight(6),
                   width: responsiveHeight(40),
                   elevation: 5,

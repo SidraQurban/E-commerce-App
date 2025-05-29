@@ -29,7 +29,7 @@ const Animation = () => {
           alignSelf: "center",
           fontWeight: "bold",
           marginBottom: responsiveHeight(10),
-          color: "green",
+          color: "#343a40",
         }}
       >
         Your order has been placed successfully! 😊

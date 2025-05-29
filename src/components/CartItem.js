@@ -172,7 +172,7 @@ const CartItem = ({product}) => {
               style={{
                 top: responsiveHeight(-8),
                 marginLeft: responsiveWidth(65),
-                backgroundColor: "#ff6d00",
+                backgroundColor: "#212529",
                 height: responsiveHeight(6),
                 borderRadius: responsiveHeight(3),
                 justifyContent: "center",
@@ -246,14 +246,14 @@ const CartItem = ({product}) => {
               </Text>
             </View>
             {/* Button */}
-            <TouchableOpacity onPress={() => navigation.navigate("Animation")}>
+            <TouchableOpacity onPress={() => navigation.navigate("CheckoutDetail")}>
               <Text
                 style={{
                   marginTop: responsiveHeight(5),
                   fontSize: responsiveFontSize(2.5),
                   fontWeight: "bold",
                   color: "white",
-                  backgroundColor: "#000",
+                  backgroundColor: "#212529",
                   padding: responsiveHeight(2),
                   borderRadius: responsiveHeight(2),
                   textAlign: "center",
