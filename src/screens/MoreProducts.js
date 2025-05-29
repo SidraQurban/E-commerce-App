@@ -26,9 +26,6 @@ const MoreProducts = () => {
     >
       {/* Searchbar */}
       <View
-
-
-
         style={{
           backgroundColor: "#e9ecef",
           height: responsiveHeight(9),
