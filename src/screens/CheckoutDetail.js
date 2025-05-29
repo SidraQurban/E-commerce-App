@@ -1,7 +1,6 @@
 import { View, Text, TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import Footer from '../components/Footer';
 import { useNavigation } from '@react-navigation/native';
 import { Ionicons } from 'react-native-vector-icons';
 import { responsiveFontSize, responsiveHeight } from 'react-native-responsive-dimensions';
@@ -80,7 +79,6 @@ const CheckoutDetail = () => {
 
         <CheckoutForm />
         <PaymentMethod />
-        {/* <Footer /> */}
       </ScrollView>
     </SafeAreaView>
   );
