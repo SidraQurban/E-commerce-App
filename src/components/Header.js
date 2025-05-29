@@ -5,9 +5,11 @@ import {
   responsiveWidth,
   responsiveHeight,
 } from "react-native-responsive-dimensions";
-import { Fontisto, Feather } from "react-native-vector-icons";
+import { Fontisto, Feather,AntDesign } from "react-native-vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 const Header = () => {
+  const navigation = useNavigation();
   return (
     <View
       style={{
@@ -37,12 +39,14 @@ const Header = () => {
           }}
         >
           <TouchableOpacity
+          
+          onPress={() => navigation.navigate("Home")}
             style={{
               marginRight: responsiveWidth(2),
               marginVertical: responsiveHeight(1.5),
             }}
           >
-            <Fontisto name="bell" size={25} />
+            <AntDesign name="logout" size={25} />
           </TouchableOpacity>
         </View>
       </View>
