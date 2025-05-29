@@ -18,13 +18,16 @@ const PaymentMethod = () => {
             justifyContent: "space-between",
           }}
         >
-          <Image
+            <TouchableOpacity>
+<Image
             source={require("../../assets/gpay.png")}
             style={{
               resizeMode: "contain",
               height: responsiveHeight(13),
               width: responsiveHeight(13),
             }}
+            </TouchableOpacity>
+          
           />
           <Image
             source={require("../../assets/card.png")}
