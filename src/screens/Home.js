@@ -39,7 +39,6 @@ const [showPassword, setShowPassword] = useState(false);
               width: responsiveWidth(40),
               alignSelf: "center",
               marginTop: responsiveHeight(-50),
-              // marginLeft: responsiveWidth(-55),
             }}/>
         </View>
         <View style={{ marginTop: responsiveHeight(2) }}>
