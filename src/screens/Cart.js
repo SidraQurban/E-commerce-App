@@ -77,7 +77,6 @@ const Cart = () => {
           </View>
         )}
       </ScrollView>
-
       <Footer />
     </>
   );
