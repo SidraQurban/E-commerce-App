@@ -42,7 +42,7 @@ const Brands = () => {
                   width: responsiveHeight(11),
                   borderRadius: responsiveHeight(5.5),
                   resizeMode: "cover",       
-                    }}
+                  }}
               />
   
             </TouchableOpacity>
