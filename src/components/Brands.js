@@ -44,12 +44,7 @@ const Brands = () => {
                   resizeMode: "cover",
                 }}
               />
-              <Text
-                style={{
-                  fontSize: responsiveFontSize(1.8),
-                  textAlign: "center",
-                  marginTop: responsiveHeight(0.5),
-                }}
+              
             </TouchableOpacity>
           );
         })}
