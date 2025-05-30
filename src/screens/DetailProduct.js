@@ -220,5 +220,4 @@ const DetailProduct = () => {
       </SafeAreaView>
     );
 } 
-
 export default DetailProduct;
