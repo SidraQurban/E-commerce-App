@@ -44,8 +44,8 @@ const Brands = () => {
                   resizeMode: "cover",       
                   }}
               />
-
             </TouchableOpacity>
+            
           );
         })}
       </View>
