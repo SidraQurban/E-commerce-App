@@ -106,7 +106,6 @@ const navigation = useNavigation();
             </Text>
           </View>
         </View>
-
         <Categories />
         <Moreproducts />
       </ScrollView>
