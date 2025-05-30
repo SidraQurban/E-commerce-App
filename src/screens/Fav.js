@@ -129,7 +129,6 @@ const Fav = () => {
           </View>
         )}
       </ScrollView>
-
       <Footer />
     </>
   );
