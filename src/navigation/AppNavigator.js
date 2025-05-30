@@ -14,8 +14,7 @@ import CheckoutDetail from "../screens/CheckoutDetail";
 const Stack = createNativeStackNavigator();
 const AppNavigator = () => {
   return (
-    <NavigationContainer>'
-      '
+    <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Dashboard" component={Dashboard} />
@@ -27,7 +26,6 @@ const AppNavigator = () => {
         <Stack.Screen name="CheckoutDetail" component={CheckoutDetail} />
         <Stack.Screen name="Animation" component={Animation} />
       </Stack.Navigator>
-      
     </NavigationContainer>
   );
 };
