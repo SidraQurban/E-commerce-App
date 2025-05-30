@@ -221,6 +221,4 @@ const DetailProduct = () => {
     );
 } 
 
-export default DetailProduct
-
-
+export default DetailProduct;

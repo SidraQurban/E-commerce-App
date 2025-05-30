@@ -17,19 +17,17 @@ const camera = async() =>{
   }
   let isCameraPermitted = await requestCameraPermissions();
   if(isCameraPermitted || Platform.Version >13){
-    launchCamera(options, (response) => { 
-      if(response.errorCode){
-        alert(response.errorMessage)
+    launchCamera(options, (response) => {
+      if (response.errorCode) {
+        alert(response.errorMessage);
       } else {
-        console.log(response?.assets)
-        setImage(response?.assets)
-        console.log("Camera permissions granted:", isCameraPermitted);       
-console.log("Camera response:", response);
-console.log("Image assets:", response?.assets);
+        console.log(response?.assets);
+        setImage(response?.assets);
+        console.log("Camera permissions granted:", isCameraPermitted);
+        console.log("Camera response:", response);
+        console.log("Image assets:", response?.assets);
       }
-    })
-    
-    
+    });
   }
 }
 
