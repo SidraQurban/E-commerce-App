@@ -45,7 +45,7 @@ const Brands = () => {
                   }}
               />
             </TouchableOpacity>
-        
+    
           );
         })}
       </View>
