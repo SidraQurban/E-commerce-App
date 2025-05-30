@@ -100,7 +100,6 @@ const MoreProducts = () => {
           </Text>
         </View>
       </View>
-
       <Categories />
       <Moreproducts />
     </ScrollView>
