@@ -41,12 +41,12 @@ const Brands = () => {
                   height: responsiveHeight(11),
                   width: responsiveHeight(11),
                   borderRadius: responsiveHeight(5.5),
-                  resizeMode: "cover",       
-                  }}
+                  resizeMode: "cover",
+                }}
               />
             </TouchableOpacity>
           );
-})}
+    })}
       </View>
     </View>
   );
