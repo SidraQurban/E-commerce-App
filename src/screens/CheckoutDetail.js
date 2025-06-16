@@ -78,8 +78,9 @@ const CheckoutDetail = () => {
         </View>
 
         <CheckoutForm />
-        
+
         <PaymentMethod />
+        
       </ScrollView>
     </SafeAreaView>
   );
