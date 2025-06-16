@@ -51,4 +51,5 @@ const Brands = () => {
     </View>
   );
 };
+
 export default Brands;
