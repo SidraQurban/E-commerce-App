@@ -82,7 +82,6 @@ const CheckoutDetail = () => {
         <PaymentMethod />
 
       </ScrollView>
-
     </SafeAreaView>
   );
 }
