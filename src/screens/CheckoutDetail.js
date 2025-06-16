@@ -76,7 +76,7 @@ const CheckoutDetail = () => {
             </Text>
           </View>
         </View>
-          
+        
         <CheckoutForm />
         <PaymentMethod />
       </ScrollView>
