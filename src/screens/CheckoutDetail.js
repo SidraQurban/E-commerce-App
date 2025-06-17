@@ -82,8 +82,8 @@ const CheckoutDetail = () => {
     </SafeAreaView>
   );
 
+            
 
-  
 
 }
 
