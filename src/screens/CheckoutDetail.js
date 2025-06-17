@@ -84,7 +84,6 @@ const CheckoutDetail = () => {
 
 
 
-
 }
 
 export default CheckoutDetail
