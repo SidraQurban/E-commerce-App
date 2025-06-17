@@ -81,6 +81,7 @@ const CheckoutDetail = () => {
       </ScrollView>
     </SafeAreaView>
   );
+
   
 
 }
