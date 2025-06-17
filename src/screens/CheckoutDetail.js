@@ -81,7 +81,6 @@ const CheckoutDetail = () => {
       </ScrollView>
     </SafeAreaView>
   );
-
 }
 
 export default CheckoutDetail
