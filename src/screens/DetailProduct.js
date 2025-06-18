@@ -13,7 +13,7 @@ const handleAddToCart = () =>{
     navigation.navigate("Cart", { product})
   }  
  
-  const shareProduct = () => {
+ const shareProduct = () => {
     Share.share({
       message: `Check out this product: ${product.name} in ${product.price}`,
       url: product.img, 
