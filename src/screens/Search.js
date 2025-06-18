@@ -18,8 +18,7 @@ import Moreproducts from "../components/Moreproducts";
 import Footer from "../components/Footer";
 
 const Search = () => {
-const navigation = useNavigation();
-  
+const navigation = useNavigation();  
   return (
     <>
       <ScrollView
