@@ -6,6 +6,7 @@ import { Ionicons } from 'react-native-vector-icons';
 import { responsiveFontSize, responsiveHeight } from 'react-native-responsive-dimensions';
 import CheckoutForm from '../components/CheckoutForm';
 import PaymentMethod from '../components/PaymentMethod';
+
 const CheckoutDetail = () => {
 const navigation = useNavigation();
   return (
