@@ -16,7 +16,7 @@ const navigation = useNavigation();
 const route = useRoute();
 const [favorites, setFavorites] = useState([]);
 
-  useEffect(() => {
+useEffect(() => {
     const newProduct = route.params?.product;
 
     if (newProduct) {
