@@ -9,7 +9,7 @@ const DetailProduct = () => {
 const navigation = useNavigation();
 const route = useRoute();  // Get the passed product data
 const { product } = route.params;
-  const handleAddToCart = () =>{
+const handleAddToCart = () =>{
     navigation.navigate("Cart", { product})
   }  
  
