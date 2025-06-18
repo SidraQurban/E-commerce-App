@@ -12,7 +12,7 @@ const Brands = () => {
       console.log("Failed to open URL: ", err);
     });
   };
-  
+
   return (
     <View style={{ marginVertical: responsiveHeight(1) }}>
       <View>
@@ -20,7 +20,6 @@ const Brands = () => {
           Top Rated Brands
         </Text>
       </View>
-
       <View
         style={{
           marginTop: responsiveHeight(1),
