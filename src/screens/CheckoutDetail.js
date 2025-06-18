@@ -8,6 +8,7 @@ import CheckoutForm from '../components/CheckoutForm';
 import PaymentMethod from '../components/PaymentMethod';
 const CheckoutDetail = () => {
 const navigation = useNavigation();
+
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <ScrollView
