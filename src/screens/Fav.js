@@ -14,7 +14,7 @@ import Footer from '../components/Footer';
 const Fav = () => {
 const navigation = useNavigation();
 const route = useRoute();
-  const [favorites, setFavorites] = useState([]);
+const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
     const newProduct = route.params?.product;
