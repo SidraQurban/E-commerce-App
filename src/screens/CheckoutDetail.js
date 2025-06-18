@@ -7,7 +7,7 @@ import { responsiveFontSize, responsiveHeight } from 'react-native-responsive-di
 import CheckoutForm from '../components/CheckoutForm';
 import PaymentMethod from '../components/PaymentMethod';
 const CheckoutDetail = () => {
-  const navigation = useNavigation();
+const navigation = useNavigation();
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <ScrollView
