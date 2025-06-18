@@ -5,7 +5,6 @@ import {
   responsiveHeight,
 } from "react-native-responsive-dimensions";
 import { brandsLogo } from "../Constant";
-
 const Brands = () => {
   const handlePress = (url) => {
     Linking.openURL(url).catch((err) => {
