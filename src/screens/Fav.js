@@ -13,7 +13,7 @@ import Footer from '../components/Footer';
 
 const Fav = () => {
 const navigation = useNavigation();
-  const route = useRoute();
+const route = useRoute();
   const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
