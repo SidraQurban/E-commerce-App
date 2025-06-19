@@ -35,6 +35,6 @@ const Animation = () => {
       </Text>
     </View>
   );
-}
+};
 
 export default Animation
