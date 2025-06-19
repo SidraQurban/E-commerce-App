@@ -84,4 +84,4 @@ const navigation = useNavigation();
   );
 }
 
-export default CheckoutDetail
+export default CheckoutDetail;
