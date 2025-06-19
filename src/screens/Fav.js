@@ -133,5 +133,4 @@ useEffect(() => {
     </>
   );
 };
-
 export default Fav;
