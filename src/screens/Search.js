@@ -112,5 +112,4 @@ const navigation = useNavigation();
     </>
   );
 };
-
 export default Search;
