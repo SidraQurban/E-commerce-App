@@ -222,4 +222,3 @@ const shareProduct = () => {
 
 export default DetailProduct;
 
-
