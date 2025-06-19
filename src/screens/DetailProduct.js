@@ -12,7 +12,6 @@ const { product } = route.params;
 const handleAddToCart = () =>{
   navigation.navigate("Cart", { product})
   }  
-
  const shareProduct = () => {
     Share.share({
       message: `Check out this product: ${product.name} in ${product.price}`,
