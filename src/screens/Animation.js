@@ -4,6 +4,7 @@ import LottieView from 'lottie-react-native';
 import { responsiveFontSize, responsiveHeight, responsiveWidth } from 'react-native-responsive-dimensions';
 import { useNavigation } from '@react-navigation/native';
 import { Entypo } from 'react-native-vector-icons';
+
 const Animation = () => {
    const navigation = useNavigation();
   return (
