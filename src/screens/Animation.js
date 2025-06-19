@@ -36,4 +36,4 @@ const Animation = () => {
     </View>
   );
 };
-export default Animation
+export default Animation;
