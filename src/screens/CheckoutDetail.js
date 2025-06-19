@@ -83,5 +83,4 @@ const navigation = useNavigation();
     </SafeAreaView>
   );
 }
-
 export default CheckoutDetail;
