@@ -10,7 +10,7 @@ const navigation = useNavigation();
 const route = useRoute();  // Get the passed product data
 const { product } = route.params;
 const handleAddToCart = () =>{
-    navigation.navigate("Cart", { product})
+   navigation.navigate("Cart", { product})
   }  
  
  const shareProduct = () => {
