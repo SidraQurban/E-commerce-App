@@ -219,5 +219,5 @@ const shareProduct = () => {
       </SafeAreaView>
     );
 }
-
+   
 export default DetailProduct;
