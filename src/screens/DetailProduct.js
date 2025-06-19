@@ -224,4 +224,3 @@ export default DetailProduct;
 
 
 
-
