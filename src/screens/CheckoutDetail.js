@@ -12,7 +12,7 @@ const navigation = useNavigation();
   return (
 
     <SafeAreaView style={{ flex: 1 }}>
-<ScrollView
+  <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ paddingBottom: responsiveHeight(4) }}
       >  
