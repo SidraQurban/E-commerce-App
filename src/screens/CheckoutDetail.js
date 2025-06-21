@@ -17,7 +17,6 @@ const navigation = useNavigation();
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ paddingBottom: responsiveHeight(4) }}
       >
-
         <View style={{ padding: responsiveHeight(1) }}>
           <View
             style={{ flexDirection: "row", justifyContent: "space-between" }}
