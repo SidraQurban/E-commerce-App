@@ -10,6 +10,7 @@ const CheckoutDetail = () => {
 const navigation = useNavigation();
 
   return (
+    
     <SafeAreaView style={{ flex: 1 }}>
       <ScrollView
         showsVerticalScrollIndicator={false}
