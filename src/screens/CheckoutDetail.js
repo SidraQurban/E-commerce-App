@@ -9,7 +9,7 @@ import PaymentMethod from '../components/PaymentMethod';
 const CheckoutDetail = () => {
 const navigation = useNavigation();
 
-  return (
+  return ( 
     <SafeAreaView style={{ flex: 1 }}>
      <ScrollView
         showsVerticalScrollIndicator={false}
