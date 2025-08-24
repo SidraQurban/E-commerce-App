@@ -20,7 +20,7 @@ const Brands = () => {
           Top Rated Brands
         </Text>
       </View>
-      <Text></Tex
+      <Text></Te
       <View
         style={{
           marginTop: responsiveHeight(1),
